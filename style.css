@@ -35,7 +35,7 @@ body {
 }
 
 .Drop ul {
-    background-color: #fff;
+    background-color: #000;
     background: rgba(255,255,255,0);
     list-style: none;
     position: absolute;
@@ -49,7 +49,21 @@ body {
 
 .Drop ul a {
     white-space: nowrap;
+}
 
+.Drop li:hover ul {
+     left: 0;
+}
+
+.Drop li:hover a {
+    background-color: #6b0c36;
+    text-decoration: underline;
+}
+.Drop li:hover ul a {
+    text-decoration: none;
+}
+.Drop li:hover ul li a:hover {
+    background-color: #333;
 }
 
 p {
