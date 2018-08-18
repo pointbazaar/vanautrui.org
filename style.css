@@ -1,10 +1,11 @@
 body {
-	color:rgb(0, 102, 255);
+	color:rgb(0, 51, 153);
+	font-size: 20px;
+	font-family:verdana;
 }
 
 p {
-	font-family:verdana;
-	font-size: 20px;
+	
 }
 
 h1{
@@ -15,6 +16,11 @@ hr{
 	color:red;
 }
 
-#team{
+.section{
 	text-align:center;
+	background-color:#ff8080;
+	opacity:0.9;
+}
+.section:hover{
+	opacity:1.0;
 }
