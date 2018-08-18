@@ -4,13 +4,13 @@ body {
 	font-family:verdana;
 }
 
+
 .Drop {
   list-style: none;
   float: left;
   width:200px
   overflow: hidden;
   background-color: #ff8080;
-
 }
 
 .Drop li {
@@ -24,10 +24,10 @@ body {
   display: block;
   padding: 5px;
   color: white;
+  background-color:#ff7080;
   text-decoration: none;
 
 }
-
 .Drop a:hover{
   color: white;
   background-color: #ff8080;
@@ -35,11 +35,12 @@ body {
 }
 
 .Drop ul {
-    background-color: #000;
+    background-color: #fff;
     background: rgba(255,255,255,0);
     list-style: none;
     position: absolute;
-    left: -9999px;
+    /*left: -9999px;*/
+    display: none;
 }
 
 .Drop ul li {
