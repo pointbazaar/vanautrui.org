@@ -1,0 +1,16 @@
+body {
+	color:blue;
+}
+
+p {
+	font-family:verdana;
+	font-size: 20px;
+}
+
+h1{
+	text-align:center;
+}
+
+hr{
+	color:red;
+}
