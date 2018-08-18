@@ -1,5 +1,5 @@
 body {
-	color:blue;
+	color:rgb(0, 102, 255);
 }
 
 p {
@@ -13,4 +13,8 @@ h1{
 
 hr{
 	color:red;
+}
+
+#team{
+	text-align:center;
 }
