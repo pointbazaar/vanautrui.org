@@ -5,52 +5,6 @@ body {
 }
 
 
-.Dropbar ul{
-	list-style: none;
-	color: white;
-	position: relative;
-    display: inline-block;
-}
-
-.Dropbar ul li{
-	background-color:#ff7080;
-	opacity: 0.8;
-	float: left;
-	width: 200px;
-	height: 40px;
-
-	opacity: 0.8;
-	line-height:40px;
-	text-align: center;
-    font-size: 20px;
-	margin-right: 20px;
-}
-
-.Dropbarul li ul li{
-	display: none;
-}
-
-.Dropbar ul li a{
-	text-decoration: none;
-	color: white;
-	display: block;
-}
-
-.Dropbar ul li a:hover {
-	background-color: white;
-	color: black;
-}
-
-.Dropbar ul li ul li{
-	display: none;
-}
-
-ul li:hover ul li{
-	display: block;
-
-}
-
-/*
 .Drop {
   list-style: none;
   float: left;
@@ -85,6 +39,7 @@ ul li:hover ul li{
     background: rgba(255,255,255,0);
     list-style: none;
     position: absolute;
+    /*left: -9999px;*/
     display: none;
 }
 
@@ -112,7 +67,9 @@ ul li:hover ul li{
     background-color: #333;
 }
 
-*/
+p {
+	
+}
 
 h1{
 	text-align:center;
