@@ -79,12 +79,22 @@ hr{
 	color:red;
 }
 
+
 .section{
-	text-align:center;
+	padding:10px;
+	margin:20px;	
+
+	text-align:block;
 	margin-left:5%;
 	margin-right:5%;
-	background-color:#ff8080;
+	background-color:rgba(255,50,50,0.6);
 	opacity:0.9;
+
+	border-left-style:solid;
+	border-color:rgb(0, 51, 153);
+	border-width:5px;
+	border-radius:5px;
+
 }
 .section:hover{
 	opacity:1.0;
