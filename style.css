@@ -81,7 +81,8 @@ hr{
 
 .section{
 	text-align:center;
-
+	margin-left:5%;
+	margin-right:5%;
 	background-color:#ff8080;
 	opacity:0.9;
 }
