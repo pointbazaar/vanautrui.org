@@ -1,7 +1,11 @@
 body {
-	color:rgb(0, 51, 153);
+	color:black;
 	font-size: 20px;
 	font-family:verdana;
+
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
 }
 
 
@@ -59,12 +63,31 @@ hr{
 }
 
 .section{
-	text-align:center;
-	margin-left:5%;
-	margin-right:5%;
-	background-color:#ff8080;
+	box-shadow: 8px 8px 5px grey;
+	padding:5px;
+	margin:15px;	
+	display:inline-block;
+	text-align:block;
+	
+	background-color:rgba(204, 0, 153,0.6);
 	opacity:0.9;
+	
+	border-left-style:solid;
+	border-color:rgb(0, 51, 153);
+	border-width:5px;
+	border-radius:5px;
 }
+
 .section:hover{
 	opacity:1.0;
+}
+
+//the language classes and the typewriter class must be present if the other is present
+
+.german{
+	display:block;
+}
+
+.english{
+	display:none;
 }
