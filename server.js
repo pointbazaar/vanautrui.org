@@ -91,7 +91,8 @@ function writefiletoresponse(filename,response){
 			response.write(htm);
 		}
 	}else{
-		response.write("didn't find file");
+		var htm=fs.readFileSync("index.html");
+		response.write(htm);
 	}
 }
 
