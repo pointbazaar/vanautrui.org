@@ -1,3 +1,3 @@
 #!/bin/bash
-killall -9 node
-node server.js >> output.txt
+killall -9 nodejs
+nodejs server.js >> output.txt

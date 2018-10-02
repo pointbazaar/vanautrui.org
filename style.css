@@ -86,6 +86,12 @@ hr{
 	
 }
 
+@keyframes colorcycle{
+	0%{background-color:grey; color:blue;}
+	50%{background-color:grey; color:black;}
+	100%{background-color:grey; color:blue;}
+}
+
 .section{
 	box-shadow: 8px 8px 5px grey;
 	padding:5px;
@@ -93,14 +99,19 @@ hr{
 	display:inline-block;
 	text-align:block;
 	
+
 	background-color:rgb(0, 128, 42);
+
 	opacity:0.9;
 	
 	border-left-style:solid;
 	border-color:rgb(255, 211, 0);
 	border-width:5px;
 	border-radius:5px;
-
+	
+	animation-name:colorcycle;
+	animation-duration:20s;
+	animation-iteration-count:infinite;
 }
 
 .section:hover{

@@ -3,6 +3,7 @@ const url = require('url');
 const http = require('http');
 var fs=require('fs');
 var mysql=require('mysql');
+var urlparse=require('url');
 
 function getdatabaseconnection(){
 
@@ -19,6 +20,7 @@ const app = http.createServer((request, response) => {
   
   if(request.method=="POST"){
 	console.log("received POST request");
+
   
   }else{
 	if(request.url=="/chat.html"){
@@ -29,9 +31,7 @@ const app = http.createServer((request, response) => {
 
 		var filename=request.url;
 		console.log("new request: "+filename);
-  
 		writefiletoresponse(filename,response);
-
 		response.end();
 	}
   }
