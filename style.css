@@ -2,10 +2,11 @@ body {
 	color:black;
 	font-size: 20px;
 	font-family:verdana;
+	background-color:white;
 
 	display:flex;
-	flex-direction:column;
 	flex-wrap:wrap;
+
 }
 
 
@@ -13,7 +14,7 @@ body {
 	list-style: none;
 	color: white;
 	position: relative;
-    display: inline-block;
+    	display: inline-block;
 }
 
 .Dropbar ul li{
@@ -26,7 +27,7 @@ body {
 	opacity: 0.8;
 	line-height:40px;
 	text-align: center;
-    font-size: 20px;
+    	font-size: 20px;
 	margin-right: 20px;
 }
 
@@ -59,7 +60,36 @@ h1{
 }
 
 hr{
-	color:red;
+	color:#ffb4b4;
+}
+
+.personprofile {
+	
+	padding:5px;
+	margin:15px;	
+	display:inline-block;
+	text-align:block;
+	
+	background-color:rgb(0, 128, 42);
+	opacity:0.9;
+	border-width:5px;
+	border-radius:5px;
+
+	line-height:0.8;
+	font-size:10;
+}
+
+.profilepic{
+	width:300px;
+	height:auto;
+	display:flex;
+	
+}
+
+@keyframes colorcycle{
+	0%{background-color:grey; color:blue;}
+	50%{background-color:grey; color:black;}
+	100%{background-color:grey; color:blue;}
 }
 
 .section{
@@ -69,17 +99,23 @@ hr{
 	display:inline-block;
 	text-align:block;
 	
-	background-color:rgba(204, 0, 153,0.6);
+
+	background-color:rgb(0, 128, 42);
+
 	opacity:0.9;
 	
 	border-left-style:solid;
-	border-color:rgb(0, 51, 153);
+	border-color:rgb(255, 211, 0);
 	border-width:5px;
 	border-radius:5px;
+	
+	animation-name:colorcycle;
+	animation-duration:20s;
+	animation-iteration-count:infinite;
 }
 
 .section:hover{
-	opacity:1.0;
+	opacity:0.8;
 }
 
 //the language classes and the typewriter class must be present if the other is present
@@ -90,4 +126,17 @@ hr{
 
 .english{
 	display:none;
+}
+
+h1 {
+	color:rgb(255, 211, 0);
+}
+h2 {
+	color:rgb(255, 211, 0);
+}
+h3 {
+	color:rgb(255, 211, 0);
+}
+h4 {
+	color:rgb(255, 211, 0);
 }

@@ -2,17 +2,59 @@
 const url = require('url');
 const http = require('http');
 var fs=require('fs');
+var mysql=require('mysql');
+var urlparse=require('url');
+
+function getdatabaseconnection(){
+
+	return mysql.createConnection({
+		host:'localhost',
+		user:'root',
+		password:'Enderborn1',
+		database:'messages'
+	});
+}
+
 
 const app = http.createServer((request, response) => {
-  /*
-  response.writeHead(200, {"Content-Type": "text/html"});
-  response.write('&lt;h1&gt;The city you are in is ${city}.&lt;/h1&gt;');
-  response.end();*/
-  var htm=fs.readFileSync('index.html','utf8');
-  response.writeHead(200, {"Content-Type": "text/html"});
-  response.write('test',{html:htm});
-  response.end();
+  
+  if(request.method=="POST"){
+	console.log("received POST request");
+
+  
+  }else{
+	if(request.url=="/chat.html"){
+		
+		writechattoresponse(response);
+		response.end();
+	}else{
+
+		var filename=request.url;
+		console.log("new request: "+filename);
+		writefiletoresponse(filename,response);
+		response.end();
+	}
+  }
+
 });
 
-app.listen(3000);
+function writefiletoresponse(filename,response){
+
+	var fname=filename.slice(1,filename.length);
+	var extension=fname.slice(fname.indexOf(".")+1,fname.length);
+	if(fs.existsSync(fname)){
+		var htm=fs.readFileSync(fname);
+		if(extension=='jpg'){
+			response.writeHead(200,{'Content-Type':'image/jpg'});
+			response.write(htm,'Base64');
+		}else{	
+			response.write(htm);
+		}
+	}else{
+		var htm=fs.readFileSync("index.html");
+		response.write(htm);
+	}
+}
+
+app.listen(80);
 
