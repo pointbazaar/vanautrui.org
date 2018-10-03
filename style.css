@@ -9,7 +9,12 @@ body {
 
 }
 
-
+nav {
+	border-left-style:solid;
+	border-color:rgb(249, 166, 2);
+	border-width:5px;
+	border-radius:10px;
+}
 .Dropbar ul{
 	list-style: none;
 	color: white;
@@ -26,12 +31,12 @@ body {
 
 	opacity: 0.8;
 	line-height:40px;
-	text-align: center;
+	text-align: left;
     	font-size: 20px;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
-.Dropbarul li ul li{
+.Dropbar ul li ul li{
 	display: none;
 }
 
@@ -93,14 +98,14 @@ hr{
 }
 
 .section{
-	box-shadow: 8px 8px 5px grey;
+	box-shadow: 8px 8px 5px rgb(71, 127, 97);
 	padding:5px;
 	margin:15px;	
 	display:inline-block;
 	text-align:block;
 	
 
-	background-color:rgb(1, 68, 33);
+	background-color:rgb(11, 140, 72);
 
 	opacity:0.9;
 	
@@ -109,13 +114,10 @@ hr{
 	border-width:5px;
 	border-radius:5px;
 	
-	animation-name:colorcycle;
-	animation-duration:20s;
-	animation-iteration-count:infinite;
 }
 
 .section:hover{
-	opacity:0.8;
+	opacity:0.7;
 }
 
 //the language classes and the typewriter class must be present if the other is present
