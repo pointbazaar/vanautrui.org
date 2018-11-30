@@ -2,61 +2,10 @@ body {
 	color:black;
 	font-size: 20px;
 	font-family:verdana;
-	background-color:rgb(1, 68, 33);
+	#background-color:rgb(1, 68, 33);
 
 	display:flex;
 	flex-wrap:wrap;
-
-}
-
-nav {
-	border-left-style:solid;
-	border-color:rgb(249, 166, 2);
-	border-width:5px;
-	border-radius:10px;
-}
-.Dropbar ul{
-	list-style: none;
-	color: white;
-	position: relative;
-    	display: inline-block;
-}
-
-.Dropbar ul li{
-	background-color:rgb(1, 68, 33);
-	opacity: 0.8;
-	float: left;
-	width: 200px;
-	height: 40px;
-
-	opacity: 0.8;
-	line-height:40px;
-	text-align: left;
-    	font-size: 20px;
-	margin-right: 10px;
-}
-
-.Dropbar ul li ul li{
-	display: none;
-}
-
-.Dropbar ul li a{
-	text-decoration: none;
-	color: white;
-	display: block;
-}
-
-.Dropbar ul li a:hover {
-	background-color: white;
-	color: black;
-}
-
-.Dropbar ul li ul li{
-	display: none;
-}
-
-ul li:hover ul li{
-	display: block;
 
 }
 
@@ -66,6 +15,11 @@ h1{
 
 hr{
 	color:#ffb4b4;
+}
+
+.middle{
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .personprofile {
@@ -99,7 +53,7 @@ hr{
 
 .section{
 	box-shadow: 8px 8px 5px rgb(71, 127, 97);
-	padding:5px;
+	padding:10px;
 	margin:15px;	
 	display:inline-block;
 	text-align:block;
@@ -117,7 +71,7 @@ hr{
 }
 
 .section:hover{
-	opacity:0.7;
+	opacity:1.0;
 }
 
 //the language classes and the typewriter class must be present if the other is present
