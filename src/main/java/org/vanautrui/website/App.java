@@ -14,13 +14,16 @@ public class App
 {
     public static void main( String[] args )
     {
-
+        String keystorepassword=args[0];
         port(80);
         //threadPool(1);
 
         String path= getProperty("user.dir");
         staticFiles.externalLocation(path+"/src/main/resources/public");
         //staticFileLocation("/public");
+        
+        secure("/etc/letsencrypt/live/vanautrui.org/mykeystore.jks", keystorepassword,null,null);
+
 
         init();
 
