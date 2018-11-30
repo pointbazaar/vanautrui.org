@@ -11,7 +11,10 @@ public class App
     public static void main( String[] args )
     {
         port(80);
-        staticFiles.location("/public");
+        threadPool(1);
+        staticFiles.externalLocation("/public");
+        staticFileLocation("/public");
+
         init();
 
         System.out.println( " World!" );
