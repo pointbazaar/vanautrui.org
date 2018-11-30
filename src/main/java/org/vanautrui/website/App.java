@@ -8,6 +8,8 @@ import java.nio.charset.*;
  */
 public class App 
 {
+    private String darkgreen="#014421";
+    private String yellow="#F9A602";
     public static void main( String[] args )
     {
 
