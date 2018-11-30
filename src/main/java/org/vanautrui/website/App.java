@@ -13,15 +13,14 @@ public class App
 
 	try{
         	port(443);
+            //the password to the keystore must be given als argument
+            String pass=args[0];
+            //reads keystore password from the environment
+            secure("/etc/letsencrypt/live/vanautrui.org/keystore.jks", pass, null,null);
 
+            //secure before setting static files location
 	        String path= System.getProperty("user.dir");
 	        staticFiles.externalLocation(path+"/src/main/resources/public");
-
-		//the password to the keystore must be given als argument
-		String pass=args[0];
-
-        	//reads keystore password from the environment
-	        secure("/etc/letsencrypt/live/vanautrui.org/keystore.jks", pass, null,null);
 
 	        init();
 
