@@ -7,4 +7,4 @@
 #run stuff with sudo, otherwise it fails to bind to port bc lack of permissions
 
 sudo mvn install
-sudo nohup mvn exec:java -Dexec.mainClass="org.vanautrui.website.App" -Dexec.args="-a $password" &
+sudo nohup mvn exec:java -Dexec.mainClass="org.vanautrui.website.App" &
