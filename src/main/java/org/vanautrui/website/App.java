@@ -22,6 +22,10 @@ public class App
         staticFiles.externalLocation(path+"/src/main/resources/public");
         //staticFileLocation("/public");
 
+        //reads keystore password from the environment
+        secure("/etc/letsencrypt/live/vanautrui.org/mykeystore.jks", System.getenv("password"),null,null);
+
+
         init();
 
         System.out.println( " World!" );
