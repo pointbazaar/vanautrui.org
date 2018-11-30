@@ -1,9 +1,5 @@
 package org.vanautrui.website;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import static java.lang.System.getProperty;
 import static spark.Spark.*;
 
 /**
@@ -15,10 +11,10 @@ public class App
     public static void main( String[] args )
     {
 
-        port(80);
+        //port(80);
         //threadPool(1);
 
-        String path= getProperty("user.dir");
+        String path= System.getProperty("user.dir");
         staticFiles.externalLocation(path+"/src/main/resources/public");
         //staticFileLocation("/public");
 
