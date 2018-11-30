@@ -14,7 +14,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        String keystorepassword=args[0];
+
         port(80);
         //threadPool(1);
 
@@ -22,7 +22,8 @@ public class App
         staticFiles.externalLocation(path+"/src/main/resources/public");
         //staticFileLocation("/public");
         
-        secure("/etc/letsencrypt/live/vanautrui.org/mykeystore.jks", keystorepassword,null,null);
+        //reads keystore password from the environment
+        secure("/etc/letsencrypt/live/vanautrui.org/mykeystore.jks", System.getenv("password"),null,null);
 
 
         init();
