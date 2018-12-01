@@ -20,7 +20,9 @@ public class App
     public static void main( String[] args )
     {
         try{
-            port(443);
+
+            port(8080);
+
             //the password to the keystore must be given als argument
             String pass=args[0];
             //reads keystore password from the environment
@@ -49,6 +51,12 @@ public class App
             init();
 
             System.out.println( " World!" );
+
+
+            before(((request, response) -> {
+                String protocol=request.protocol();
+                System.out.println(protocol);
+            }));
 
             get("/test",(req,res)->{
                 return "world";
