@@ -21,7 +21,7 @@ public class App
     {
         try{
 
-            port(8080);
+            port(443);
 
             //the password to the keystore must be given als argument
             String pass=args[0];
