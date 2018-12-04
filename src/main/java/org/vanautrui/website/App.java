@@ -7,7 +7,10 @@ import java.net.URI;
 import java.nio.file.*;
 import static spark.Spark.*;
 import java.nio.charset.*;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.stream.Collectors;
 
 /**
  * Hello world!
@@ -19,6 +22,7 @@ public class App
     private String yellow="#F9A602";
     public static void main( String[] args )
     {
+
         try{
 
             port(443);

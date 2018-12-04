@@ -6,19 +6,38 @@
 </head>
 <body>
 <script>
-    function changelocation(){
+    function changelocation(destination){
         //top is referring to parent window
-        top.location.href="index.html";
+        top.location.href=destination;
     }
 </script>
-<div id="greeting" style="margin-left:auto; margin-right:auto;" onclick="changelocation()">
+
+<div id="top-bar" style="margin-left:30%; margin-right:30%;" >
     <table >
         <tr>
-            <td>
-                <img src="pics/logo.svg" width="100em" height="auto">
+            <td id="logo-middle" onclick="changelocation('index.html')">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="pics/logo.svg" width="150em" height="auto">
+                        </td>
+                        <td>
+                            <button>
+                                <h1>Van Autrui</h1>
+                            </button>
+
+                        </td>
+                    </tr>
+                </table>
             </td>
-            <td>
-                <h1>Van Autrui</h1>
+            <td >
+                <button onclick="changelocation('services.html')"><h4>Our Service</h4></button>
+            </td>
+            <td onclick="changelocation('team.html')">
+                <button href="."><h4>Our Team</h4></button>
+            </td>
+            <td onclick="changelocation('workwithus.html')">
+                <button href="."><h4>Jobs</h4></button>
             </td>
         </tr>
     </table>
