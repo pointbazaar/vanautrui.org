@@ -1,3 +1,4 @@
+# tag based sty
 
 html, body{ height:100%; margin:0; }
 
@@ -13,9 +14,21 @@ body {
 
 }
 
-.toolimage{
-    height:4em;
-    padding: 0.1em 0.1em 0.1em 0.1em;
+table{
+	border-collapse: collapse;
+}
+
+th{
+	text-align: left;
+	font-size: 34;
+}
+
+#prices td{
+	padding: 1em 1em 1em 1em;
+}
+
+#prices td,th{
+	border: 1px solid #ddd;
 }
 
 button{
@@ -26,17 +39,50 @@ button{
 
 }
 
-h1{
+span{
+	margin: 1cm 1cm 1cm 1cm;
+}
+
+h1 {
 	text-align:center;
+	color:rgb(249, 166, 2);
+}
+h2 {
+	color:rgb(249, 166, 2);
+}
+h3 {
+	color:rgb(249, 166, 2);
+}
+h4 {
+	color:rgb(249, 166, 2);
 }
 
 hr{
 	color:#ffb4b4;
 }
 
+#footer {
+    position: fixed;
+    z-index: 10;
+    height: 4em;
+		bottom: 0;
+		background-color: white;
+}
+
+.toolimage{
+    height:4em;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+}
+
+
+
 .middle{
     margin-left:auto;
     margin-right:auto;
+}
+
+.contentbox {
+
 }
 
 .contentbox, .personprofile{
@@ -60,8 +106,6 @@ hr{
 	margin: 1em 1em 1em 1em;
 }
 
-
-
 .profilepic{
 	width:300px;
 	height:auto;
@@ -75,10 +119,7 @@ hr{
 	100%{background-color:grey; color:blue;}
 }
 
-
-
 .section{
-
 
 	box-shadow: 8px 8px 5px rgb(71, 127, 97);
 	padding:10px;
@@ -86,17 +127,17 @@ hr{
 	#display:inline-block;
 	display:block;
 	text-align:block;
-	
+
 
 	background-color:rgb(11, 140, 72);
 
 	opacity:0.9;
-	
+
 	border-left-style:solid;
 	border-color:rgb(249, 166, 2);
 	border-width:5px;
 	border-radius:5px;
-	
+
 }
 
 .section:hover{
@@ -111,17 +152,4 @@ hr{
 
 .english{
 	display:none;
-}
-
-h1 {
-	color:rgb(249, 166, 2);
-}
-h2 {
-	color:rgb(249, 166, 2);
-}
-h3 {
-	color:rgb(249, 166, 2);
-}
-h4 {
-	color:rgb(249, 166, 2);
 }
