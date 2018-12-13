@@ -85,6 +85,16 @@ hr{
 
 }
 
+.myflexbox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.center{
+	text-align: center;
+}
+
 .contentbox, .personprofile{
 
     border-radius: 4px;
