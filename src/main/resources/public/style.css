@@ -61,12 +61,14 @@ hr{
 	color:#ffb4b4;
 }
 
-#footer {
-    position: fixed;
-    z-index: 10;
-    height: 4em;
-		bottom: 0;
-		background-color: white;
+
+.bg-custom{
+	background-color:#229759;
+}
+
+.fg-custom{
+	color:#F9AE1A;
+
 }
 
 .toolimage{
@@ -119,8 +121,7 @@ hr{
 .profilepic{
 	width:300px;
 	height:auto;
-	display:flex;
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 @keyframes colorcycle{
