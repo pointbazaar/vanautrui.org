@@ -1,69 +1,14 @@
-# tag based sty
-
-html, body{ height:100%; margin:0; }
-
 body {
-	color:black;
-	font-size: 20px;
-	font-family:verdana;
-	#background-color:rgb(1, 68, 33);
-
-	#display:flex;
-	#flex-direction:column;
-	#flex-wrap:wrap;
-
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 }
 
-table{
-	border-collapse: collapse;
+.bg-custom-dark{
+	background-color: #014421;
 }
 
-th{
-	text-align: left;
-	font-size: 34;
-}
-
-#prices td{
-	padding: 1em 1em 1em 1em;
-}
-
-#prices td,th{
-	border: 1px solid #ddd;
-}
-
-button{
-    background-color:white;
-    border-radius:4px;
-    border: 2px solid rgb(249, 166, 2);
-    cursor:pointer;
-
-}
-
-span{
-	margin: 1cm 1cm 1cm 1cm;
-}
-
-h1 {
-	text-align:center;
-	color:rgb(249, 166, 2);
-}
-h2 {
-	color:rgb(249, 166, 2);
-}
-h3 {
-	color:rgb(249, 166, 2);
-}
-h4 {
-	color:rgb(249, 166, 2);
-}
-
-hr{
-	color:#ffb4b4;
-}
-
-
-.bg-custom{
-	background-color:#229759;
+.bg-custom-light{
+	background-color:#005227;
 }
 
 .fg-custom{
@@ -73,94 +18,12 @@ hr{
 
 .toolimage{
     height:4em;
+		width: auto;
     padding: 0.1em 0.1em 0.1em 0.1em;
-}
-
-
-
-.middle{
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.contentbox {
-
-}
-
-.myflexbox{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.center{
-	text-align: center;
-}
-
-.contentbox, .personprofile{
-
-    border-radius: 4px;
-    border-width: 5px;
-    border: 2px solid rgb(11, 140, 72);
-
-    background-color:white;
-    #display:inline-block;
-    display:block;
-    margin-left: 2%;
-    margin-right:2%;
-    padding: 1em 1em 1em 1em;
-}
-
-.personprofile {
-
-	display:inline-block;
-	text-align:block;
-	margin: 1em 1em 1em 1em;
 }
 
 .profilepic{
 	width:300px;
 	height:auto;
   border-radius: 8px;
-}
-
-@keyframes colorcycle{
-	0%{background-color:grey; color:blue;}
-	50%{background-color:grey; color:black;}
-	100%{background-color:grey; color:blue;}
-}
-
-.section{
-
-	box-shadow: 8px 8px 5px rgb(71, 127, 97);
-	padding:10px;
-	margin:2%;
-	#display:inline-block;
-	display:block;
-	text-align:block;
-
-
-	background-color:rgb(11, 140, 72);
-
-	opacity:0.9;
-
-	border-left-style:solid;
-	border-color:rgb(249, 166, 2);
-	border-width:5px;
-	border-radius:5px;
-
-}
-
-.section:hover{
-	opacity:1.0;
-}
-
-//the language classes and the typewriter class must be present if the other is present
-
-.german{
-	display:block;
-}
-
-.english{
-	display:none;
 }
