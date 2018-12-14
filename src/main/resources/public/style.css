@@ -23,7 +23,10 @@ body {
 }
 
 .profilepic{
-	width:300px;
-	height:auto;
+	height:20vw;
+	width:20vw;
   border-radius: 8px;
+
+	object-fit: cover;
+	overflow: hidden;
 }
