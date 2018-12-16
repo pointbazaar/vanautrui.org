@@ -30,3 +30,11 @@ body {
 	object-fit: cover;
 	overflow: hidden;
 }
+
+.techtag{
+	font-size: 0.9vmin;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	border-radius: 12px;
+	background-color: orange;
+	color:white;
+}
