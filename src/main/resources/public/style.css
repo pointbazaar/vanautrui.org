@@ -16,9 +16,17 @@ body {
 
 }
 
+.perkicon{
+	height: 4vmax;
+	width: auto;
+
+}
+
+
+
 .toolimage{
-    height:4em;
-		width: auto;
+    height:6em;
+	width: auto;
     padding: 0.1em 0.1em 0.1em 0.1em;
 }
 
