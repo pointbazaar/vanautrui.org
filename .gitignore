@@ -3,3 +3,4 @@ output.txt
 .idea/
 target/
 *.out
+nohup.out
