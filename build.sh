@@ -1,2 +1,0 @@
-
-mvn -Dpassword=$password install  
