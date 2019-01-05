@@ -4,3 +4,5 @@ output.txt
 target/
 *.out
 nohup.out
+.kdev4/
+*.kdev4
