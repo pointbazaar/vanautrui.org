@@ -29,23 +29,10 @@ body {
 }
 
 .profilepic{
-	height:17vw;
-	width:17vw;
-  border-radius: 8px;
+	height:17em;
+	width:17em;
+        border-radius: 1px;
 
 	object-fit: cover;
 	overflow: hidden;
-}
-
-.techtag{
-	font-size: 0.9vmin;
-	padding: 0.2em 0.5em 0.2em 0.5em;
-	border-radius: 12px;
-	background-color: orange;
-	color:black;
-	opacity: 0.7;
-}
-
-.card {
-    float: left;
 }
