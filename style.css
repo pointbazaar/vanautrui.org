@@ -29,10 +29,14 @@ body {
 }
 
 .profilepic{
-	height:17em;
-	width:17em;
+	height:19em;
+	width:19em;
         border-radius: 1px;
 
 	object-fit: cover;
 	overflow: hidden;
+}
+
+.teamcard{
+    width:17em;
 }
