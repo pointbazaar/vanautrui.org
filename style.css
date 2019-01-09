@@ -24,19 +24,17 @@ body {
 
 .toolimage{
     height:6em;
-	width: auto;
+    width: auto;
     padding: 0.1em 0.1em 0.1em 0.1em;
 }
 
-.profilepic{
-	height:19em;
-	width:19em;
-        border-radius: 1px;
 
+
+.profilepic{
+	height:14em;
+	width:16em;
+        border-radius: 1px;
+            
 	object-fit: cover;
 	overflow: hidden;
-}
-
-.teamcard{
-    width:17em;
 }
