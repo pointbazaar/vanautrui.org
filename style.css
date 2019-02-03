@@ -2,7 +2,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
         color: #191919;
-        
+
 }
 
 .bg-custom-dark{
@@ -19,24 +19,29 @@ body {
 }
 
 .perkicon{
-	height: 4vmax;
+	height: 4em;
 	width: auto;
 
 }
 
 .toolimage{
-    height:6em;
+    height:4em;
     width: auto;
     padding: 0.1em 0.1em 0.1em 0.1em;
 }
-
 
 
 .profilepic{
 	height:14em;
 	width:16em;
         border-radius: 1px;
-            
+
 	object-fit: cover;
 	overflow: hidden;
+}
+
+.mycard{
+	border: 1px solid grey;
+	border-radius: 3px;
+	margin: 0.1em 0.1em 0.1em 0.1em;
 }
