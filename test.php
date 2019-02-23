@@ -1,3 +1,3 @@
 <?php
-echo "hello"
+include("logo_fragment.html");
 ?>

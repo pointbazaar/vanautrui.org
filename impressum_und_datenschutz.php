@@ -24,6 +24,9 @@
 <body>
   <script src="loadheaderandfooter.js"></script>
   <div id="header"></div>
+  <?php
+    include("logo_fragment.php");
+  ?>
 
   <!-- https://www.datenschutz.org/website/ -->
   <div id="Impressum" class="container">
@@ -63,8 +66,10 @@
         <p>Diese Website benutzt Google Analytics. Google Analytics sammelt anonymisierte Informationen zu den Besuchern einer Website, etwa aus welchem Land Sie diese Website besuchen.
         Wenn Sie mit Google Analytics nicht einverstanden sind, koennen sie jederzeit unterlassen, diese Website zu nutzen.</p>
     </div>
-    
-  <div id="footer"></div>
 
+  <div id="footer"></div>
+  <?php
+    include("footer.html");
+  ?>
 </body>
 </html>

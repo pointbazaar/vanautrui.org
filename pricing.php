@@ -15,12 +15,15 @@
   <script src="loadheaderandfooter.js"></script>
   <div id="header"></div>
 
+  <?php
+    include("logo_fragment.php");
+  ?>
   <div class="p-4"></div>
 
-  
+
   <div class="container">
   <h3 class="text-center">Pricing </h3>
-  
+
 		<p>
 			These are just rough guidelines. <br>
 			We will always make a detailed Quote which depends
@@ -45,25 +48,25 @@
 			We provide Support and Maintenance Packages from <strong> 50 € / month</strong>. <br>
 			Of course you are freeto choose another Provider or to maintain the Project yourself.
 		</p>
-		
+
 		<p>
 			How do we handle Payment? <br>
 			We take 25% of the Project Budget as a Commitment Fee Upfront,<br>
 			then start work on the Project. If you are satisfied with the final Results, after revisions<br>
 			and changes have been requested and implemented, you pay the rest of the Budget.
 		</p>
-		
+
 		<p>
 			If there is disagreement about the Project <br>
 			or you are not satisfied, we will try to fix it. <br>
-			
+
 			<strong>You will not get the initial 25% back.</strong>
 		</p>
 		<p>
 			There is no possibility of doing the final Payment in Parts or over a longer Period of time.<br>
-			
+
 			The final payment is due 30 days after the Project has been finished. <br>
-			If the final Payment is not delivered, 
+			If the final Payment is not delivered,
 			no further steps will be taken, we will simply stop doing business with you.
 		</p>
   </div>
@@ -72,7 +75,9 @@
   <!-- https://www.rkh.co.uk/about-us -->
 
   <div id="footer"></div>
-
+  <?php
+    include("footer.html");
+  ?>
 
 </body>
 </html>

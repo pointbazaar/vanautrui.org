@@ -14,6 +14,9 @@
 <body>
   <script src="loadheaderandfooter.js"></script>
   <div id="header"></div>
+  <?php
+    include("logo_fragment.php");
+  ?>
 
   <div class="p-4"></div>
 
@@ -62,7 +65,7 @@
             </div>
         </div>
       </div>
-      
+
       <div class="card m-3 ">
         <div class="card-header bg-custom-dark">
             <a class="fg-custom" href="profiles/joanna.html">Ilona</a>
@@ -103,7 +106,9 @@
   <!-- https://www.rkh.co.uk/about-us -->
 
   <div id="footer"></div>
-
+  <?php
+    include("footer.html");
+  ?>
 
 </body>
 </html>

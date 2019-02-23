@@ -15,6 +15,9 @@
 <body>
   <script src="loadheaderandfooter.js"></script>
   <div id="header"></div>
+  <?php
+    include("logo_fragment.php");
+  ?>
   <div id="spacer" style="height: 3em;"></div>
   <div class="container-fluid">
 
@@ -203,4 +206,7 @@
   <div class="p-4"></div>
 
   <div id="footer" class="container-fluid"></div>
+  <?php
+    include("footer.html");
+  ?>
 </body>

@@ -30,9 +30,15 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+<?php
+$activePage = basename($_SERVER['PHP_SELF'], ".php");
+ ?>
+
+ <p> <?= ($activePage)?> </p>
+
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="index.php">
           <strong>
             <span>
             Home
@@ -41,7 +47,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="services.html">
+        <a class="nav-link" href="services.php">
           <strong>
             <span>
             Service
@@ -51,7 +57,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="portfolio.html">
+        <a class="nav-link" href="portfolio.php">
           <strong>
             <span>
             Portfolio
@@ -60,26 +66,26 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pricing.html">
+        <a class="nav-link" href="pricing.php">
             Pricing
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="team.html">
+        <a class="nav-link" href="team.php">
             Team
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="workwithus.html">
+        <a class="nav-link" href="workwithus.php">
             Jobs
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="impressum_und_datenschutz.html">
+        <a class="nav-link" href="impressum_und_datenschutz.php">
             Impressum, Datenschutz
         </a>
       </li>
-      
+
     </ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="highlightcurrentpage.js"></script>

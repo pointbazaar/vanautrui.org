@@ -13,6 +13,9 @@
 
   <script src="loadheaderandfooter.js"></script>
   <div id="header"></div>
+  <?php
+    include("logo_fragment.php");
+  ?>
 
 <div class="container-fluid">
 
@@ -102,7 +105,9 @@
                           We use only opensource software and opensource dependencies
                           to ensure our clients have the best results
                         </p>
-                        <div id="toolslogos"></div>
+                        <?php
+                          include("tools_logos_fragment.html");
+                        ?>
                     </div>
                 </div>
             </div>
@@ -216,6 +221,8 @@
 </div>
 
   <div id="footer"></div>
-
+  <?php
+    include("footer.html");
+  ?>
 </body>
 </html>
