@@ -13,8 +13,6 @@
 </head>
 
 <body>
-  <script src="loadheaderandfooter.js"></script>
-  <div id="header"></div>
   <?php
     include("logo_fragment.php");
   ?>

@@ -10,12 +10,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<script>
-    function changelocation(destination){
-        //top is referring to parent window
-        top.location.href=destination;
-    }
-</script>
 
 <div class="container-fullwidth">
   <nav class="navbar navbar-expand-xl navbar-dark bg-custom-dark">
