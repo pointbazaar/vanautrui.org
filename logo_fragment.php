@@ -34,10 +34,10 @@
 $activePage = basename($_SERVER['PHP_SELF'], ".php");
  ?>
 
- <p> <?= ($activePage)?> </p>
+ <!-- <p> <?= ($activePage)?> </p> -->
 
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
+      <li class="nav-item <?= ($activePage == 'index') ? 'active':''; ?>">
         <a class="nav-link" href="index.php">
           <strong>
             <span>
@@ -46,7 +46,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
           </strong>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?= ($activePage == 'services') ? 'active':''; ?>">
         <a class="nav-link" href="services.php">
           <strong>
             <span>
@@ -56,7 +56,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
         </a>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item <?= ($activePage == 'portfolio') ? 'active':''; ?>">
         <a class="nav-link" href="portfolio.php">
           <strong>
             <span>
@@ -65,22 +65,22 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
           </strong>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?= ($activePage == 'pricing') ? 'active':''; ?>">
         <a class="nav-link" href="pricing.php">
             Pricing
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?= ($activePage == 'team') ? 'active':''; ?>">
         <a class="nav-link" href="team.php">
             Team
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?= ($activePage == 'workwithus') ? 'active':''; ?>">
         <a class="nav-link" href="workwithus.php">
             Jobs
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?= ($activePage == 'impressum_und_datenschutz') ? 'active':''; ?>">
         <a class="nav-link" href="impressum_und_datenschutz.php">
             Impressum, Datenschutz
         </a>
@@ -88,7 +88,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
 
     </ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="highlightcurrentpage.js"></script>
+
     </div>
   </nav>
 </div>
