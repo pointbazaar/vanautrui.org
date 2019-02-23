@@ -2,17 +2,6 @@
 
 <head>
   <meta charset="utf-8" />
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130200041-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-130200041-1');
-    </script>
     <title>Datenschutz und Services - Van Autrui</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -61,8 +50,7 @@
     <div id="datenschutz" class="container">
         <h3>Datenschutz</h3>
         <p>Diese Wesite benutzt HTTPS. Das bedeutet, dass dritte keinen Zugang zu Daten haben, die sie auf dieser Website eingeben.</p>
-        <p>Diese Website benutzt Google Analytics. Google Analytics sammelt anonymisierte Informationen zu den Besuchern einer Website, etwa aus welchem Land Sie diese Website besuchen.
-        Wenn Sie mit Google Analytics nicht einverstanden sind, koennen sie jederzeit unterlassen, diese Website zu nutzen.</p>
+        
     </div>
 
   <div id="footer"></div>
