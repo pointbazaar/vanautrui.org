@@ -26,29 +26,57 @@
 			We will always make a detailed Quote which depends
 			on what is required.
 		</p>
+    <table>
+        <tr>
+            <td>
+                Our Web Development and <strong>Web Design </strong>starts from
+            </td>
+            <td>
+              <strong> 200 €</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Our <strong>Ecommerce</strong> Development starts from
+            </td>
+            <td>
+                <strong> 400 €</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Our <strong>Android App </strong>Development starts from
+            </td>
+            <td>
+                <strong> 300 €</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                If your Project requires a custom Backend, we do that from
+            </td>
+            <td>
+                <strong> 500 €</strong>.
+            </td>
+        </tr>
+    </table>
+    <br>
 		<p>
-			Our Web Development and Web Design starts from <strong> 200 €</strong>.
-			<br>
-			Our Ecommerce Development starts from <strong> 400 €</strong>.
-			<br>
-			Our Android App Development starts from <strong> 300 €</strong>.
-			<br>
-			If your Project requires a custom Backend, we do that from <strong> 500 €</strong>.
-			<br>
+			If a Project is over 2000 €, we break it down into smaller Projects to be done in sequence.<br>
+      This lowers the Risk for us and the Client.
 		</p>
 		<p>
-			We have never done a project above 20 000 €. <br>
-			Just so you can have a clear picture of where we are at.
-		</p>
-		<p>
-			If your Project has an Ecommerce or a Backend, that almost always requires Support and Maintenance.<br>
-			We provide Support and Maintenance Packages from <strong> 50 € / month</strong>. <br>
-			Of course you are freeto choose another Provider or to maintain the Project yourself.
+			If your Project has an Ecommerce or a Backend, <br>
+            that always requires Hosting and usually also requires Maintenance and Support.<br>
+            We provide <strong>Hosting and Maintenance Packages </strong>from <strong> 50 € / month</strong>. <br>
+			Of course you are freeto choose another Provider or to maintain and host the Project yourself.
 		</p>
 
 		<p>
 			How do we handle Payment? <br>
-			We take 25% of the Project Budget as a Commitment Fee Upfront,<br>
+
+            <strong>We take 25% of the Project Budget as a Commitment Fee Upfront,</strong>
+                <br>
 			then start work on the Project. If you are satisfied with the final Results, after revisions<br>
 			and changes have been requested and implemented, you pay the rest of the Budget.
 		</p>
@@ -66,7 +94,10 @@
 			If the final Payment is not delivered,
 			no further steps will be taken, we will simply stop doing business with you.
 		</p>
+      <br>
+
   </div>
+
 
   <!-- inspiration: https://blog.hubspot.com/marketing/creative-agency-team-pages -->
   <!-- https://www.rkh.co.uk/about-us -->

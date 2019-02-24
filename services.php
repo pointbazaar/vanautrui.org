@@ -193,7 +193,6 @@
       Our Guarantee:
     </h3>
     <div class="text-center">
-        <p> If you are not <strong>100% satisfied</strong> with our results, <br>you pay nothing and find another business.</p>
         <p> You will always get the <strong>Source Code </strong>for the entire project.</p>
         <p> We will develop 100% Open-Source Software </p>
         <p> <strong>no Vendor Lock-In.</strong> <br>Because we only use opensource libraries and frameworks, <br>
