@@ -17,163 +17,77 @@
     include("logo_fragment.php");
   ?>
   <div id="spacer" style="height: 3em;"></div>
-  <div class="container-fluid">
+  <div class="container">
 
-    <!-- col-lg-4 means that card will wrap around earlier than if it were
-    col-sm-4.
-    -->
-    <h1 class="display-4 text-center">
-      <code> < Development Services /> </code>
-    </h1>
+            <h1 class="display-4 text-center">
+              <code> < Development Services/> </code>
+            </h1>
 
 
-    <div class="m-3"></div>
+            <div class="m-3"></div>
 
-    <div class="row justify-content-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="">What we do</h3>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Web Design</li>
+                        <li>
+                            <strong>Web Applications</strong>
+                            <ul>
+                                <li>Spring Boot</li>
+                                <li>PHP</li>
+                            </ul>
+                        </li>
+                        <li>Android Applications</li>
+                        <li>SSL Certificates with
+                            <a href="https://certbot.eff.org/">Certbot </a> for your Website
+                        </li>
+                        <li>
+                            <strong>Analytics</strong>
+                        </li>
+                        <li>Social Media Marketing through our Associates</li>
+                        <li>Mobile Responsive</li>
+                        <li>above average Page Speed</li>
+                        <li>Map with
+                            <a href="https://www.openstreetmap.org">Openstreetmap</a>
+                            and
+                            <a href="https://leafletjs.com/">Leaflet.js</a>
+                        </li>
+                        <li>Adding Translations to an already existing site
+                        </li>
 
-      <div class="m-3 col-md-12" >
-        <div class="">
-          <div class="text-center">
-            <h3>Webdesign and Web Development</h3>
-          </div>
-          <div class="card-text">
-              Some of the things we can do for you:
-            <ul>
-              <li> Pages on your Website
-                <ul>
-                  <li>Products Overview Page</li>
-                  <li>Business hours</li>
-                  <li>Contact Page</li>
-                </ul>
-              </li>
-              <li>SSL Certificates for your Website</li>
-              <li>
-                  <strong>Analytics</strong>
-              </li>
-              <li>Social Media Marketing through our Associates</li>
-              <li>Mobile Responsive</li>
-              <li>above average Page Speed</li>
-              <li>Map with
-                <a href="https://www.openstreetmap.org">Openstreetmap</a>
-                and
-                <a href="https://leafletjs.com/">Leaflet.js</a>
-              </li>
-                <li>Adding Translations to an already existing site
-                </li>
-
-            </ul>
-            <div class="row justify-content-center">
-                <!--TODO make seperate sections on portfolio site -->
-                <a href="portfolio.html" class="p-1">
-                    <button class="btn btn-info">Our Portfolio including <br><strong>Static Websites</strong></button>
-                </a>
+                        <li>
+                            Content Management Systems with <a href="https://wordpress.com/">Wordpress</a>
+                            <ul>
+                                <li>Setup</li>
+                                <li>Custom Theme</li>
+                                <li>Maintenance</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Ecommerce</strong>
+                            <ul>
+                                <li><a href="https://woocommerce.com/">Woocommerce</a> based Systems</li>
+                                <li>Custom Theme</li>
+                                <li>PayPal Checkout</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 class=""> What we don't do</h3>
+                    <ul>
+                        <li>Software Development for Windows</li>
+                        <li>Animations</li>
+                        <li>Video and Content Creation</li>
+                        <li>Social Media Marketing</li>
+                        <li>Develop Proprietary Software</li>
+                        <li>Sign an NDA</li>
+                        <li>Google Analytics Integration</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-        <hr>
-
-      <div class="m-3 col-md-12">
-        <div class="card-body">
-          <div class="card-title text-center">
-            <h3>Content Management Systems <br>and Ecommerce <br>
-                with Wordpress and Woocommerce
-            </h3>
-          </div>
-          <div class="card-text">
-              Some of the things we can do for you:
-            <ul>
-              <li>SSL Certificates Configuration with
-                <a href="https://certbot.eff.org/">Certbot </a>
-              </li>
-              <li>
-                  <strong>Analytics</strong>
-                  <ul>
-                      <li>Custom Targets and Marketing Funnels</li>
-                      <li>Reporting</li>
-                  </ul>
-              </li>
-              <li>
-                Our
-                <a href="https://wordpress.com/">Wordpress</a>
-                 and Ecommerce Offering
-                <ul>
-                  <li>Developing a Wordpress Theme for your Brand.</li>
-                  <li>Wordpress Configuration and Setup </li>
-                  <li>Wordpress
-                    <a href="https://woocommerce.com/">Woocommerce</a>
-                     Ecommerce Configuration<br>
-                    </li>
-                </ul>
-              </li>
-              <li>Mobile-First approach with a focus on Page Speed</li>
-              <li>Map with Openstreetmap and Leaflet.js</li>
-              <li>Web Applications with Spring Boot and Database. <br>
-                We can build custom Software for you.</li>
-              <li>Modifying existing Web Applications.</li>
-              <li>Adding Translations to an already existing site </li>
-            </ul>
-            <div class="row justify-content-center">
-                <a href="portfolio.html" class="p-1">
-                    <button class="btn btn-info">Our Portfolio including <br><strong> Web Applications</strong></button>
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <hr>
-
-      <div class="m-3 col-md-12">
-        <div class="card-body">
-          <div class="card-title text-center">
-            <h3>Android Applications</h3>
-          </div>
-          <div class="card-text">
-            Some of the things we can do for you:
-            <ul>
-                <li>
-                    Paypal integration
-                </li>
-                <li>
-                    Interactive Visualzations
-                </li>
-                <li>
-                    Using Device Sensors
-                </li>
-                <li>
-                    Chat App
-                </li>
-                <li>
-                    Dating App
-                </li>
-            </ul>
-            <div class="row justify-content-center">
-                <!--TODO make seperate sections on portfolio site -->
-                <a href="portfolio.html" class="p-1">
-                    <button class="btn btn-info">Our Portfolio including <br><strong>Android Applications </strong></button>
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-
-    <!-- TODO: bring in more charts and graphics to illustrate the benefits of a website -->
-
-
-
-
-    <div class="container-fluid">
-
-
-    <!-- the clients we served, their logos -->
-    <!-- TODO: we should generate this using js or something. so much html is intimidating. -->
-
-    <div class="p-4"></div>
 
   </div>
 

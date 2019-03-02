@@ -2,6 +2,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
         color: #191919;
+	font-size: 5mm;
 
 }
 
@@ -44,4 +45,9 @@ body {
 	border: 1px solid grey;
 	border-radius: 3px;
 	margin: 0.1em 0.1em 0.1em 0.1em;
+}
+
+td{
+	margin: auto auto auto auto;
+	padding: 4px 4px 4px 4px;
 }

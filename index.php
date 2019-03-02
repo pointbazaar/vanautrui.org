@@ -19,7 +19,7 @@
   <div class="container">
     <h2> Web Development Company</h2>
     <p class="english typewriter"> We are a small enterprise. <br>
-        Our focus is to create reliable Web applications, websites and serve as a consulting team for customers ...</p>
+        Our focus is to create reliable Web applications, websites and serve as a consulting team for customers.</p>
     <p class="german typewriter"> Wir sind ein kleines Unternehmen. <br>
         Unser Fokus sind verlaessliche Web-Applications, Websites und Consulting.</p>
   </div>

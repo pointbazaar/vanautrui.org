@@ -23,37 +23,38 @@
           <div class="col-md-6">
               <h3 class="text-center">Pricing </h3>
 
-              <table>
+              <table class="p-1">
                   <tr>
                       <td>
-                          Our Web Development and <strong>Web Design </strong>starts from
+                          Web Development, <strong>Web Design </strong>
                       </td>
                       <td>
-                          <strong> 200 €</strong>.
+                          from <strong> 200 €</strong>.
                       </td>
                   </tr>
                   <tr>
                       <td>
-                          Our <strong>Ecommerce</strong> Development starts from
+                          <strong>Ecommerce</strong>
                       </td>
                       <td>
-                          <strong> 400 €</strong>.
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>
-                          Our <strong>Android App </strong>Development starts from
-                      </td>
-                      <td>
-                          <strong> 300 €</strong>.
+                          from <strong> 400 €</strong>.
                       </td>
                   </tr>
                   <tr>
                       <td>
-                          If your Project requires a custom Backend, we do that from
+                          <strong>Android App </strong>
                       </td>
                       <td>
-                          <strong> 500 €</strong>.
+                          from <strong> 300 €</strong>.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          custom Backend, <br>
+                          Serverside Software
+                      </td>
+                      <td>
+                          from <strong> 500 €</strong>.
                       </td>
                   </tr>
               </table>
