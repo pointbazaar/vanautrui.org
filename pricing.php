@@ -19,83 +19,104 @@
 
 
   <div class="container">
-  <h3 class="text-center">Pricing </h3>
+      <div class="row">
+          <div class="col-md-6">
+              <h3 class="text-center">Pricing </h3>
 
-		<p>
-			These are just rough guidelines. <br>
-			We will always make a detailed Quote which depends
-			on what is required.
-		</p>
-    <table>
-        <tr>
-            <td>
-                Our Web Development and <strong>Web Design </strong>starts from
-            </td>
-            <td>
-              <strong> 200 €</strong>.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Our <strong>Ecommerce</strong> Development starts from
-            </td>
-            <td>
-                <strong> 400 €</strong>.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Our <strong>Android App </strong>Development starts from
-            </td>
-            <td>
-                <strong> 300 €</strong>.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                If your Project requires a custom Backend, we do that from
-            </td>
-            <td>
-                <strong> 500 €</strong>.
-            </td>
-        </tr>
-    </table>
-    <br>
-		<p>
-			If a Project is over 2000 €, we break it down into smaller Projects to be done in sequence.<br>
-      This lowers the Risk for us and the Client.
-		</p>
-		<p>
-			If your Project has an Ecommerce or a Backend, <br>
-            that always requires Hosting and usually also requires Maintenance and Support.<br>
-            We provide <strong>Hosting and Maintenance Packages </strong>from <strong> 50 € / month</strong>. <br>
-			Of course you are freeto choose another Provider or to maintain and host the Project yourself.
-		</p>
+              <table>
+                  <tr>
+                      <td>
+                          Our Web Development and <strong>Web Design </strong>starts from
+                      </td>
+                      <td>
+                          <strong> 200 €</strong>.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          Our <strong>Ecommerce</strong> Development starts from
+                      </td>
+                      <td>
+                          <strong> 400 €</strong>.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          Our <strong>Android App </strong>Development starts from
+                      </td>
+                      <td>
+                          <strong> 300 €</strong>.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          If your Project requires a custom Backend, we do that from
+                      </td>
+                      <td>
+                          <strong> 500 €</strong>.
+                      </td>
+                  </tr>
+              </table>
+              <br>
+              <p>
+                  If a Project is over 2000 €,
+                  we break it down into smaller Projects.<br>
+                  This lowers the Risk for us and the Client.
+              </p>
+              <p>
+                  If your Project has an Ecommerce or a Backend, <br>
+                  that always requires Hosting and usually also requires Maintenance and Support.<br>
+                  We provide <strong>Hosting and Maintenance Packages<br>
+                  </strong>from <strong> 50 € / month</strong>. <br>
+                  Of course you are freeto choose another Provider <br>
+                  or to maintain and host the Project yourself.
+              </p>
+          </div>
 
-		<p>
-			How do we handle Payment? <br>
+          <div class="col-md-6">
+              <div id="our-process" class="">
+                  <h3 class="text-center">Our Process</h3>
+                  <ol>
+                      <li>We talk about the Project and what needs to be done, preferably in Person.</li>
+                      <li>We make a detailed list of the work we are going to do</li>
+                      <li>We submit a quote</li>
+                      <li>
+                          <strong>You transfer 25% of the Budget to our Account as a Commitment Fee</strong>
+                      </li>
+                      <hr>
+                      <li>We start work on the Project</li>
+                      <li>We show you a Wireframe of how the finished Software should look.</li>
+                      <li>You can then request revisions to the Design</li>
+                      <li>We implement the Software</li>
+                      <li>You can then request revisions to the Implementation</li>
+                      <li>You transfer the remaining 75% if you are satisfied with the work.</li>
+                  </ol>
+              </div>
+          </div>
+      </div>
 
-            <strong>We take 25% of the Project Budget as a Commitment Fee Upfront,</strong>
-                <br>
-			then start work on the Project. If you are satisfied with the final Results, after revisions<br>
-			and changes have been requested and implemented, you pay the rest of the Budget.
-		</p>
+      <div id="questions-and-answers" class="m-3">
+          <h3>Questions and Answers</h3>
+          <hr>
 
-		<p>
-			If there is disagreement about the Project <br>
-			or you are not satisfied, we will try to fix it. <br>
+          <?php
+            $q_and_a=array(
+                array("Can i get the Commitment Fee (25%) back if i do not like the End Result?","No"),
+                array("Can i do the final Payment in Parts?","No"),
+                array("When is the final Payment due?","20 days after Project Completion"),
+                array("Whan happens if i do not deliver the final Payment?","Nothing")
+            );
 
-			<strong>You will not get the initial 25% back.</strong>
-		</p>
-		<p>
-			There is no possibility of doing the final Payment in Parts or over a longer Period of time.<br>
+            for($i=0;$i<sizeof($q_and_a);$i++){
+                echo "<div>";
+                    echo "<h4>" . $q_and_a[$i][0] . "</h4>";
+                    echo "<p>" . $q_and_a[$i][1] . "</p>";
+                echo "</div>";
+                echo "<hr>";
+            }
+          ?>
 
-			The final payment is due 30 days after the Project has been finished. <br>
-			If the final Payment is not delivered,
-			no further steps will be taken, we will simply stop doing business with you.
-		</p>
-      <br>
-
+      </div>
   </div>
 
 
