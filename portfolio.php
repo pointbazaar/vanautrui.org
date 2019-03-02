@@ -22,7 +22,7 @@
 
 
   <!-- https://www.datenschutz.org/website/ -->
-  <div id="Portfolio" class="container-fluid m-3">
+  <div id="Portfolio" class="container-fluid">
         <div class="m-3"></div>
         <h1 class="display-4 text-center"> Projects we completed </h1>
         <div class="m-3"></div>
