@@ -29,11 +29,11 @@
 
     <div class="m-3"></div>
 
-    <div class="row">
+    <div class="row justify-content-center">
 
-      <div class="card m-3">
-        <div class="card-body">
-          <div class="card-title text-center">
+      <div class="m-3 col-md-12" >
+        <div class="">
+          <div class="text-center">
             <h3>Webdesign and Web Development</h3>
           </div>
           <div class="card-text">
@@ -72,7 +72,9 @@
         </div>
       </div>
 
-      <div class="card m-3">
+        <hr>
+
+      <div class="m-3 col-md-12">
         <div class="card-body">
           <div class="card-title text-center">
             <h3>Content Management Systems <br>and Ecommerce <br>
@@ -121,7 +123,9 @@
         </div>
       </div>
 
-      <div class="card m-3">
+        <hr>
+
+      <div class="m-3 col-md-12">
         <div class="card-body">
           <div class="card-title text-center">
             <h3>Android Applications</h3>
@@ -148,7 +152,7 @@
             <div class="row justify-content-center">
                 <!--TODO make seperate sections on portfolio site -->
                 <a href="portfolio.html" class="p-1">
-                    <button class="btn btn-info">Our Portfolio of <br><strong>Android Applications (under contstruction, not ready yet)</strong></button>
+                    <button class="btn btn-info">Our Portfolio including <br><strong>Android Applications </strong></button>
                 </a>
             </div>
           </div>
