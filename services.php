@@ -37,12 +37,7 @@
             <h3>Webdesign and Web Development</h3>
           </div>
           <div class="card-text">
-            You can also choose a site-builder like <br>
-            <a href="https://wix.com">wix.com</a> or <a href="https://www.jimdo.com/"> jimdo.com</a> <br>
-            if you just want a simple website. <br>
-
-            Overview of some of the Components you might want. <br>
-            This is only a small selection of what we can do for your Business.<br>
+              Some of the things we can do for you:
             <ul>
               <li> Pages on your Website
                 <ul>
@@ -53,25 +48,19 @@
               </li>
               <li>SSL Certificates for your Website</li>
               <li>
-                  <span>Analytics using
-                    <a href="https://analytics.google.com/">Google Analytics</a>
-                  </span>
-                  <ul>
-                      <li>Custom Targets and Marketing Funnels</li>
-                      <li>Reporting</li>
-                  </ul>
+                  <strong>Analytics</strong>
               </li>
-
               <li>Social Media Marketing through our Associates</li>
-              <li>Mobile-First approach with a focus on Page Speed</li>
+              <li>Mobile Responsive</li>
+              <li>above average Page Speed</li>
               <li>Map with
                 <a href="https://www.openstreetmap.org">Openstreetmap</a>
                 and
                 <a href="https://leafletjs.com/">Leaflet.js</a>
               </li>
+                <li>Adding Translations to an already existing site
+                </li>
 
-              <li>Adding Translations to an already existing site with only <br>
-                Javascript and no extra .html files via visibility toggling on .class attributes</li>
             </ul>
             <div class="row justify-content-center">
                 <!--TODO make seperate sections on portfolio site -->
@@ -86,19 +75,18 @@
       <div class="card m-3">
         <div class="card-body">
           <div class="card-title text-center">
-            <h3>Content Management Systems, Ecommerce and Web Applications</h3>
+            <h3>Content Management Systems <br>and Ecommerce <br>
+                with Wordpress and Woocommerce
+            </h3>
           </div>
           <div class="card-text">
-            Overview of some of the Components you might want. <br>
-            This is only a small selection of what we can do for your Business.<br>
+              Some of the things we can do for you:
             <ul>
               <li>SSL Certificates Configuration with
                 <a href="https://certbot.eff.org/">Certbot </a>
               </li>
               <li>
-                  <span>Analytics using
-                    <a href="https://analytics.google.com/">Google Analytics</a>
-                  </span>
+                  <strong>Analytics</strong>
                   <ul>
                       <li>Custom Targets and Marketing Funnels</li>
                       <li>Reporting</li>
@@ -110,15 +98,13 @@
                  and Ecommerce Offering
                 <ul>
                   <li>Developing a Wordpress Theme for your Brand.</li>
-                  <li>Wordpress Configuration and Setup which enables you to update your content without programming knowledge.<br>
-                      This is useful for Businesses which want to showcase their Portfolio and attract Clients that way.</li>
+                  <li>Wordpress Configuration and Setup </li>
                   <li>Wordpress
                     <a href="https://woocommerce.com/">Woocommerce</a>
                      Ecommerce Configuration<br>
-                    If you want to sell your Products with Ecommerce, we are the right Partner for you.</li>
+                    </li>
                 </ul>
               </li>
-              <li>Social Media Marketing through our Associates</li>
               <li>Mobile-First approach with a focus on Page Speed</li>
               <li>Map with Openstreetmap and Leaflet.js</li>
               <li>Web Applications with Spring Boot and Database. <br>
@@ -141,24 +127,23 @@
             <h3>Android Applications</h3>
           </div>
           <div class="card-text">
-
-            The Question is not if a company should <br>
-            have a mobile App, it is when.<br>
-
-            The App can be as simple as an offline version of your website,<br>
-            all the way to custom Order management<br>
-            through your app, at your restaurant.<br>
-
+            Some of the things we can do for you:
             <ul>
-              <li>usage of publicly available API's, such as weather
-                or public transit.
-              </li>
-              <li>
-                Paypal integration
-              </li>
-              <li>
-                Interactive Visualzations
-              </li>
+                <li>
+                    Paypal integration
+                </li>
+                <li>
+                    Interactive Visualzations
+                </li>
+                <li>
+                    Using Device Sensors
+                </li>
+                <li>
+                    Chat App
+                </li>
+                <li>
+                    Dating App
+                </li>
             </ul>
             <div class="row justify-content-center">
                 <!--TODO make seperate sections on portfolio site -->
