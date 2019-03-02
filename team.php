@@ -25,7 +25,7 @@
 
       <div class="card m-3 ">
         <div class="card-header bg-custom-dark">
-            <a class="fg-custom" href ="profiles/maurice.html">Aaron Frey</a>
+            Aaron Frey
         </div>
         <img class="card-img-top profilepic" src="https://kreathon-krefeld.de/wp-content/uploads/2018/11/kreathon-2018-21.jpg">
         <div class="card-footer bg-custom-dark">
@@ -66,7 +66,7 @@
 
       <div class="card m-3 ">
         <div class="card-header bg-custom-dark">
-            <a class="fg-custom" href="profiles/joanna.html">Ilona</a>
+            Ilona
         </div>
         <img class="card-img-top profilepic" src="https://vanautrui.org/pics/ilona2.png">
         <div class="card-footer bg-custom-dark">
@@ -80,24 +80,30 @@
         </div>
       </div>
 
-      <div class="card m-3">
-        <div class="card-header bg-custom-dark">
-            <a class="fg-custom" href="">Saleh Chaaban</a>
-        </div>
-        <img class="card-img-top profilepic" src="https://vanautrui.org/pics/saleh.jpeg">
-        <div class="card-footer bg-custom-dark">
-            <div>
-                <span class="badge badge-light">Frontend</span>
-                <span class="badge badge-light">Git</span>
-            </div>
-            <div>
-                <span class="badge badge-light">Java</span>
-                <span class="badge badge-light">Photoshop</span>
-            </div>
-        </div>
-      </div>
   </div>
 
+      <div class="row justify-content-center">
+          <!-- how we work-->
+          <div class="col-lg-4">
+              <div class="card">
+                  <div class="card-header">
+                      <h3 class="text-center"> How we work </h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-text">
+                          <p>
+                              We use only opensource software and opensource dependencies
+                              to ensure our clients have the best results
+                          </p>
+                          <?php
+                          include("tools_logos_fragment.html");
+                          ?>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
   </div>
 
   <!-- inspiration: https://blog.hubspot.com/marketing/creative-agency-team-pages -->
