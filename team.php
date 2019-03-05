@@ -25,7 +25,7 @@
 
       <div class="card m-3 ">
         <div class="card-header bg-custom-dark">
-            Aaron Frey
+            <a href="" class="fg-custom">Aaron Frey</a>
         </div>
         <img class="card-img-top profilepic" src="https://kreathon-krefeld.de/wp-content/uploads/2018/11/kreathon-2018-21.jpg">
         <div class="card-footer bg-custom-dark">
@@ -66,7 +66,7 @@
 
       <div class="card m-3 ">
         <div class="card-header bg-custom-dark">
-            Ilona
+            <a href="" class="fg-custom">Ilona</a>
         </div>
         <img class="card-img-top profilepic" src="https://vanautrui.org/pics/ilona2.png">
         <div class="card-footer bg-custom-dark">
