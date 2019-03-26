@@ -48,7 +48,11 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
           </strong>
         </a>
       </li>
-
+        <li class="nav-item">
+            <a class="nav-link" href="https://octofinsights.vanautrui.org">
+                    Octofinsights
+            </a>
+        </li>
       <li class="nav-item <?= ($activePage == 'portfolio') ? 'active':''; ?>">
         <a class="nav-link" href="portfolio.php">
           <strong>
