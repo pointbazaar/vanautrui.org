@@ -17,11 +17,93 @@
 
   <div class="p-4"></div>
   <div class="container">
-    <h2> Web Development Company</h2>
-    <p class="english typewriter"> We are a small enterprise. <br>
+    <h2 class="m-3"> Web Development Company</h2>
+    <p class="english m-3"> We are a small enterprise. <br>
         Our focus is to create reliable Web applications, websites and serve as a consulting team for customers.</p>
-    <p class="german typewriter"> Wir sind ein kleines Unternehmen. <br>
-        Unser Fokus sind verlaessliche Web-Applications, Websites und Consulting.</p>
+
+    <br>
+    <div class=" ">
+        <div>
+            <div class="row ">
+                <img src="http://cc0-icons.vanautrui.org/composite/chat_conversation_texting.svg" style="width:12em;" class="m-3"/>
+                <div class="col justify-content-center ">
+                    <div>
+                        <h2 class="m-3">Consulting</h2>
+                        <p class="m-3">
+                            We offer a first Consultation free of charge.<br>
+                            There are 10000+ existing software solutions out there on the Internet. <br>
+                            We help you find out what is right for your business,<br>
+                            and figure out the most cost-effective way to do that.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="row ">
+                <img src="http://cc0-icons.vanautrui.org/composite/server.svg" style="width:12em;" class="m-3"/>
+                <div class="col justify-content-center ">
+                    <div>
+                        <h2 class="m-3">Websites</h2>
+                        <p class="m-3">
+                            We can design your Website using PHP, to represent your business.<br>
+                            All of the Websites we develop are secured using <a href="https://letsencrypt.org/"> Lets Encrypt Certificates</a> <br>
+                            Take a look at our Portfolio to see some Websites that <br>
+                            we have designed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="row ">
+                <img src="http://cc0-icons.vanautrui.org/composite/coin_simple.svg" style="width:12em;" class="m-3"/>
+                <div class="col justify-content-center ">
+                    <div>
+                        <h2 class="m-3">Ecommerce</h2>
+                        <p class="m-3">
+                            We can develop an Online Shop for you, using <a href="https://wordpress.com/">Wordpress</a> and <a href="https://woocommerce.com/">Woocommerce</a>.<br>
+                            It includes an easy-to-use admin panel with the ability to manage Products.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="row ">
+                <img src="http://cc0-icons.vanautrui.org/composite/servers.svg" style="width:12em;" class="m-3"/>
+                <div class="col justify-content-center">
+                    <div>
+                        <h2 class="m-3">Web Applications</h2>
+                        <p class="m-3">
+                            We offer custom Web Application development using Java and Haskell,<br>
+                            which goes from Consulting, Requirement Gathering and Design<br>
+                            to Development, Hosting and ongoing Maintenance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="row ">
+                <img src="http://cc0-icons.vanautrui.org/composite/smartphone_phone_android.svg" style="width:12em;" class="m-3" />
+                <div class="col justify-content-center">
+                    <div>
+                        <h2 class="m-3" >Android Applications</h2>
+                        <p class="m-3">
+                            We offer custom Android Application development using Java.<br>
+                            This includes Consulting, Design, Development<br>
+                            and Updates to your Android App.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
 
   <div id="footer" class="container-fluid"></div>

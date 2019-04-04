@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-xl navbar-dark bg-custom-dark">
     <a class="navbar-brand" href="index.php">
       <img style="width:3em;" src="https://vanautrui.org/pics/logo.svg"/>
-      <span class="fg-custom">Van Autrui</span>
+      <span class="fg-custom">Van Autrui Web Development</span>
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
@@ -51,6 +51,11 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
         <li class="nav-item">
             <a class="nav-link" href="https://octofinsights.vanautrui.org">
                     Octofinsights
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://cc0-icons.vanautrui.org">
+                Free Icons
             </a>
         </li>
       <li class="nav-item <?= ($activePage == 'portfolio') ? 'active':''; ?>">

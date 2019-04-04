@@ -75,18 +75,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <h3 class=""> What we don't do</h3>
-                    <ul>
-                        <li>Software Development for Windows</li>
-                        <li>Animations</li>
-                        <li>Video and Content Creation</li>
-                        <li>Social Media Marketing</li>
-                        <li>Develop Proprietary Software</li>
-                        <li>Sign an NDA</li>
-                        <li>Google Analytics Integration</li>
-                    </ul>
-                </div>
+
             </div>
 
   </div>
