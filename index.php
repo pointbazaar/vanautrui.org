@@ -52,6 +52,19 @@
                             Take a look at our Portfolio to see some Websites that <br>
                             we have designed.
                         </p>
+                        <p>Features include</p>
+                        <ul>
+                            <li>Mobile Responsive</li>
+                            <li>good page speed</li>
+                            <li>SSL Certificates with
+                                <a href="https://certbot.eff.org/">Certbot </a> for your Website
+                            </li>
+                            <li>Map with
+                                <a href="https://www.openstreetmap.org">Openstreetmap</a>
+                                and
+                                <a href="https://leafletjs.com/">Leaflet.js</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -67,6 +80,12 @@
                             We can develop an Online Shop for you, using <a href="https://wordpress.com/">Wordpress</a> and <a href="https://woocommerce.com/">Woocommerce</a>.<br>
                             It includes an easy-to-use admin panel with the ability to manage Products.
                         </p>
+                        <p>Features include</p>
+                        <ul>
+                            <li>PayPal checkout</li>
+                            <li>Inventory Management</li>
+                            <li>Product Management</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -79,7 +98,7 @@
                     <div>
                         <h2 class="m-3">Web Applications</h2>
                         <p class="m-3">
-                            We offer custom Web Application development using Java and Haskell,<br>
+                            We offer custom Web Application development using Java(Spring Boot or our own Framework) and Haskell,<br>
                             which goes from Consulting, Requirement Gathering and Design<br>
                             to Development, Hosting and ongoing Maintenance.
                         </p>
@@ -104,6 +123,18 @@
             </div>
         </div>
     </div>
+  </div>
+    <hr>
+  <div class="container">
+      <h3 class="text-center display-4">
+          Our Guarantee:
+      </h3>
+      <div class="text-center">
+          <p> You will always get the <strong>Source Code </strong>for the entire project.</p>
+          <p> We will develop 100% Open-Source Software </p>
+          <p> <strong>no Vendor Lock-In.</strong> <br>Because we only use opensource libraries and frameworks, <br>
+              everyone can build on our work.</p>
+      </div>
   </div>
 
   <div id="footer" class="container-fluid"></div>

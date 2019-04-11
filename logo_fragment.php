@@ -30,27 +30,22 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
  <!-- <p> <?= ($activePage)?> </p> -->
 
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item <?= ($activePage == 'index') ? 'active':''; ?>">
-        <a class="nav-link" href="index.php">
-          <strong>
-            <span>
-            Home
-            </span>
-          </strong>
-        </a>
-      </li>
-      <li class="nav-item <?= ($activePage == 'services') ? 'active':''; ?>">
-        <a class="nav-link" href="services.php">
-          <strong>
-            <span>
-            Service
-            </span>
-          </strong>
-        </a>
-      </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://octofinsights.vanautrui.org">
-                    Octofinsights
+        <li class="nav-item <?= ($activePage == 'index') ? 'active':''; ?>">
+            <a class="nav-link" href="index.php">
+              <strong>
+                <span>
+                Our Service
+                </span>
+              </strong>
+            </a>
+        </li>
+        <li class="nav-item <?= ($activePage == 'octofinsights_embed') ? 'active':''; ?>">
+            <a class="nav-link" href="octofinsights_embed.php">
+                <strong>
+                    <span>
+                        Octofinsights
+                    </span>
+                </strong>
             </a>
         </li>
         <li class="nav-item">
