@@ -49,7 +49,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="http://cc0-icons.vanautrui.org">
+            <a class="nav-link" href="cc0-icons_embed.php">
                 Free Icons
             </a>
         </li>
