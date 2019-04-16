@@ -200,8 +200,8 @@ read: man pages for: pwd, touch,cat,mkdir,cd,ls,ech,file
 <h2>Java</h2>
 <p>
 .java files are compiled by javac into jvm bytecode in .class files.
-These can be interpreted by the JavaVirtualMachine.<br>
-The .java File always has to be the same name as the class. Example:
+These can be interpreted by the Java VirtualMachine.<br>
+The .java File always has to be the same name as the class.
 </p>
 
 <code>
@@ -211,8 +211,6 @@ public class Example{<br>
 }
 </code>
 <br>
-
-to save space, there will only be the method and no class declared in the examples<br>
 
 <h3>Arithmetic, Comparison</h3>
 
@@ -272,38 +270,42 @@ java.util.Collections<br>
 </code>
 
 
-Arrays.asList(T... a) //argument: an array, return type: a list of the specified array<br>
-Arrays.sort(T[] arr)   //argument: an array, return type: none //it changes the array <br>
-Arrays.toString() //returns a string representing the contents of the array<br>
-Arrays.binarySearch(T... a, T key) //returns the index of the key if found or -1 if not found<br>
+Arrays.asList(T... a) <br>
+Arrays.sort(T[] arr)   <br>
+Arrays.toString() <br>
+<br>
+//returns the index of the key if found or -1 if not found<br>
+Arrays.binarySearch(T... a, T key) <br>
+<br>
 Arrays.copyOfRange(int from,int to)  <br>
 Arrays.deepEquals(T[] a,T[] b) <br>
 Arrays.fill(T[] arr, T value) <br>
 
 
-\subsubsection{java.util.LinkedList}
-\begin{verbatim}
-new LinkedList();
-.add(E e);
-.addFirst(E e);
-.addLast(E e);
-.clear();
-.contains(Object o);
-.element();             //retrieves but does not remove the head
-.get(int index);
-.getFirst();
-.getLast();
-.indexOf(Object o);
-.lastIndexOf(Object o);
-.pop();
-.push(E e);
-.size();
-\end{verbatim}
-\subsubsection{java.util.Stack}
+<h3>java.util.LinkedList</h3>
+<code>
+new LinkedList();<br>
+.add(E e);<br>
+.addFirst(E e);<br>
+.addLast(E e);<br>
+.clear();<br>
+.contains(Object o);<br>
+.element();<br>
+.get(int index);<br>
+.getFirst();<br>
+.getLast();<br>
+.indexOf(Object o);<br>
+.lastIndexOf(Object o);<br>
+.pop();<br>
+.push(E e);<br>
+.size();<br>
+</code>
+
+<h3>java.util.Stack}</h3>
 
 
 new Stack();
-.empty();       //tests if stack is empty
+.empty();
 .peek();
 .pop();
 .push(Object o);
@@ -312,7 +314,8 @@ new Stack();
 
 
 
-\subsubsection{java.util.HashMap}
+<h3>java.util.HashMap</h3>
+
 //these methods are defined on objects of type HashMap. <br>
 .clear() //removes all mappings<br>
 .containsKey(Object key) //returns true if the key is in the map<br>\
@@ -323,10 +326,9 @@ new Stack();
 
 
 
-\chapter{Algorithms}
-\section{O Kalkuel}
-Faster algorithms, which use less Resources are preferred over inefficient ones.
-To calculate the growth of runtime depending on input size, these rules can be used.
+<h1>Algorithms</h1>
+<h2>O Kalkuel</h2>
+To calculate the growth of runtime depending on input size, these rules can be used.<br>
 
 Different Running time classes:
 O(1),O(n),O(n log n),O(n squared), O(n cubed), O(x to the n)
@@ -355,14 +357,14 @@ Mergesort splits the array in 2 arrays until they have length 1. Then it recursi
 \subsection{Counting Sort}
 \subsection{Radixsort}
 
-\subsection{Bucketsort}
-\section{Searching}
-\subsection{Binary Search}
-for searching a sorted array, running time in O(log(n))
-\subsection{Linear Search}
-just search the entire input from beginning to end. Running time in O(n)
+Bucketsort<br>
+Searching<br>
+Binary Search<br>
+for searching a sorted array, running time in O(log(n))<br>
+Linear Search}<br>
+just search the entire input from beginning to end. Running time in O(n)<br>
 
-\section{Searching in Texts}
+<h3>Searching in Texts</h3>
 
 Gegeben: Zeichensatz Z, T= a0,...,a n-1 mit a i elem. Z
 und Muster P = b0, ... ,b m-1 mit b i elem Z
@@ -381,7 +383,7 @@ Verschiebe das Wort bei einem Mismatch um eine Position nach rechts.
 Erh??he i auf i + 1 und wiederhole der Vergleich f??r j = 0, . . . , m ??? 1.
 Wurde ein Vorkommen des Musters im Text gefunden, gebe den Index i
 zur??ck, ansonsten n
-\begin{verbatim}
+<code>
 int naive search (char T [ ], int n, char P[ ], int m)
 {
     if ((m > 0) ??? (n ??? m)) {
@@ -402,10 +404,11 @@ int naive search (char T [ ], int n, char P[ ], int m)
     }
     return(n);
 }
-\end{verbatim}
+</code>
 Analyse: Der naive Algorithmus f??hrt im ung??nstigsten Fall
 (n ??? m + 1) ?? m ??? O(n ?? m)
 viele Vergleiche durch.
+
 \subsection{Knuth Morris Pratt}
 Das Verfahren von Knuth-Morris-Pratt:<br>
 Methode: <br>
@@ -539,69 +542,15 @@ int bm suche (char T [ ], int n, char P[ ], int m)
 }
 \end{verbatim}
 In Zeile 13 ist beim vereinfachten Verfahren von Boyer und Moore die
-Musterverschiebung
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
-1,= max.delta(T [i ??? j]) ??? j
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mn>1</mn>
-	<mo>,</mo>
-	<mo>=</mo>
-	<mi>m</mi>
-	<mi>a</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mo>&#x02146;</mo>
-	<mi>e</mi>
-	<mi>l</mi>
-	<mi>t</mi>
-	<mi>a</mi>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>T</mi>
-		<mrow>
-			<mo form="prefix">[</mo>
-			<mi>i</mi>
-			???<mi>j</mi>
-			<mo form="postfix">]</mo>
-		</mrow>
-		<mo form="postfix">)</mo>
-	</mrow>
-	???<mi>j</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
+Musterverschiebung 
+$$
+	1,= max.delta(T [i ??? j]) ??? j
+$$
 Beachte:
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$
 ???j ??? delta(T [i ??? j]) ??? j ??? m
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	???<mi>j</mi>
-	???<mo>&#x02146;</mo>
-	<mi>e</mi>
-	<mi>l</mi>
-	<mi>t</mi>
-	<mi>a</mi>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>T</mi>
-		<mrow>
-			<mo form="prefix">[</mo>
-			<mi>i</mi>
-			???<mi>j</mi>
-			<mo form="postfix">]</mo>
-		</mrow>
-		<mo form="postfix">)</mo>
-	</mrow>
-	???<mi>j</mi>
-	???<mi>m</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
+$
+
 Bemerkungen:
 Kommt es zu einem Mismatch zwischen T [i ??? j] und P[(m ??? 1) ??? j],
 dann wird das Muster so weit nach rechts verschoben, bis das Zeichen
@@ -713,42 +662,10 @@ Beim Hashing werden die Schluessel der Objekte zur Berechnung einer Position in 
 
 Sei K eine Schluesselmenge und I eine eindeutige Indexmenge.
 
-(In der Regel 
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+(In der Regel $$
 I =\lbrace0,...,m-1\rbrace
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>I</mi>
-			<mo>=</mo>
-			<mrow>
-				<mo form="prefix">&#x0007B;</mo>
-				<mn>0</mn>
-				<mo>,</mo>
-				<mo>.</mo>
-				<mo>.</mo>
-				<mo>.</mo>
-				<mo>,</mo>
-				<mi>m</mi>
-				<mo>-</mo>
-				<mn>1</mn>
-				<mo form="postfix">&#x0007D;</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(1)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->wobei m die feldgroesse ist.)<br>
+$$
+wobei m die feldgroesse ist.)<br>
 Die Hash funktion <br>
 \textbf{h: K-> I}
 wird zum Suchen und platzieren von Elementen eingesetzt.
@@ -760,189 +677,26 @@ Ausblenden und Restbilden. <br>
 Ausblenden: benutze nur einen Teil des schluessels(nicht alle stellen)
 Restbildung: Der schluessel k wird ganzzahlig durch die laenge der Hashtabelle dividiert.
 Der Rest wird als Index verwendet.<br>
-<!-- %\begin{math} -->
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$$
 h(k)=k mod \mid l \mid
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>h</mi>
-			<mrow>
-				<mo form="prefix">(</mo>
-				<mi>k</mi>
-				<mo form="postfix">)</mo>
-			</mrow>
-			<mo>=</mo>
-			<mi>k</mi>
-			<mi>m</mi>
-			<mi>o</mi>
-			<mi>d</mi>
-			<mo>&#x02223;</mo>
-			<mi>l</mi>
-			<mo>&#x02223;</mo>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(2)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
-<!-- %\end{math}<br> -->
+$$
+
 Die besten Ergebnissze erhaelt man wenn l eine primzahl ist.
 Schluessel die nicht als zahlen interpretiert werden koennen, werden vorher geeignet umgerechnet.
 \subsection{Universelle Hash funktionen}
 Gesucht sind Hashfunktionen die im mittel akzeptabel sind.<br>
-Sei <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
-m=\mid I \mid und H eine endliche Menge von >= m Hash Funtkionen. 
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>m</mi>
-			<mo>=</mo>
-			<mo>&#x02223;</mo>
-			<mi>I</mi>
-			<mo>&#x02223;</mo>
-			<mi>u</mi>
-			<mi>n</mi>
-			<mo>&#x02146;</mo>
-			<mi>H</mi>
-			<mi>e</mi>
-			<mi>i</mi>
-			<mi>n</mi>
-			<mi>e</mi>
-			<mi>e</mi>
-			<mi>n</mi>
-			<mo>&#x02146;</mo>
-			<mi>l</mi>
-			<mi>i</mi>
-			<mi>c</mi>
-			<mi>h</mi>
-			<mi>e</mi>
-			<mi>M</mi>
-			<mi>e</mi>
-			<mi>n</mi>
-			<mi>g</mi>
-			<mi>e</mi>
-			<mi>v</mi>
-			<mi>o</mi>
-			<mi>n</mi>
-			<mo>&#x0003E;</mo>
-			<mo>=</mo>
-			<mi>m</mi>
-			<mi>H</mi>
-			<mi>a</mi>
-			<mi>s</mi>
-			<mi>h</mi>
-			<mi>F</mi>
-			<mi>u</mi>
-			<mi>n</mi>
-			<mi>t</mi>
-			<mi>k</mi>
-			<mi>i</mi>
-			<mi>o</mi>
-			<mi>n</mi>
-			<mi>e</mi>
-			<mi>n</mi>
-			<mo>.</mo>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(1)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
+Sei 
+$$
+	m=\mid I \mid und H eine endliche Menge von >= m Hash Funtkionen. 
+$$
 H heisst Universell wenn fuer jedes Paar von verschiedenen Schluesseln 
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$
 x,y \in K gilt:
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>x</mi>
-	<mo>,</mo>
-	<mi>y</mi>
-	<mo>&#x02208;</mo>
-	<mi>K</mi>
-	<mi>g</mi>
-	<mi>i</mi>
-	<mi>l</mi>
-	<mi>t</mi>
-	<mo>:</mo>
-</mrow>
-</math>
-<!-- end MathToWeb --><br>
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$
+<br>
+$$
 \mid\lbrace h \in H \mid h(x)=h(y) \rbrace \mid \leq \lceil \frac{\mid H \mid}{m} \rceil
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mo>&#x02223;</mo>
-			<mrow>
-				<mo form="prefix">&#x0007B;</mo>
-				<mi>h</mi>
-				<mo>&#x02208;</mo>
-				<mi>H</mi>
-				<mo>&#x02223;</mo>
-				<mi>h</mi>
-				<mrow>
-					<mo form="prefix">(</mo>
-					<mi>x</mi>
-					<mo form="postfix">)</mo>
-				</mrow>
-				<mo>=</mo>
-				<mi>h</mi>
-				<mrow>
-					<mo form="prefix">(</mo>
-					<mi>y</mi>
-					<mo form="postfix">)</mo>
-				</mrow>
-				<mo form="postfix">&#x0007D;</mo>
-			</mrow>
-			<mo>&#x02223;</mo>
-			<mo>&#x02264;</mo>
-			<mrow>
-				<mo form="prefix">&#x02308;</mo>
-				<mfrac linethickness="1">
-					<mrow>
-						<mo>&#x02223;</mo>
-						<mi>H</mi>
-						<mo>&#x02223;</mo>
-					</mrow>
-					<mi>m</mi>
-				</mfrac>
-				<mo form="postfix">&#x02309;</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(2)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
+$$
 Fuer jedes Schluesselpaar x,y fuehrt hoechstens der m-te Teil der Hash Funktionen die beiden schluessel x,y zu einer Kollision.<br>
 Die Wahrscheinlichkeit dass zwei Schluessel mit einer Hash Funktion aus H auf den gleichen Index abgebildet werden ist <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math} \frac{1}{m} \end{math} -->
@@ -956,166 +710,21 @@ Die Wahrscheinlichkeit dass zwei Schluessel mit einer Hash Funktion aus H auf de
 </math>
 <!-- end MathToWeb --><br>
 Sei
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$
 p \geq m
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>p</mi>
-	<mo>&#x02265;</mo>
-	<mi>m</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> 
+$
 eine Primzahl und <br>
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$$
 h(a,b) : \lbrace 0,...,p-1\rbrace \mapsto \lbrace 0,...,m-1 \rbrace 
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>h</mi>
-			<mrow>
-				<mo form="prefix">(</mo>
-				<mi>a</mi>
-				<mo>,</mo>
-				<mi>b</mi>
-				<mo form="postfix">)</mo>
-			</mrow>
-			<mo>:</mo>
-			<mrow>
-				<mo form="prefix">&#x0007B;</mo>
-				<mn>0</mn>
-				<mo>,</mo>
-				<mo>.</mo>
-				<mo>.</mo>
-				<mo>.</mo>
-				<mo>,</mo>
-				<mi>p</mi>
-				<mo>-</mo>
-				<mn>1</mn>
-				<mo form="postfix">&#x0007D;</mo>
-			</mrow>
-			<mo>&#x021A6;</mo>
-			<mrow>
-				<mo form="prefix">&#x0007B;</mo>
-				<mn>0</mn>
-				<mo>,</mo>
-				<mo>.</mo>
-				<mo>.</mo>
-				<mo>.</mo>
-				<mo>,</mo>
-				<mi>m</mi>
-				<mo>-</mo>
-				<mn>1</mn>
-				<mo form="postfix">&#x0007D;</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(3)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
+$$
 mit
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$$
 \textbf{ha,b(x)=((ax + b) mod p) mod m}
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mstyle mathvariant="bold">
-				<mi>h</mi>
-				<mi>a</mi>
-				<mo>,</mo>
-				<mi>b</mi>
-				<mrow>
-					<mo form="prefix">(</mo>
-					<mi>x</mi>
-					<mo form="postfix">)</mo>
-				</mrow>
-				<mo>=</mo>
-				<mrow>
-					<mo form="prefix">(</mo>
-					<mo form="prefix">(</mo>
-					<mi>a</mi>
-					<mi>x</mi>
-					<mo>+</mo>
-					<mi>b</mi>
-					<mo form="postfix">)</mo>
-					<mi>m</mi>
-					<mi>o</mi>
-					<mo>&#x02146;</mo>
-					<mi>p</mi>
-					<mo form="postfix">)</mo>
-				</mrow>
-				<mi>m</mi>
-				<mi>o</mi>
-				<mo>&#x02146;</mo>
-				<mi>m</mi>
-			</mstyle>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(4)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
+$$
 Dann ist 
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$$
 \lbrace h a,b \mid 1 \leq a < p, 0 \leq b < p \rbrace
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mrow>
-				<mo form="prefix">&#x0007B;</mo>
-				<mi>h</mi>
-				<mi>a</mi>
-				<mo>,</mo>
-				<mi>b</mi>
-				<mo>&#x02223;</mo>
-				<mn>1</mn>
-				<mo>&#x02264;</mo>
-				<mi>a</mi>
-				<mo>&#x0003C;</mo>
-				<mi>p</mi>
-				<mn>,0</mn>
-				<mo>&#x02264;</mo>
-				<mi>b</mi>
-				<mo>&#x0003C;</mo>
-				<mi>p</mi>
-				<mo form="postfix">&#x0007D;</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(5)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
+$$
 eine universelle Klasse von Hash Funktionen (lineare Algebra)<br>
 \subsection{Kollisionsaufloesung}
 Probleme treten auf bei der Platzierung, wenn der berechnete Platz nicht leer ist und bei der Suche, wenn der berechnete Platz ein anderes Element enthaelt.<br>
@@ -1171,80 +780,9 @@ C n=\frac{n}{m}=\alpha
 Beim einfuegen des j-ten Schluessels ist die durchschnittliche Listenlaenge gerade (j-1)/m<br>
 Also betrachten wir bei einer spaeteren Suche nach dem j-ten Schluessel gerade 1+(j-1)/m Eintraege im Durchschnitt, wenn stets am Listenende eingefuegt wird und kein Datensatz entfernt wurde.<br>
 Im Mittel ist die Anzahl der bei der erfolgreichen Suche nach einem Schluessel betrachteten Eintraege also
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$$
 C _{n} = \frac{1}{n}\sum _{j=1} ^{n} (1+(j-1)/m) = 1 + \frac{n-1}{2m} \approx 1+ \frac{\alpha}{2}
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<msub>
-				<mi>C</mi>
-				<mi>n</mi>
-			</msub>
-			<mo>=</mo>
-			<mfrac linethickness="1">
-				<mn>1</mn>
-				<mi>n</mi>
-			</mfrac>
-			<mstyle displaystyle="true">
-				<munderover>
-					<mo>&#x02211;</mo>
-					<mrow>
-						<mi>j</mi>
-						<mo>=</mo>
-						<mn>1</mn>
-					</mrow>
-					<mi>n</mi>
-				</munderover>
-			</mstyle>
-			<mrow>
-				<mo form="prefix">(</mo>
-				<mn>1</mn>
-				<mo>+</mo>
-				<mo form="prefix">(</mo>
-				<mi>j</mi>
-				<mo>-</mo>
-				<mn>1</mn>
-				<mo form="postfix">)</mo>
-				<mo>&#x0002F;</mo>
-				<mi>m</mi>
-				<mo form="postfix">)</mo>
-			</mrow>
-			<mo>=</mo>
-			<mn>1</mn>
-			<mo>+</mo>
-			<mfrac linethickness="1">
-				<mrow>
-					<mi>n</mi>
-					<mo>-</mo>
-					<mn>1</mn>
-				</mrow>
-				<mrow>
-					<mn>2</mn>
-					<mi>m</mi>
-				</mrow>
-			</mfrac>
-			<mo>&#x02248;</mo>
-			<mn>1</mn>
-			<mo>+</mo>
-			<mfrac linethickness="1">
-				<mi>&#x003B1;</mi>
-				<mn>2</mn>
-			</mfrac>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(2)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
+$$
 \subsubsection{2. Offene Hash Verfahren}
 Speichere die Ueberlaeufer in der Hashtabelle und nicht in zusaetzlichen Listen. Nur sinnvoll fuer <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}\alpha < 1\end{math} -->
@@ -2529,6 +2067,11 @@ https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 <br>
 https://www.youtube.com/watch?v=dHYX4dtNS1k
 
+<h1>Theoretical Computer Science</h1>
+An Alphabet $ \Sigma $ is a finite, non-empty Set.<br>
+Elements of this Set are called Letters.<br>
+
+A Word $ w $ over $ \Sigma $ is a finite (and possibly empty) sequence of Letters from $ \Sigma$ <br>
 
 <hr>
 
@@ -2553,7 +2096,7 @@ Begruenden sie ihre Antworten, insbesondere, warum Ihre Grammatik von keinem gro
 <h2> Aufgabe1: mein Ergebnis </h2>
 <br>
 (a) $G_{1} = ({},N,S,T) $
-<br><br><br>
+<hr>
 
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
