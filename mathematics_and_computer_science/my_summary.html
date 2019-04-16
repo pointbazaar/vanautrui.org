@@ -3,7 +3,7 @@
 <head>
 <title>Mathedemo</title>
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['<br>(','<br>)']]}});
 </script>
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -92,7 +92,7 @@ $
 Two Sets are called disjoint, if $
  A \cap B = \emptyset
 $
-Definition: Joining of two Sets:\\
+Definition: Joining of two Sets:<br>
 The joining of two sets A,B is defined as $$
  A \cup B := \lbrace x : x \in A \vee x \in B \rbrace
 $$
@@ -109,8 +109,8 @@ Definition: Potenzmenge:
 $$
 P(M) := \lbrace A : A \subset P \rbrace
 $$
-The Potenzmenge is the set of all subsets of M.\\
-Definition: Cartesian Product:\\
+The Potenzmenge is the set of all subsets of M.<br>
+Definition: Cartesian Product:<br>
 The cartesian Product of the sets $$ A_{1}, ... , A_{n}
 $$ is defined as
 $$
@@ -138,12 +138,12 @@ direct Proof:
 Man geht von der (gegebenen, wahren) Vorraussetzung (Aussage) A aus und zeigt durch Umformungen oder Folgern, dass aus A die Aussage B folgt. Mathematisch ausgedrueckt untersucht man $ A \Rightarrow B $
 
  indirect Proof:
-Der indirekte Beweis ist einer der elegantesten und auch einfachsten Beweise. Man geht dabei so vor: \\
-1. Man geht von Gegenteil der Behauptung aus (dies ist die Annahme).\\
-2. Man versucht diese Annahme zu einem Widerspruch zu fuehren.\\
-3. Wenn der Beweisgang legitim und logisch war, muss die Annahme falsch gewesen sein und damit die Behauptung wahr.\\
-Definition: Induction:\\
-Wir moechten uns der vollstaendingen Induktion nun mithilfe der sogenannten Peano-Axiome annaehern, die folgendes besagen:\\
+Der indirekte Beweis ist einer der elegantesten und auch einfachsten Beweise. Man geht dabei so vor: <br>
+1. Man geht von Gegenteil der Behauptung aus (dies ist die Annahme).<br>
+2. Man versucht diese Annahme zu einem Widerspruch zu fuehren.<br>
+3. Wenn der Beweisgang legitim und logisch war, muss die Annahme falsch gewesen sein und damit die Behauptung wahr.<br>
+Definition: Induction:<br>
+Wir moechten uns der vollstaendingen Induktion nun mithilfe der sogenannten Peano-Axiome annaehern, die folgendes besagen:<br>
 TODO: continue here
 
 \section{Analysis}
@@ -264,7 +264,7 @@ int, float, double
 <h2>Java</h2>
 <p>
 .java files are compiled by javac into jvm bytecode in .class files.
-These can be interpreted by the JavaVirtualMachine.\\
+These can be interpreted by the JavaVirtualMachine.<br>
 The .java File always has to be the same name as the class. Example:
 </p>
 
@@ -296,15 +296,15 @@ The .equals() method checks 2 Objects for value equality.<br>
     relational & < > <= >= instanceof<br>
     equality & == !=<br>
     bitwise and & \&<br>
-    bitwise XOR & |\\
-    logical and & "&&"\\
-    logical or & ||\\
-    ternary & ? : \\
-    assignment & = += -= *= /= \%= \&= ^= <<= >>= >>>= \\
+    bitwise XOR & |<br>
+    logical and & "&&"<br>
+    logical or & ||<br>
+    ternary & ? : <br>
+    assignment & = += -= *= /= \%= \&= ^= <<= >>= >>>= <br>
     
 </code>
 \subsection{Data Types}
-There is a difference between primitive Data Types and Class Tyes\\
+There is a difference between primitive Data Types and Class Tyes<br>
 Integer <-> int
 Character <-> char
 Double <-> double
@@ -536,7 +536,7 @@ void show(int dt)  //show the canvas, wait dt milliseconds
 void save(String filename) //save canvas picture into .png or .jpg
 \end{verbatim}
 \subsection{The Standard Library useful methods reference}
-I only included the methods and classes i thought were most useful\\
+I only included the methods and classes i thought were most useful<br>
 These methods are battle tested and should work reliably. Simple and primitive data structures are 
 better if there is a way to use them. Writing your own data types should be a last resort.
 java.net,
@@ -546,17 +546,17 @@ java.util.Collections
 
 \subsubsection{java.lang.String}
 \begin{verbatim}
-.indexOf(String s)              //returns int\\
-.lastIndexOf(String s)          //returns int\\
-.split(String regex)            //returns String[]\\
-.substring(int begin,int end)   //returns String\\
-.toCharArray()                  //returns char[]\\
-.toLowerCase()                                  \\
-.toUpperCase()                                  \\
-.trim()                     //leading and trailing whitespace removed\\
-.length()           \\
-.charAt(int index)\\
-.contains(String match)\\
+.indexOf(String s)              //returns int<br>
+.lastIndexOf(String s)          //returns int<br>
+.split(String regex)            //returns String[]<br>
+.substring(int begin,int end)   //returns String<br>
+.toCharArray()                  //returns char[]<br>
+.toLowerCase()                                  <br>
+.toUpperCase()                                  <br>
+.trim()                     //leading and trailing whitespace removed<br>
+.length()           <br>
+.charAt(int index)<br>
+.contains(String match)<br>
 .equals()
 \end{verbatim}
 \subsubsection{java.lang.StringBuilder}
@@ -565,18 +565,18 @@ StringBuilder(String str) //makes a new String builder
 \end{verbatim}
 \subsubsection{java.lang.StringBuffer}
 \begin{verbatim}
-StringBuffer(String str)\\
+StringBuffer(String str)<br>
 .reverse()
 \end{verbatim}
 \subsubsection{java.util.Arrays}
 \begin{verbatim}
-Arrays.asList(T... a) //argument: an array, return type: a list of the specified array\\
-Arrays.sort(T[] arr)   //argument: an array, return type: none //it changes the array \\
-Arrays.toString() //returns a string representing the contents of the array\\
-Arrays.binarySearch(T... a, T key) //returns the index of the key if found or -1 if not found\\
-Arrays.copyOfRange(int from,int to)  \\
-Arrays.deepEquals(T[] a,T[] b) \\
-Arrays.fill(T[] arr, T value) \\
+Arrays.asList(T... a) //argument: an array, return type: a list of the specified array<br>
+Arrays.sort(T[] arr)   //argument: an array, return type: none //it changes the array <br>
+Arrays.toString() //returns a string representing the contents of the array<br>
+Arrays.binarySearch(T... a, T key) //returns the index of the key if found or -1 if not found<br>
+Arrays.copyOfRange(int from,int to)  <br>
+Arrays.deepEquals(T[] a,T[] b) <br>
+Arrays.fill(T[] arr, T value) <br>
 \end{verbatim}
 \subsubsection{java.util.LinkedList}
 \begin{verbatim}
@@ -610,12 +610,12 @@ new Stack();
 
 
 \subsubsection{java.util.HashMap}
-//these methods are defined on objects of type HashMap. \\
-.clear() //removes all mappings\\
-.containsKey(Object key) //returns true if the key is in the map\\\
-.get(Object key) //returns the value to which the key is mapped\\
-.put(Object key, Object value) //makes a new entry for the key,value pair\\
-.remove(Object key) //removes the key and its value\\
+//these methods are defined on objects of type HashMap. <br>
+.clear() //removes all mappings<br>
+.containsKey(Object key) //returns true if the key is in the map<br>\
+.get(Object key) //returns the value to which the key is mapped<br>
+.put(Object key, Object value) //makes a new entry for the key,value pair<br>
+.remove(Object key) //removes the key and its value<br>
 .size() 
 \subsection{LibGDX Game Development}
 \section{Javascript}
@@ -894,15 +894,15 @@ Analoge Moeglichkeiten gibt es auch fuer abgesetzte Formeln: <!-- begin MathToWe
 </math>
 <!-- end MathToWeb --> empfohlen, die Umgebungsform heisst hier {displaymath}. Fuer spezielle Varianten abgesetzter Formeln gibt es viele weitere Umbegbungen. Die wichtigsten sind:
 {equation}: Die Umgebung fuer eine einzige Abgesetze Formel, die mit einer Nummer versehen wird.
-{eqnarray}: Eine Umgebung fuer Gleichungssysteme, die wie eine dreispaltige Tabelle aufgebaut ist. Bis zu zwei & duerfen in jeder Zeile eingesetzt werden, um die Ausrichtung vorzunehmen. Jede Zeile wird voreingestellt nummeriert, sofert dies nicht \\nonumber unterdrueckt.  \\lefteqn erlaubt die Nummer auf der anderen als der voreingestellten Seite zu setzen.
-{eqnarray*}: Eine Variante von {eqnarray}, in der Gleichungssysteme ohne Nummerierung gesetzt werden.\\
-Ein besonderest Makro ist \\ensuremath. Es stellt sicher, dass der Inhalt seines obligatorischen Arguments im Mathematikmodus formatiert wird. Erfolgt der Aufruf im Textmodus, aktiviert das Makro automatisch den Modus fuer eingebettete Formeln. Dieses Makro wird hauptsaechlich bei der Definition neuer Makros verwendet.
+{eqnarray}: Eine Umgebung fuer Gleichungssysteme, die wie eine dreispaltige Tabelle aufgebaut ist. Bis zu zwei & duerfen in jeder Zeile eingesetzt werden, um die Ausrichtung vorzunehmen. Jede Zeile wird voreingestellt nummeriert, sofert dies nicht <br>nonumber unterdrueckt.  <br>lefteqn erlaubt die Nummer auf der anderen als der voreingestellten Seite zu setzen.
+{eqnarray*}: Eine Variante von {eqnarray}, in der Gleichungssysteme ohne Nummerierung gesetzt werden.<br>
+Ein besonderest Makro ist <br>ensuremath. Es stellt sicher, dass der Inhalt seines obligatorischen Arguments im Mathematikmodus formatiert wird. Erfolgt der Aufruf im Textmodus, aktiviert das Makro automatisch den Modus fuer eingebettete Formeln. Dieses Makro wird hauptsaechlich bei der Definition neuer Makros verwendet.
 Das Makropaket amstex unterstuetzt viele Varianten und erweiterungen dieser Umgebungen (und vieles mehr, was fuer den Mathematiksatz und das Publizieren in Mathematikjournalen nuetzlich ist).
 \subsection{Schriften in Formeln}
-Voreingestellt sucht Tex im Mathematikmodus die im Kontext richtigen Schriften automatisch aus. Dabei werden viele in der professionellen Typographie geltenden Regeln beruecksichtigt. Lediglich in einigen mehrdeutigen Situationen kann es erforderlich sein, manuell einzugreifen. In diesem Fall ist es nicht moeglich, die normalen im Textmodus einsetzbaren Makros wie \\text... oder die Deklarationsformen einzusetzen, sie funktionieren in Formeln nicht. Stattdessen gibt es spezielle Varianten, die hier einzusetzen sind. Die Textformen heissen \\mathbf, \\mathit, \\mathrm, \\mathsf, \\mathtt und \\mathcal(Kalligraphieschrift). Als Deklarationsbefehle gibt es oft nur \\boldmath und \\unboldmath.
+Voreingestellt sucht Tex im Mathematikmodus die im Kontext richtigen Schriften automatisch aus. Dabei werden viele in der professionellen Typographie geltenden Regeln beruecksichtigt. Lediglich in einigen mehrdeutigen Situationen kann es erforderlich sein, manuell einzugreifen. In diesem Fall ist es nicht moeglich, die normalen im Textmodus einsetzbaren Makros wie <br>text... oder die Deklarationsformen einzusetzen, sie funktionieren in Formeln nicht. Stattdessen gibt es spezielle Varianten, die hier einzusetzen sind. Die Textformen heissen <br>mathbf, <br>mathit, <br>mathrm, <br>mathsf, <br>mathtt und <br>mathcal(Kalligraphieschrift). Als Deklarationsbefehle gibt es oft nur <br>boldmath und <br>unboldmath.
 \subsection{Text im Mathematikmodus}
-In manchen Situationen is es erforderlich, Text als solchen innerhalb einer Formel darzustellen. In diesem Fall ist es oft die einfachste Moeglichkeit, in innerhalb einer \\mbox zu setzen., wobei  dort natuerlich auch wieder alle normalen Formatierungen aus dem Textmodus zulaessig sind. Natuerlich koennen auch \\parboxen oder {minipage}s verwendet werden. Komplexere Strukturen lassen sich oft relativ einfach in Form einer Tabelle (die ebenfalls eine Box umgibt) einbauen.
-AMS-Tex unterstuetzt den Textsatz in Formeln mit eigenen Makros.\\
+In manchen Situationen is es erforderlich, Text als solchen innerhalb einer Formel darzustellen. In diesem Fall ist es oft die einfachste Moeglichkeit, in innerhalb einer <br>mbox zu setzen., wobei  dort natuerlich auch wieder alle normalen Formatierungen aus dem Textmodus zulaessig sind. Natuerlich koennen auch <br>parboxen oder {minipage}s verwendet werden. Komplexere Strukturen lassen sich oft relativ einfach in Form einer Tabelle (die ebenfalls eine Box umgibt) einbauen.
+AMS-Tex unterstuetzt den Textsatz in Formeln mit eigenen Makros.<br>
 Here we have the most commen math expressions in a table,
 together with the \backslash commands to use them.
 
@@ -911,12 +911,12 @@ together with the \backslash commands to use them.
     <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}
     \begin{tabular}{c|l|c|l|c|l|c|l}
-     \vee &vee &\wedge &wedge   & \sqcup &sqcup  & \ast &ast \\
-     \div&div&\sqcap&sqcap &\bullet &bullet&\setminus&setminus \\
-     \star   & a        &\mp      & \times  \\
-     \ominus & a        &\cap      &\oplus      \\
-     \cup    & a        &\oslash   &\uplus     \\
-     \circ   & \otimes  &\wr       & \pm      \\
+     \vee &vee &\wedge &wedge   & \sqcup &sqcup  & \ast &ast <br>
+     \div&div&\sqcap&sqcap &\bullet &bullet&\setminus&setminus <br>
+     \star   & a        &\mp      & \times  <br>
+     \ominus & a        &\cap      &\oplus      <br>
+     \cup    & a        &\oslash   &\uplus     <br>
+     \circ   & \otimes  &\wr       & \pm      <br>
          
          
           
@@ -1020,23 +1020,23 @@ Tex teilt die in Formeln auftretenden mathematischen Symoble in sieben bzw acht 
 <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}
     \begin{tabular}{c|c}
-        \approx &  \\
-        \cong & \\
-        \equiv & \\
-        > & \\
-        \geq & \\
-        \leq & \\
-        \in & \\ 
-        \mid & \\
-        \ni & \\
-        \perp & \\
-        < & \\
-        \sim & \\
-        \subset & \\
-        \subseteq & \\
-        = & \\
-        \subset & \\
-        \supseteq & \\
+        \approx &  <br>
+        \cong & <br>
+        \equiv & <br>
+        > & <br>
+        \geq & <br>
+        \leq & <br>
+        \in & <br> 
+        \mid & <br>
+        \ni & <br>
+        \perp & <br>
+        < & <br>
+        \sim & <br>
+        \subset & <br>
+        \subseteq & <br>
+        = & <br>
+        \subset & <br>
+        \supseteq & <br>
         
     \end{tabular}
     \end{math} -->
@@ -1090,18 +1090,18 @@ In vielen Formeln treten Pfeilsymbole mit teilweise recht unterschiedlichen Funk
 
 \begin{center}
     \begin{tabular}{c|c|c}
-        \ rightarrow & \ leftarrow & \ lbrack \\
-        \ Leftarrow & \ rbrack & \ lfloor \\
-        \ Leftrightarrow & \ rfloor & \ lceil \\
-        \ mapsto &\ Rightarrow & \ rceil \\
-        \ leadsto & & \ lbrace \\
-        \ bigcap &  & \ rbrace \\
-        \ bigcup &  & \ langle \\
-        \ int &    & \ rangle \\
-        \ bigoplus & \ lgroup \\
-        \ prod & & \ rgroup \\
-        \ sum & & \ lmoustache \\
-        \ rmoustache & & \\
+        \ rightarrow & \ leftarrow & \ lbrack <br>
+        \ Leftarrow & \ rbrack & \ lfloor <br>
+        \ Leftrightarrow & \ rfloor & \ lceil <br>
+        \ mapsto &\ Rightarrow & \ rceil <br>
+        \ leadsto & & \ lbrace <br>
+        \ bigcap &  & \ rbrace <br>
+        \ bigcup &  & \ langle <br>
+        \ int &    & \ rangle <br>
+        \ bigoplus & \ lgroup <br>
+        \ prod & & \ rgroup <br>
+        \ sum & & \ lmoustache <br>
+        \ rmoustache & & <br>
         
     \end{tabular}
 \end{center}
@@ -1331,11 +1331,11 @@ Gegeben: Zeichensatz Z, T= a0,...,a n-1 mit a i elem. Z
 und Muster P = b0, ... ,b m-1 mit b i elem Z
 
 Aufgabe: Berechne i elem N 0 mit 
-0 <= i <= n-m und i ist die Anfangsposition  \\
-des Musters P im Text T, d.h., ai=b0, ai+1=b1, ... , a i+m-1 =b m-1 oder \\
+0 <= i <= n-m und i ist die Anfangsposition  <br>
+des Musters P im Text T, d.h., ai=b0, ai+1=b1, ... , a i+m-1 =b m-1 oder <br>
 i=n falls das Muster P nicht im Text T enthalten ist.
 \subsection{Naive Suche}
-Methode: \\
+Methode: <br>
 Durchsuche den gesamten Text schrittweise von links nach rechts und vergleiche bei jeder Position von links das Muster zeichenweise
 mit dem Text.
 Vergleiche das Zeichen im Text auf Position i + j mit dem Zeichen im
@@ -1370,8 +1370,8 @@ Analyse: Der naive Algorithmus f??hrt im ung??nstigsten Fall
 (n ??? m + 1) ?? m ??? O(n ?? m)
 viele Vergleiche durch.
 \subsection{Knuth Morris Pratt}
-Das Verfahren von Knuth-Morris-Pratt:\\
-Methode: \\
+Das Verfahren von Knuth-Morris-Pratt:<br>
+Methode: <br>
 Vergleiche das Zeichen im Text auf Position i mit dem Zeichen
 im Muster auf Position j.
 Wenn das Zeichen im Text auf Position i mit dem Zeichen im Muster auf
@@ -1379,10 +1379,10 @@ Position j ??bereinstimmt, dann erh??he i und j um 1.
 Wenn das Zeichen im Text auf Position i mit dem Zeichen im Muster auf
 Position j nicht ??bereinstimmt, dann setze j auf die gr????te Position l
 zwischen 0 und j ??? 1 zur??ck, so das b 0 , . . . , b l???1 = a i???l , . . . , a i???1 .
-\\
+<br>
 Speichere diese Positionen im next-Array.
 
-Berechnung des next arrays\\
+Berechnung des next arrays<br>
 \begin{verbatim}
 
 void init next array (int next[ ], char P[ ], int m)
@@ -1404,7 +1404,7 @@ void init next array (int next[ ], char P[ ], int m)
 }
 \end{verbatim}
 Textsuche mit berechneten next array
-\\
+<br>
 \begin{verbatim}
 int kmp search (char T [ ], int n, char P[ ], int m, int next[ ])
 {
@@ -1427,19 +1427,19 @@ int kmp search (char T [ ], int n, char P[ ], int m, int next[ ])
 }
 \end{verbatim}
 
-Analyse:\\
+Analyse:<br>
 Variable j kann nur so oft erniedrigt werden, wie sie zuvor erh??ht wurde.
 Variable j wird immer zusammen mit Variable i erh??ht.
 Also wird j nur so oft erniedrigt, wie i erh??ht wird.
 Ist das next-Array bekannt, so hat das Verfahren eine lineare Laufzeit
 O(n).
 Da das next-Array in O(m) Schritten aufgebaut werden kann, ben??tigt
-der gesamte Algorithmus O(n + m) Schritte.\\
+der gesamte Algorithmus O(n + m) Schritte.<br>
 Verbessertes next-Array
 Das verbesserte next-Array next???[ ] ber??cksichtig zus??tzlich die
 Information, dass im Text ein Zeichen steht, dass dem Zeichen im Wort
 nicht entspricht.
-\\
+<br>
 Berechnung des next' Arrays
 \begin{verbatim}
 void init next array (int next 0 [ ], char P[ ], int m)
@@ -1569,7 +1569,7 @@ Bemerkungen:
 Kommt es zu einem Mismatch zwischen T [i ??? j] und P[(m ??? 1) ??? j],
 dann wird das Muster so weit nach rechts verschoben, bis das Zeichen
 T [i ??? j] im Text ??ber dem rechtesten Vorkommen von T [i ??? j] im
-Muster P steht.\\
+Muster P steht.<br>
 
 Kommt das Zeichen T [i ??? j] im Muster gar nicht vor, dann wird das Muster um seine gesamte L??nge verschoben.
 Das Muster wird jedoch mindestens um eine Position nach rechts geschoben.
@@ -1579,13 +1579,13 @@ ausgezeichnet bew??hrt.
 F??r gen??gend kurze Muster und hinreichend gro??e Zeichens??tze werden
 im Mittel O(n/m) viele Schritte durchgef??hrt.
 Das Muster wird dann also nahezu immer um seine Gesamtl??nge nach
-rechts verschoben.\\
+rechts verschoben.<br>
 
 Kleine Modifikationen
 Der delta-Wert f??r das letzte Zeichen P[m ??? 1] im Muster P kann auch
 auf das zweite Vorkommen des Zeichens im Muster (von rechts gez??hlt)
 gesetzt werden, da ein delta-Wert von 0 einer Musterverschiebung von 0
-entspricht.\\
+entspricht.<br>
 
 Jetzt wird das Muster so weit nach rechts geschoben, dass das zweite
 Vorkommen von rechts des letzten Zeichens im Muster mit der Position
@@ -1628,16 +1628,16 @@ Die Musterverschiebung wird abh??ngig von j in einem beta-Wert
 gespeichert.
 Wird zus??tzlich noch die Information genutzt, dass auf Position i ??? j im
 Text ein anderes Zeichen steht als auf Position (m ??? 1) ??? j im Muster,
-dann ist es der verbesserte beta-Wert.\\
+dann ist es der verbesserte beta-Wert.<br>
 
 Die beta Musterverschiebung f??r Muster P mit einem Mismatch bei j,
-das hei??t T [i ??? j] 6 = P[(m ??? 1) ??? j], ist der Wert beta(j).\\
+das hei??t T [i ??? j] 6 = P[(m ??? 1) ??? j], ist der Wert beta(j).<br>
 
 Es ist die kleinste Zahl k zwischen 1 und m ??? 1, sodass f??r
 l = 0, 1, . . . , l Ende
 P[(m ??? 1) ??? l]
 =/=
-P[(m ??? 1) ??? k ??? l].\\
+P[(m ??? 1) ??? k ??? l].<br>
 
 Der Endwert l Ende f??r den Laufindex l ist das Minimum von
 1 j ??? 1, da nur j ??? 1 Zeichen links der Position i im Text mit den
@@ -1666,7 +1666,7 @@ delta???(P[m ??? 1]) falls j > 0,
 = max
 delta(T
 [i + 1]) + 1,
-beta 0 (j)\\
+beta 0 (j)<br>
 Bemerkungen:
 Der beta-Wert beseitigt zwar die worst-case Instanzen bei der Textsuche
 (hier ohne Beweis), bringt aber in der Praxis eigentlich nichts. Deshalb
@@ -1711,18 +1711,18 @@ I =\lbrace0,...,m-1\rbrace
 	</mtr>
 </mtable>
 </math>
-<!-- end MathToWeb -->wobei m die feldgroesse ist.)\\
-Die Hash funktion \\
+<!-- end MathToWeb -->wobei m die feldgroesse ist.)<br>
+Die Hash funktion <br>
 \textbf{h: K-> I}
 wird zum Suchen und platzieren von Elementen eingesetzt.
-Sie soll die Schluessel gleichmaessig auf die Indizes verteilen.\\
+Sie soll die Schluessel gleichmaessig auf die Indizes verteilen.<br>
 Wenn mehrere Schluessel auf einen Index abgebildet werden, ist das eine Kollision.
-Bei einer Kollision muss ein Ersatzplatz gefunden werden.\\
-Welche Funktionen sind als Hash Funktionen geeignet?\\
-Ausblenden und Restbilden. \\
+Bei einer Kollision muss ein Ersatzplatz gefunden werden.<br>
+Welche Funktionen sind als Hash Funktionen geeignet?<br>
+Ausblenden und Restbilden. <br>
 Ausblenden: benutze nur einen Teil des schluessels(nicht alle stellen)
 Restbildung: Der schluessel k wird ganzzahlig durch die laenge der Hashtabelle dividiert.
-Der Rest wird als Index verwendet.\\
+Der Rest wird als Index verwendet.<br>
 <!-- %\begin{math} -->
 <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{equation}
@@ -1758,11 +1758,11 @@ h(k)=k mod \mid l \mid
 </mtable>
 </math>
 <!-- end MathToWeb -->
-<!-- %\end{math}\\ -->
+<!-- %\end{math}<br> -->
 Die besten Ergebnissze erhaelt man wenn l eine primzahl ist.
 Schluessel die nicht als zahlen interpretiert werden koennen, werden vorher geeignet umgerechnet.
 \subsection{Universelle Hash funktionen}
-Gesucht sind Hashfunktionen die im mittel akzeptabel sind.\\
+Gesucht sind Hashfunktionen die im mittel akzeptabel sind.<br>
 Sei <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{equation}
 m=\mid I \mid und H eine endliche Menge von >= m Hash Funtkionen. 
@@ -1849,7 +1849,7 @@ x,y \in K gilt:
 	<mo>:</mo>
 </mrow>
 </math>
-<!-- end MathToWeb -->\\
+<!-- end MathToWeb --><br>
 <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{equation}
 \mid\lbrace h \in H \mid h(x)=h(y) \rbrace \mid \leq \lceil \frac{\mid H \mid}{m} \rceil
@@ -1906,7 +1906,7 @@ x,y \in K gilt:
 </mtable>
 </math>
 <!-- end MathToWeb -->
-Fuer jedes Schluesselpaar x,y fuehrt hoechstens der m-te Teil der Hash Funktionen die beiden schluessel x,y zu einer Kollision.\\
+Fuer jedes Schluesselpaar x,y fuehrt hoechstens der m-te Teil der Hash Funktionen die beiden schluessel x,y zu einer Kollision.<br>
 Die Wahrscheinlichkeit dass zwei Schluessel mit einer Hash Funktion aus H auf den gleichen Index abgebildet werden ist <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math} \frac{1}{m} \end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1917,7 +1917,7 @@ Die Wahrscheinlichkeit dass zwei Schluessel mit einer Hash Funktion aus H auf de
 	</mfrac>
 </mrow>
 </math>
-<!-- end MathToWeb -->\\
+<!-- end MathToWeb --><br>
 Sei
 <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}
@@ -1931,7 +1931,7 @@ p \geq m
 </mrow>
 </math>
 <!-- end MathToWeb --> 
-eine Primzahl und \\
+eine Primzahl und <br>
 <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{equation}
 h(a,b) : \lbrace 0,...,p-1\rbrace \mapsto \lbrace 0,...,m-1 \rbrace 
@@ -2079,14 +2079,14 @@ Dann ist
 </mtable>
 </math>
 <!-- end MathToWeb -->
-eine universelle Klasse von Hash Funktionen (lineare Algebra)\\
+eine universelle Klasse von Hash Funktionen (lineare Algebra)<br>
 \subsection{Kollisionsaufloesung}
-Probleme treten auf bei der Platzierung, wenn der berechnete Platz nicht leer ist und bei der Suche, wenn der berechnete Platz ein anderes Element enthaelt.\\
+Probleme treten auf bei der Platzierung, wenn der berechnete Platz nicht leer ist und bei der Suche, wenn der berechnete Platz ein anderes Element enthaelt.<br>
 Zur Kollisionsaufloesung muss ein ersatzplatz gefunden werden.
 \subsubsection{1. Verkettung der Ueberlaeufer}
 Die Ueberlaeufer, die auch auf diesen schon besetzten Platz platziert werden sollen, koennen z.b.
-in einer linearen Liste verkettet werden, welche an den Hashtabelleneintrag angehaengt wird, der sich aus der Hash Funktion angewendet auf den Schluessel ergibt.\\
-Bei einer erfolglosen Suche nach schluessel k betrachten wir alle Elemente in der Liste an h(k)\\
+in einer linearen Liste verkettet werden, welche an den Hashtabelleneintrag angehaengt wird, der sich aus der Hash Funktion angewendet auf den Schluessel ergibt.<br>
+Bei einer erfolglosen Suche nach schluessel k betrachten wir alle Elemente in der Liste an h(k)<br>
 Die durchschnittliche Anzahl der Eintraege in h(k) ist n/m wenn n Eintraege auf m Listen verteilt sind.
 \textbf{Belegungsfaktor <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}\alpha = n/m\end{math} -->
@@ -2131,8 +2131,8 @@ C n=\frac{n}{m}=\alpha
 </mtable>
 </math>
 <!-- end MathToWeb -->
-Beim einfuegen des j-ten Schluessels ist die durchschnittliche Listenlaenge gerade (j-1)/m\\
-Also betrachten wir bei einer spaeteren Suche nach dem j-ten Schluessel gerade 1+(j-1)/m Eintraege im Durchschnitt, wenn stets am Listenende eingefuegt wird und kein Datensatz entfernt wurde.\\
+Beim einfuegen des j-ten Schluessels ist die durchschnittliche Listenlaenge gerade (j-1)/m<br>
+Also betrachten wir bei einer spaeteren Suche nach dem j-ten Schluessel gerade 1+(j-1)/m Eintraege im Durchschnitt, wenn stets am Listenende eingefuegt wird und kein Datensatz entfernt wurde.<br>
 Im Mittel ist die Anzahl der bei der erfolgreichen Suche nach einem Schluessel betrachteten Eintraege also
 <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{equation}
@@ -2218,9 +2218,9 @@ Speichere die Ueberlaeufer in der Hashtabelle und nicht in zusaetzlichen Listen.
 	<mn>1</mn>
 </mrow>
 </math>
-<!-- end MathToWeb -->\\
+<!-- end MathToWeb --><br>
 Ist die Hash Addresse h(k) belegt, so wird eine Ausweichposition gesucht.
-\textbf{Die Folge der zu betrachtenden Speicherplaetze fuer einen Schluessel nennt man Sondierungsfolge}\\
+\textbf{Die Folge der zu betrachtenden Speicherplaetze fuer einen Schluessel nennt man Sondierungsfolge}<br>
 Sei <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}h:K \rightarrow \lbrace 0,...,m-1 \rbrace \end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2279,10 +2279,10 @@ Sei <!-- begin MathToWeb -->
 	<mi>K</mi>
 </mrow>
 </math>
-<!-- end MathToWeb --> , die Folge (h(k) - s(j,k)) mod m fuer j=0,1,...,m-1 eine Permutation aller Hash Addressen 0,...,m-1 ist, dann ist s eine Sondierungsfunktion fuer h.\\
+<!-- end MathToWeb --> , die Folge (h(k) - s(j,k)) mod m fuer j=0,1,...,m-1 eine Permutation aller Hash Addressen 0,...,m-1 ist, dann ist s eine Sondierungsfunktion fuer h.<br>
 
-\underline{Lineares Sondieren}\\
-Beim linearen Sondieren ist fuer Schluessel k die Sondierungsfolge h(k), h(k)-1, h(k)-2 ,...,0,m-1,...,h(k)+1 \\
+\underline{Lineares Sondieren}<br>
+Beim linearen Sondieren ist fuer Schluessel k die Sondierungsfolge h(k), h(k)-1, h(k)-2 ,...,0,m-1,...,h(k)+1 <br>
 Die Sondierungsfunktion ist damit <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{equation}
 s(j,k)=j
@@ -2313,12 +2313,12 @@ s(j,k)=j
 </mtable>
 </math>
 <!-- end MathToWeb -->
-\underline{Nachteil}\\
-Das Verfahren neight zur \underline{primaeren Haeufung}, indem gewisse Bereiche keine Luecke mehr aufweisen.\\
-\underline{Quadratisches Sondieren}\\
-Es wird um h(k) herum mit quadratisch wachsendem Abstand nach einem freien Platz gesucht.\\
-Sondierungsfolge: h(k), (h(k)=1) mod m, (h(k) -1) mod m, (h(k) +4 ) mod m, (h(k) -4) mod m, ... \\
-Sondierungsfunktion: \\
+\underline{Nachteil}<br>
+Das Verfahren neight zur \underline{primaeren Haeufung}, indem gewisse Bereiche keine Luecke mehr aufweisen.<br>
+\underline{Quadratisches Sondieren}<br>
+Es wird um h(k) herum mit quadratisch wachsendem Abstand nach einem freien Platz gesucht.<br>
+Sondierungsfolge: h(k), (h(k)=1) mod m, (h(k) -1) mod m, (h(k) +4 ) mod m, (h(k) -4) mod m, ... <br>
+Sondierungsfunktion: <br>
 <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{equation}
 s(j,k) = (\lceil j/2 \rceil)^{2} (-1)^{j}
@@ -2380,19 +2380,19 @@ Wenn m eine Primzahl der Form 4i+3, <!-- begin MathToWeb -->
 	<mi>N</mi>
 </mrow>
 </math>
-<!-- end MathToWeb -->ist, dann ist garantiert, \\
+<!-- end MathToWeb -->ist, dann ist garantiert, <br>
 dass die Sondierungsfunktion Modulo m eine Permutation der Hash Addressen 0 bis m-1 ist.
 
-\underline{Nachteil}\\
+\underline{Nachteil}<br>
 Zwei Schluessel k und k' mit h(k) = h(k') durchlaufen stets dieselbe Sondierungsfolge. Sie behindern sich also auf Ausweichplaetzen (sekundaere haeufung)
 
 
 \subsubsection{Double Hashing}
 \underline{Verbesserte Kollisionsaufloesung}
 Schluesselabhaengige Sondierung (double Hashing):
-Verwende fuer die Sondierungsfolge eine zweite Hash Funktion h' \\
+Verwende fuer die Sondierungsfolge eine zweite Hash Funktion h' <br>
 Sondierungsfolge:
-h(k), (h(k) -h'(k)) mod m, (h(k) -2*h'(k)) mod m, ..., (h(k) -(m-1) * h'(k)) mod m\\
+h(k), (h(k) -h'(k)) mod m, (h(k) -2*h'(k)) mod m, ..., (h(k) -(m-1) * h'(k)) mod m<br>
 Sondierungsfunktion:
 <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{equation}
@@ -2448,27 +2448,27 @@ Die Funktion h' muss so gewaehlt werden, dass die Sondierungsfolge eine Permutat
 	<mn>0</mn>
 </mrow>
 </math>
-<!-- end MathToWeb --> sein muss und m nicht teilen darf.\\
+<!-- end MathToWeb --> sein muss und m nicht teilen darf.<br>
 Ist m eine Primzahl und h(k) = k mod m so erfuellt 
 h'(k)=1+(k mod (m-2)) die erwarteten Anforderungen.
-\\
+<br>
 \underline{Verbesserung der erfolgreichen Suche}
-Die durchschnittliche Suchzeit bei erfolgreicher Suche variiert bei Hash Verfahren ohne Haeufung mit unterschiedlicher Reihenfolge des einfuegens der Schluessel. \\
-In Faellen in denen wesentlich haeeufiger gesuch als eingefuegt wird, kann es sich lohnen, die Schluessel beim einfugen eines neuen Schluessels so zu reorganisieren dass die Suchzeit verkuerzt wird.\\
+Die durchschnittliche Suchzeit bei erfolgreicher Suche variiert bei Hash Verfahren ohne Haeufung mit unterschiedlicher Reihenfolge des einfuegens der Schluessel. <br>
+In Faellen in denen wesentlich haeeufiger gesuch als eingefuegt wird, kann es sich lohnen, die Schluessel beim einfugen eines neuen Schluessels so zu reorganisieren dass die Suchzeit verkuerzt wird.<br>
 \subsection{Brents Alogrithmus}
-\underline{Methode} Einfuegen eines Schluessels k: \\
-Beginne mit Hash Addresse i=h(k). \\
-Falls Position i belegt ist, betrachte die beiden Hash-Addressen b=(i-h'(k)) mod m und b'=(i-h'(k')) mod m, wobei k' der Schluessel auf Hash Addresse i ist.\\
+\underline{Methode} Einfuegen eines Schluessels k: <br>
+Beginne mit Hash Addresse i=h(k). <br>
+Falls Position i belegt ist, betrachte die beiden Hash-Addressen b=(i-h'(k)) mod m und b'=(i-h'(k')) mod m, wobei k' der Schluessel auf Hash Addresse i ist.<br>
 
 Ist b eine freie Hash Addresse dann positioniere Schluessel k auf Position b, ansonsten, ist b' eine freie Hash Addresse dann positioniere Schluessel k auf Position i und k' auf Position b', ansonsten fahre fort mit dem Versuch, k auf Posiition i=b zu positionieren.
 
 \section{Vorlesung 6: Suchbaeume}
-Ein Element (Knoten) knoten hat eine endliche  Anzahl an Nachfolgern (Soehne)\\
+Ein Element (Knoten) knoten hat eine endliche  Anzahl an Nachfolgern (Soehne)<br>
  
 Der Knoten ohne Vater heisst \textbf{Wurzel}
 Die Knoten ohne Nachfolger heissen \textbf{Blaetter}
 
-Knoten mit Nachfolger heissen \textbf{innere knoten}\\
+Knoten mit Nachfolger heissen \textbf{innere knoten}<br>
 
 Eine Folge von Knoten <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math} u_{1} ,..., u_{k} \end{math} -->
@@ -2504,17 +2504,17 @@ Eine Folge von Knoten <!-- begin MathToWeb -->
 </math>
 <!-- end MathToWeb --> ein Nachfolger
 von u i-1 ist, heisst \textbf{Weg der Laenge k} bzw Weg mit k knoten.
-\\
+<br>
 Baeume in denen jeder innere Knoten genau k Nachfolger hat, heissen \textbf{k-naere Baeume}
 
-Die \textbf{Hoehe eines Baumes} ist die Laenge eines laengsten weges von der Wurzel zu einem Blatt -1\\
+Die \textbf{Hoehe eines Baumes} ist die Laenge eines laengsten weges von der Wurzel zu einem Blatt -1<br>
 Dies ist die Anzahl der Nachfolger von der Wurzel bis zum Knoten u. Die Wurzel hat die Tiefe 0.
-\\
+<br>
 Auf den Nachfolgern besteht in der Regel eine Ordnung, linker bzw. rechter Nachfolger, oder i-ter Nachfolger usw.
-Das sind \textbf{geordnete Baeume}\\
+Das sind \textbf{geordnete Baeume}<br>
 
 Ein Baum heisst vollstaendig, wenn alle inneren Knoten die maximal moegliche Anzahl von Nachfolgern und alle Blaetter dieselbe Tiefe haben.
-\\
+<br>
 \textbf{Ein Binaerbaum mit n inneren Knoten hat n+1 Blaetter.}
 \textbf{
 Seine Hoehe ist maximal <!-- begin MathToWeb -->
@@ -2555,34 +2555,34 @@ Seine Hoehe ist maximal <!-- begin MathToWeb -->
 }
 
 \textbf{Suchbaeume sind geordnete binaere Baeume die in den inneren Knoten Schluessel (oder Elemente mit Schluesseln) speichern}
-\\
+<br>
 Sei u ein innerer Knoten, der den Schluessel k(u) speichert.
 Dann sind alle Schluessel im linken Teilbaum von u kleiner als k(u) und
-alle Schluessel im rechten Teilbaum von u groesser als k(u)\\
+alle Schluessel im rechten Teilbaum von u groesser als k(u)<br>
 
-Die Blaetter repraesentieren Intervalle zwischen den in den inneren Knoten gespeicherten Schluesseln.\\
+Die Blaetter repraesentieren Intervalle zwischen den in den inneren Knoten gespeicherten Schluesseln.<br>
 \subsubsection{Einen Schluessel in einem Suchbaum finden}
-Beginne bei der Wurzel p und vergleiche x mit dem bei p gespeicherten  Schluessel k(p)\\
-Ist x kleiner als k(p),  Setze die Suche mit dem linken Nachfolger von p fort.\\
+Beginne bei der Wurzel p und vergleiche x mit dem bei p gespeicherten  Schluessel k(p)<br>
+Ist x kleiner als k(p),  Setze die Suche mit dem linken Nachfolger von p fort.<br>
 Ist x groesser als k(p), setze die Suche mit dem rechten Nachfolger von p  fort.
-\\
+<br>
 Wird ein Blatt erreicht, ist Schluessel x nicht im Suchbaum gespeichert.
 \subsubsection{Einfuegen eines Schluessels x in einen Suchbaum}
 Suche den Schluessel x im Suchbaum. Falls x nicht im Suchbaum ist, endet die Suche in einem Blatt.
 Fuege dort den schluessel ein und erzeuge 2 neue Blaetter.
-\\
+<br>
 Die Form des dabei enstehenden Suchbaums ist von der Reihenfolge des einfuegens abhaengig
 
 \subsubsection{Entfernen eines Schluessels x in einem Suchbaum}
 
-Suche den Schluessel x im Suchbaum. Falls x im Suchbaum ist,  sei u der Knoten mit k(u)=x.\\
-Sind beide Nachfolger von u Blaetter, dann mache u zu einem Blatt.\\
-Ist ein Nachfolger von ein Blatt, dann mache u zu einem blatt(//tausche mit einem nachfolger und schneide blatt u vom baum)\\
+Suche den Schluessel x im Suchbaum. Falls x im Suchbaum ist,  sei u der Knoten mit k(u)=x.<br>
+Sind beide Nachfolger von u Blaetter, dann mache u zu einem Blatt.<br>
+Ist ein Nachfolger von ein Blatt, dann mache u zu einem blatt(//tausche mit einem nachfolger und schneide blatt u vom baum)<br>
 
-Ist ein Nachfolger von u ein Blatt und der andere ein innerer Knoten dann haenge den anderen Nachfolger von u an den Vater von u.\\
+Ist ein Nachfolger von u ein Blatt und der andere ein innerer Knoten dann haenge den anderen Nachfolger von u an den Vater von u.<br>
 
 Sind beide Nachfolger von u innere Knoten, dann suche im rechten Teilbaum von u den Knoten v mit dem kleinsten Schluessel k(v).
-Schluessel k(v) ist immer groesser k(u). Der Knoten v heisst \textbf{symmetrischer Nachfolger} von u. Ersetze k(u) durch k(v) und entferne knoten v . Knoten u kann auch durch den \textbf{ symmetrischen Vorgaenger} von u ersetzt werden. Dies ist der Knoten v im linken Teilbaum von u mit dem groessten Schluessel k(v).\\
+Schluessel k(v) ist immer groesser k(u). Der Knoten v heisst \textbf{symmetrischer Nachfolger} von u. Ersetze k(u) durch k(v) und entferne knoten v . Knoten u kann auch durch den \textbf{ symmetrischen Vorgaenger} von u ersetzt werden. Dies ist der Knoten v im linken Teilbaum von u mit dem groessten Schluessel k(v).<br>
 \underline{Durchlaufanforderungen}
 Jeder Durchlauf startet an der Wurzel
 \underline{Hauptreihenfolge}
@@ -2590,23 +2590,23 @@ Betrachte zuerste den Knoten selbst, dann den linken Teilbaum, dann den rechten 
 \underline{Nebenreihenfolge}
 Betrachte zuerst den linken Teilbaum, dann den rechten Teilbaum, dann den Knoten selbst.
 \underline{Symmetrische Reihenfolge} Betrachte zuerst den linken Teilbaum, dann den Knoten selbst, dann den rechten Teilbaum
-TODO: insert example from the slides\\
+TODO: insert example from the slides<br>
 \subsection{AVL Baeume}
 Der Aufwand der Operationen Suchen, Einfuegen und Entfernen ist im wesentlichen von der hoehe des Baumes abhaengig.
 \underline{Ziel: } Die hoehe des Suchbaumes soll auf O(log(n)) beschraenkt werden, damit die Such und Einfuege Operationen 
-hoechstens O(log(n)) vergleiche benoetigen.\\
+hoechstens O(log(n)) vergleiche benoetigen.<br>
 Ein Suchbaum ist \underline{hoehenbalanciert } wenn fuer jeden inneren Knoten u sich die Hoehe des rechten Teilbaumes von u von der 
-Hoehe des linken Teilbaumes von u hoechstens um 1 unterscheidet.\\
+Hoehe des linken Teilbaumes von u hoechstens um 1 unterscheidet.<br>
 
-Hoehenbalancierte Baeume werden auch \underline{AVL-Baeume} genannt.(nach den erfindern)\\
+Hoehenbalancierte Baeume werden auch \underline{AVL-Baeume} genannt.(nach den erfindern)<br>
 Die hoehenbedingung sichert, dass AVL Baeume mit n inneren Knoten und n+1 Blaettern eine Hoehe aus O(log(n)) haben.
 \url{AVL- Baeume}
 Ein AVL Baum der Hoehe 1 mit minimaler Blattanzahl hat 2 Blaetter.
 Ein AVL Baum der Hoehe 2 mit minimaler Blattanzahl hat 3 Blaetter.
 
 Einen AVL Baum der hoehe h+2 mit minimaler Blattanzahl erhaelt man, wenn ein AVL Baum der hoehe h+1 und einen AVL Baum mit hoehe h,
-beide mit minimaler Blattanzahl, wie folgt zu einem Baum der Hoehe h+2 zusammengefuegt wird: \\ 
-TODO: minimale Blattanzahl herausfinden was es bedeutet\\
+beide mit minimaler Blattanzahl, wie folgt zu einem Baum der Hoehe h+2 zusammengefuegt wird: <br> 
+TODO: minimale Blattanzahl herausfinden was es bedeutet<br>
 Ist <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}F_{i}\end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2632,7 +2632,7 @@ Ist <!-- begin MathToWeb -->
 </mrow>
 </math>
 <!-- end MathToWeb --> Blaetter.
-\\
+<br>
 Die Anzahl der Blaetter in einem hoehenbalacierten Baum waechst also exponentiell mit der Hoehe. Daraus folgt dass ein AVL Baum mit n blaettern (und n-1 inneren Knoten) eine hoehe aus O(log(n)) hat. Denn jeder AVL-Baum mit hoehe h hat <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}n \geq F_{h+2} \approx c*1.618^{h+2}\end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2662,16 +2662,16 @@ Die Anzahl der Blaetter in einem hoehenbalacierten Baum waechst also exponentiel
 </mrow>
 </math>
 <!-- end MathToWeb --> Blaetter.
-\underline{comment}: Es gibt hier noch eine anmerkung auf den folien aber die habe ich rausgelassen. \\
+\underline{comment}: Es gibt hier noch eine anmerkung auf den folien aber die habe ich rausgelassen. <br>
 \underline{Suchen}
 Das Suchen in AVL Baeumen erfolgt wie in einem Suchbaum, und ist durch die AVL ausgeglichenheit in O(log(n)) schritten moeglich.
 
 \underline{Einfuegen}
 Der schluessel x wird wie beim Suchbaum gemacht. Liegt anschliessend keine AVL eigenschaft mehr vor, so wird sie wiederhergestellt.
-\\
-Um die Hoehenbedingung an einen inneren Knoten zu ueberpruefen, \\
-genuegt es einen sogenannten \underline{Balancefaktor} bal(u) mitzufuehren, der wie folgt definiert ist.\\
-bal(u) ist die hoehe des rechten Teilbaumes minus der hoehe des linken Teilbaumes.\\
+<br>
+Um die Hoehenbedingung an einen inneren Knoten zu ueberpruefen, <br>
+genuegt es einen sogenannten \underline{Balancefaktor} bal(u) mitzufuehren, der wie folgt definiert ist.<br>
+bal(u) ist die hoehe des rechten Teilbaumes minus der hoehe des linken Teilbaumes.<br>
 In einem AVL Baum gilt fuer jeden inneren Knoten <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}bal(u) \in \lbrace -1,0,1 \rbrace \end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2701,10 +2701,10 @@ Sei p der Vater des Blattes bei dem die Suche endet.
 \underline{Fall 3 } bal(p) = 0 und x ist groesser als k(p)
 \underline{Fall 4 } bal(p) = 0 und x ist kleiner als k(p)
 
-Durch Einfuegen eines neuen Knotes als rechten oder linken Sohn von p wird p ein Knoten mit Balancefaktor -1 oder +1. Dadurch hat sich die hoehe des Teilbaumes veraendert.\\
+Durch Einfuegen eines neuen Knotes als rechten oder linken Sohn von p wird p ein Knoten mit Balancefaktor -1 oder +1. Dadurch hat sich die hoehe des Teilbaumes veraendert.<br>
 Wir rufen eine Funktion upin(p) fuer den knoten p auf, die den Suchpfad zuruecklaeuft, die Balancefaktoren prueft, gegebenenfalls adjustiert und Umstrukturierungen (sogenannte Rotationen oder Doppelrotationen) vornimmt.
 
-\underline{Invariante}\\
+\underline{Invariante}<br>
 Wenn upin(p) aufgerufen wird, ist <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}bal(p) \in \lbrace -1, +1 \rbrace \end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2732,7 +2732,7 @@ Wenn upin(p) aufgerufen wird, ist <!-- begin MathToWeb -->
 <!-- end MathToWeb -->
 und die Hoehe des Teilbaumes mit Wurzel p um eins gewachsen.
 upin(p) bricht ab, wenn p die Wurzel ist.
-Wir unterscheiden zwei Faelle, je nachdem ob p linker oder rechter Sochn seines Vaters ist.\\
+Wir unterscheiden zwei Faelle, je nachdem ob p linker oder rechter Sochn seines Vaters ist.<br>
 \underline{Fall 1} (p ist linker Sohn seines Vaters <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math} \varphi(p)\end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2767,8 +2767,8 @@ Wir unterscheiden zwei Faelle, je nachdem ob p linker oder rechter Sochn seines 
 </mrow>
 </math>
 <!-- end MathToWeb -->), x wird im linken Teilbaum von p angehangen.
-\underline{die vorlesung hat hier ein bild}\\
-Die hoehe des Teilbaumes hat sich nicht veraendert, keine weitere Umstrukturierung notwendig.\\
+\underline{die vorlesung hat hier ein bild}<br>
+Die hoehe des Teilbaumes hat sich nicht veraendert, keine weitere Umstrukturierung notwendig.<br>
 \underline{Fall 1.2}(<!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math} bal(varphi(p))=0\end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2814,7 +2814,7 @@ Die hoehe des Teilbaumes hat sich nicht veraendert, keine weitere Umstrukturieru
 	<mn>1</mn>
 </mrow>
 </math>
-<!-- end MathToWeb -->)\\
+<!-- end MathToWeb -->)<br>
 Da <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}bal(\varphi(p))=-1\end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2902,7 +2902,7 @@ um eins groeser als der rechte Teilbaum von <!-- begin MathToWeb -->
 	</mrow>
 </mrow>
 </math>
-<!-- end MathToWeb -->.\\
+<!-- end MathToWeb -->.<br>
 Eine \textbf{Rotation} nach rechts bringte den baum bei <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}\varphi(p)\end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2937,7 +2937,7 @@ Dabei wird der rechte Teilbaum von p neuer linker Teilbaum von <!-- begin MathTo
 	</mrow>
 </mrow>
 </math>
-<!-- end MathToWeb --> mit rechtem Teilbaum wird neuer rechter Teilbaum von p.\\
+<!-- end MathToWeb --> mit rechtem Teilbaum wird neuer rechter Teilbaum von p.<br>
 Da nach der Rotation der Teilbaum mit Wurzel <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}\varphi(p)\end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2969,14 +2969,14 @@ Da nach der Rotation der Teilbaum mit Wurzel <!-- begin MathToWeb -->
 </mrow>
 </math>
 <!-- end MathToWeb -->)
-Hier ist in der Vorlesung ein Bild\\
+Hier ist in der Vorlesung ein Bild<br>
 TODO: hier weitermachen mit folie 27/71
 \subsection{Splay Baeume}
 \subsection{B Baeume}
 B Baeume sind balancierte Baumstrukturen. Das Ziel ist es moeglichst selten Bloecke aus dem Plattenspeicher laden zu muessen.
-Es wird versucht die Hoehe der Baeume sehr klein zu halten, indem mehrere Schluessel in inneren Knoten gespeichert werden.\\
+Es wird versucht die Hoehe der Baeume sehr klein zu halten, indem mehrere Schluessel in inneren Knoten gespeichert werden.<br>
 
-Ein B Baum der Ordnung m, m>=3 ist ein Baum mit folgenden Eigenschaften:\\
+Ein B Baum der Ordnung m, m>=3 ist ein Baum mit folgenden Eigenschaften:<br>
 Alle Blaetter haben die gleiche Tiefe, Jeder Knoten mit Ausnahme der Wurzel und der Blaetter hat mindestens <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}
 \lceil m/2 \rceil 
@@ -2992,7 +2992,7 @@ Alle Blaetter haben die gleiche Tiefe, Jeder Knoten mit Ausnahme der Wurzel und 
 </math>
 <!-- end MathToWeb -->
 Soehne.
-Die Wurzel hat mindestens 2 Soehne. Jeder Knoten hat hoechstens m Soehne. Jeder Knoten mit i Soehnen speichert m-1 Schluessel.\\
+Die Wurzel hat mindestens 2 Soehne. Jeder Knoten hat hoechstens m Soehne. Jeder Knoten mit i Soehnen speichert m-1 Schluessel.<br>
 
 Zusaetzlich gilt:
 Ist p ein innerer Knoten eines B Baumes der Ordnung m, so speichert er l schluessel, s1,...,sl und hat l+1 Soehne.
@@ -3040,8 +3040,8 @@ Alle Schluessel im Teilbaum mit wurzel
 	<mi>l</mi>
 </mrow>
 </math>
-<!-- end MathToWeb --> sind kleiner als si und alle Schluessel im Teilbaum mit Wurzel pi sind groesser als si.\\
-Bemerkung: Ein B Baum der n Schluessel speichert hat n+1 Blaetter.\\
+<!-- end MathToWeb --> sind kleiner als si und alle Schluessel im Teilbaum mit Wurzel pi sind groesser als si.<br>
+Bemerkung: Ein B Baum der n Schluessel speichert hat n+1 Blaetter.<br>
 Ein B Baum der Ordnung m mit hoehe h hat die minimale Blattanzahl wenn seine Wurzel nur 2 und jeder innere Knoten nur <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}
 \lceil m/2 \rceil 
@@ -3154,7 +3154,7 @@ Schluessel hat, sei q der linke oder rechte Bruder von p, je nachdem welcher Bru
 OBdA ist q linker Bruder von p.
 
 Sei y der Schluessel im Vater r, der zwischen q und p angeordnet ist. 
-Wir speichern nun die Schluessel von q,y,p in einem neuen Knoten p' \\
+Wir speichern nun die Schluessel von q,y,p in einem neuen Knoten p' <br>
 Dazu wird y aus dem Vater r entfernt.
 
 \subparagraph{Fall 2.1:}
@@ -3319,10 +3319,10 @@ In einem gerichteten Graphen ist jede Kante e ein Paar (u,v) von zwei knoten u,v
 In einem ungerichteten Graphen ist jede Kante e 
 \section{Runtime Analysis}
 \section{Showing Correctness of an Algorithm}
-\url{http://www.cs.cornell.edu/courses/cs211/2006sp/Lectures/L06-Induction/binary_search.html}\\
+\url{http://www.cs.cornell.edu/courses/cs211/2006sp/Lectures/L06-Induction/binary_search.html}<br>
 
-\textbf{Showing binary search correct using strong induction }\\
-Strong induction\\
+\textbf{Showing binary search correct using strong induction }<br>
+Strong induction<br>
 
 Strong (or course-of-values) induction is an easier proof technique than ordinary induction because you get to make a stronger assumption in the inductive step. In that step, you are to prove that the proposition holds for k+1 assuming that that it holds for all numbers from 0 up to k. This stronger assumption is especially useful for showing that many recursive algorithms work.
 
@@ -3335,7 +3335,7 @@ Strong (or course-of-values) induction is an easier proof technique than ordinar
 
 \textbf{Example: Binary Search}
 
-For example, consider a binary search algorithm that searches efficiently for an element contained in a sorted array. We might implement this algorithm recursively as follows:\\
+For example, consider a binary search algorithm that searches efficiently for an element contained in a sorted array. We might implement this algorithm recursively as follows:<br>
 
 \begin{verbatim}
 /** Return an index of x in a.
@@ -3372,9 +3372,9 @@ int binsrch(int x, int[] a, int left, int right) {
 }
 \end{verbatim}
 
-Binary search is efficient and easy to understand, but it is also famously easy to implement incorrectly. So it is a good example of code for which we want to think carefully about whether it works. Just testing it may well miss cases in which it does not work correctly.\\
+Binary search is efficient and easy to understand, but it is also famously easy to implement incorrectly. So it is a good example of code for which we want to think carefully about whether it works. Just testing it may well miss cases in which it does not work correctly.<br>
 
-We can prove either piece of code correct by induction, but it is arguably simpler to think about the recursive version. The problem with convincing ourselves that binsrch works is that it uses itself, so the argument becomes circular if we're not careful. The key observation is that binsrch works in a divide-and-conquer fashion, calling itself only on arguments that are ???smaller??? in some way. In what way do the arguments become smaller? The difference between the parameters right and left becomes smaller in the recursive call. This is then the variable we should choose to construct our inductive argument. Now we can follow the strong induction recipe.\\
+We can prove either piece of code correct by induction, but it is arguably simpler to think about the recursive version. The problem with convincing ourselves that binsrch works is that it uses itself, so the argument becomes circular if we're not careful. The key observation is that binsrch works in a divide-and-conquer fashion, calling itself only on arguments that are ???smaller??? in some way. In what way do the arguments become smaller? The difference between the parameters right and left becomes smaller in the recursive call. This is then the variable we should choose to construct our inductive argument. Now we can follow the strong induction recipe.<br>
 
 Let P(n) be the assertion that binsrch works correctly for inputs where <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}right???left = n\end{math} -->
@@ -3394,13 +3394,13 @@ Let P(n) be the assertion that binsrch works correctly for inputs where <!-- beg
 </mrow>
 </math>
 <!-- end MathToWeb -->. 
-If we can prove that P(n) is true for all n, then we know that binsrch works on all possible arguments.\\
+If we can prove that P(n) is true for all n, then we know that binsrch works on all possible arguments.<br>
 
-\textbf{Base Case}. In the case where n=0, we know left=right=m. Since we assumed that the function would only be called when x is found between left and right, it must be the case that x = a[m], and therefore the function will return m, an index of x in array a.\\
+\textbf{Base Case}. In the case where n=0, we know left=right=m. Since we assumed that the function would only be called when x is found between left and right, it must be the case that x = a[m], and therefore the function will return m, an index of x in array a.<br>
 
-\textbf{Inductive Step}. We assume that binsrch works as long as left???right ??? k. Our goal is to prove that it works on an input where left???right = k + 1. There are three cases, where x = a[m], where x < a[m] and where x > a[m].\\
-\textbf{Case x = a[m]}. \\Clearly the function works correctly.\\
-\textbf{Case x < a[m]}. \\We know because the array is sorted that x must be found between a[left] and a[m???-1]. So if the recursive call works correctly, this call will too. The n for the recursive call is n = m ??? 1 ??? left = ???(left+right)/2??? ??? 1 ??? left. (Note that ???x??? is the floor of x, which rounds it down toward negative infinity.) If left+right is odd, then n = (left + right ??? 1)/2 ??? 1 ??? left = (right ??? left)/2 ??? 1, which is definitely smaller than right???left. If left+right is even then n = (left + right)/2 ??? 1 ??? left = (right???left)/2, which is also smaller than k + 1 = right???left because right???left = k + 1 > 0. So the recursive call must be to a range of a that is between 0 and k cells, and must be correct by our induction hypothesis.\\
+\textbf{Inductive Step}. We assume that binsrch works as long as left???right ??? k. Our goal is to prove that it works on an input where left???right = k + 1. There are three cases, where x = a[m], where x < a[m] and where x > a[m].<br>
+\textbf{Case x = a[m]}. <br>Clearly the function works correctly.<br>
+\textbf{Case x < a[m]}. <br>We know because the array is sorted that x must be found between a[left] and a[m???-1]. So if the recursive call works correctly, this call will too. The n for the recursive call is n = m ??? 1 ??? left = ???(left+right)/2??? ??? 1 ??? left. (Note that ???x??? is the floor of x, which rounds it down toward negative infinity.) If left+right is odd, then n = (left + right ??? 1)/2 ??? 1 ??? left = (right ??? left)/2 ??? 1, which is definitely smaller than right???left. If left+right is even then n = (left + right)/2 ??? 1 ??? left = (right???left)/2, which is also smaller than k + 1 = right???left because right???left = k + 1 > 0. So the recursive call must be to a range of a that is between 0 and k cells, and must be correct by our induction hypothesis.<br>
 
 \textbf{Case <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}x > a[m]\end{math} -->
@@ -3416,8 +3416,8 @@ If we can prove that P(n) is true for all n, then we know that binsrch works on 
 	</mrow>
 </mrow>
 </math>
-<!-- end MathToWeb -->}. \\
-This is more or less symmetrical to the previous case. \\
+<!-- end MathToWeb -->}. <br>
+This is more or less symmetrical to the previous case. <br>
 We need to show that r ??? (m + 1) ??? right ??? left. 
 We have <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{equation}r???(m + 1)???l=right???\lfloor(left+right)/2\rfloor-1\end{equation} -->
@@ -3475,12 +3475,12 @@ We have <!-- begin MathToWeb -->
 	</mtr>
 </mtable>
 </math>
-<!-- end MathToWeb -->.\\
+<!-- end MathToWeb -->.<br>
 
-If right+left is even, this is (right???left)/2 ??? 1, which is less than right???left. If right+left is odd, this is right??? (left + right ??? 1)/2 ??? 1 = (right???left)/2 ??? 1/2, which is also less than right???left. Therefore, the recursive call is to a smaller range of the array and can be assumed to work correctly by the induction hypothesis. \\
+If right+left is even, this is (right???left)/2 ??? 1, which is less than right???left. If right+left is odd, this is right??? (left + right ??? 1)/2 ??? 1 = (right???left)/2 ??? 1/2, which is also less than right???left. Therefore, the recursive call is to a smaller range of the array and can be assumed to work correctly by the induction hypothesis. <br>
 
 Because in all cases the inductive step works, we can conclude that binsrch (and its iterative variant) are correct! 
-\\
+<br>
 Notice that if we had made a mistake coding the <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}x > a[m]\end{math} -->
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3545,16 +3545,16 @@ Begruenden sie ihre Antworten, insbesondere, warum Ihre Grammatik von keinem gro
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 $$ \begin{array}{rcll}
-y & = & x^{2}+bx+c\\
-  & = & x^{2}+2\times\dfrac{b}{2}x+c\\
+y & = & x^{2}+bx+c<br>
+  & = & x^{2}+2\times\dfrac{b}{2}x+c<br>
   & = & \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
-      {\left(\dfrac{b}{2}\right)^{2}+c}\\
-  &  & \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
+      {\left(\dfrac{b}{2}\right)^{2}+c}<br>
+  &  & \qquad\left(x+{\dfrac{b}{2}}\right)^{2}<br>
   & = & \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c 
-  & \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
+  & \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.<br>
     y+\left(\dfrac{b}{2}\right)^{2}-c & = & \left(x+
-    \dfrac{b}{2}\right)^{2} & \left|\strut(\textrm{vertex form})\right.\\
-y-y_{S} & = & (x-x_{S})^{2}\\
+    \dfrac{b}{2}\right)^{2} & \left|\strut(\textrm{vertex form})\right.<br>
+y-y_{S} & = & (x-x_{S})^{2}<br>
 S(x_{S};y_{S}) & \,\textrm{or}\, 
     & S\left(-\dfrac{b}{2};\,\left(\dfrac{b}{2}\right)^{2}-c\right)
 \end{array} $$
