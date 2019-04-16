@@ -25,23 +25,6 @@
     <div class=" ">
         <div>
             <div class="row ">
-                <img src="http://cc0-icons.vanautrui.org/composite/chat_conversation_texting.svg" style="width:12em;" class="m-3"/>
-                <div class="col justify-content-center ">
-                    <div>
-                        <h2 class="m-3">Consulting</h2>
-                        <p class="m-3">
-                            We offer a first Consultation free of charge.<br>
-                            There are 10000+ existing software solutions out there on the Internet. <br>
-                            We help you find out what is right for your business,<br>
-                            and figure out the most cost-effective way to do that.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <div class="row ">
                 <img src="http://cc0-icons.vanautrui.org/composite/server.svg" style="width:12em;" class="m-3"/>
                 <div class="col justify-content-center ">
                     <div>
@@ -69,27 +52,7 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <div>
-            <div class="row ">
-                <img src="http://cc0-icons.vanautrui.org/composite/coin_simple.svg" style="width:12em;" class="m-3"/>
-                <div class="col justify-content-center ">
-                    <div>
-                        <h2 class="m-3">Ecommerce</h2>
-                        <p class="m-3">
-                            We can develop an Online Shop for you, using <a href="https://wordpress.com/">Wordpress</a> and <a href="https://woocommerce.com/">Woocommerce</a>.<br>
-                            It includes an easy-to-use admin panel with the ability to manage Products.
-                        </p>
-                        <p>Features include</p>
-                        <ul>
-                            <li>PayPal checkout</li>
-                            <li>Inventory Management</li>
-                            <li>Product Management</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <hr>
         <div>
             <div class="row ">
@@ -101,22 +64,6 @@
                             We offer custom Web Application development using Java(Spring Boot or our own Framework) and Haskell,<br>
                             which goes from Consulting, Requirement Gathering and Design<br>
                             to Development, Hosting and ongoing Maintenance.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <div class="row ">
-                <img src="http://cc0-icons.vanautrui.org/composite/smartphone_phone_android.svg" style="width:12em;" class="m-3" />
-                <div class="col justify-content-center">
-                    <div>
-                        <h2 class="m-3" >Android Applications</h2>
-                        <p class="m-3">
-                            We offer custom Android Application development using Java.<br>
-                            This includes Consulting, Design, Development<br>
-                            and Updates to your Android App.
                         </p>
                     </div>
                 </div>
