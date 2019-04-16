@@ -14,7 +14,4889 @@
 
 <!-- credits: https://tex.stackexchange.com/questions/23804/how-to-incorporate-tex-into-a-website -->
 <h2>Math in TeX notation</h2>
+
+<h1> Math </h1>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %% LaTeX book template                           %% -->
+<!-- %% Author:  Amber Jain (http://amberj.devio.us/) %% -->
+<!-- %% License: ISC license                          %% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+\documentclass[a4paper,11pt,openany]{book}
+\usepackage[margin=1.5cm,padding=0.1cm]{geometry}
+\usepackage{verbatim}
+<!-- % Source: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks % -->
+\usepackage{hyperref}
+\usepackage{graphicx}
+<!-- %https://stackoverflow.com/questions/3175105/writing-code-in-latex-document -->
+<!-- %https://stackoverflow.com/questions/491904/how-do-i-remove-blank-pages-coming-between-two-chapters-in-appendix -->
+\usepackage{listings}
+\usepackage{color}
+\begin{document}
+
+\tableofcontents
+
+\chapter{Mathematics}
+\section{Logic}
+Truth Value: An Assertion is an Object which has a truth value, is either true or false, 1 or 0 \\
+Definiton: Negation:
+Is A an assertion, so is <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \neg A 
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>&#x000AC;</mo>
+	<mi>A</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> it's negation. If A is true, then <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \neg A
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>&#x000AC;</mo>
+	<mi>A</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> is false. \\
+Definition 1.3 (Conjunction, Disjunction):\\
+Are A and B assertions, then the Conjunction of A and B is <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} A \wedge B \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x02227;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} A \wedge B \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x02227;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> is true if A and B are true.
+Are A and B assertions, then the Disjunction of A and B: 
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ A \vee B
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x02228;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> is true if either A is true or B is true.\\
+Definition: Quantoren:\\
+1. Existence: we write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \exists
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>&#x02203;</mo>
+</mrow>
+</math>
+<!-- end MathToWeb --> to say that there is something that has some propertie(s).
+2. We write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \exits \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+\exits
+</mrow>
+</math>
+<!-- end MathToWeb --> to say there exists just one thing with that property.
+3. We write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \forall
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>&#x02200;</mo>
+</mrow>
+</math>
+<!-- end MathToWeb --> to say that for all objects specified, some proposition is true.\\
+Definition:\\
+Are A and B assertions, we write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} A \Rightarrow B \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x021D2;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> for "A implies B" and call this implication. The only case where this statement is false is if A is true and B is false.
+If <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} A \Rightarrow B \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x021D2;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> and <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} B \Rightarrow A \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>B</mi>
+	<mo>&#x021D2;</mo>
+	<mi>A</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> are true, we write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} A \Leftrightarrow B \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x021D4;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> and call this equivalence.\\
+Definition: other Notation:\\
+We write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ x:=y
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	<mo>:</mo>
+	<mo>=</mo>
+	<mi>y</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> to say that x is defined in terms of y.
+We write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ :
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>:</mo>
+</mrow>
+</math>
+<!-- end MathToWeb --> to say that the statement to the right of this sign holds true for the things on the left of this sign.
+We also write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ a | b 
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>a</mi>
+	<mo>|</mo>
+	<mi>b</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> to say that a divides b without remainder.\\
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c}
+    A & B & A and B & A or B & A => B & A<=>B \\
+    1 & 1 &     1   &    1   &  1     &     1\\
+    1 & 0 &     0   &    1   &  0     &     0\\
+    0 & 1 &     0   &    1   &  1     &     0\\
+    0 & 0 &     0   &    0   &  1     &     1
+\end{tabular}
+\end{center}
+\section{Sets}
+Definition: Set: 
+A Set is a collection of distinct Objects to a whole. These Objects can have any form. If a Set has no elements, we call it the empty set
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \emptyset
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>&#x02205;</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->.
+If x is Element of the Set A, we write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ x \in A
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	<mo>&#x02208;</mo>
+	<mi>A</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->, if x is not Element of Set A, <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ x \not\in A
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	\not<mo>&#x02208;</mo>
+	<mi>A</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+Definition: Subset\\
+A is called a subset of B, written <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ A \subset B
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x02282;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> if and only if <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ x \in A \Rightarrow x \in B
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	<mo>&#x02208;</mo>
+	<mi>A</mi>
+	<mo>&#x021D2;</mo>
+	<mi>x</mi>
+	<mo>&#x02208;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->. 
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ A \not\subset B
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	\not<mo>&#x02282;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> is defined as : <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \exists x \in A : x \not\in B
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>&#x02203;</mo>
+	<mi>x</mi>
+	<mo>&#x02208;</mo>
+	<mi>A</mi>
+	<mo>:</mo>
+	<mi>x</mi>
+	\not<mo>&#x02208;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->.\\
+Definition: the Cut of two Sets A, B is defined as:
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ A \cap B := \lbrace x : x\in A \wedge x \in B \rbrace
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x02229;</mo>
+	<mi>B</mi>
+	<mo>:</mo>
+	<mo>=</mo>
+	<mrow>
+		<mo form="prefix">&#x0007B;</mo>
+		<mi>x</mi>
+		<mo>:</mo>
+		<mi>x</mi>
+		<mo>&#x02208;</mo>
+		<mi>A</mi>
+		<mo>&#x02227;</mo>
+		<mi>x</mi>
+		<mo>&#x02208;</mo>
+		<mi>B</mi>
+		<mo form="postfix">&#x0007D;</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+Two Sets are called disjoint, if <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ A \cap B = \emptyset
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x02229;</mo>
+	<mi>B</mi>
+	<mo>=</mo>
+	<mo>&#x02205;</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+Definition: Joining of two Sets:\\
+The joining of two sets A,B is defined as <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+ A \cup B := \lbrace x : x \in A \vee x \in B \rbrace
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>A</mi>
+			<mo>&#x0222A;</mo>
+			<mi>B</mi>
+			<mo>:</mo>
+			<mo>=</mo>
+			<mrow>
+				<mo form="prefix">&#x0007B;</mo>
+				<mi>x</mi>
+				<mo>:</mo>
+				<mi>x</mi>
+				<mo>&#x02208;</mo>
+				<mi>A</mi>
+				<mo>&#x02228;</mo>
+				<mi>x</mi>
+				<mo>&#x02208;</mo>
+				<mi>B</mi>
+				<mo form="postfix">&#x0007D;</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+Disjunct joining means joining two or more sets where they have no elements in common. TODO: expand on this like in the book\\
+Definition: Difference of two sets:\\
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+ A \backslash B := \lbrace x : x \in A \wedge x \not\in B \rbrace
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>A</mi>
+			<mo>&#x0005C;</mo>
+			<mi>B</mi>
+			<mo>:</mo>
+			<mo>=</mo>
+			<mrow>
+				<mo form="prefix">&#x0007B;</mo>
+				<mi>x</mi>
+				<mo>:</mo>
+				<mi>x</mi>
+				<mo>&#x02208;</mo>
+				<mi>A</mi>
+				<mo>&#x02227;</mo>
+				<mi>x</mi>
+				\not<mo>&#x02208;</mo>
+				<mi>B</mi>
+				<mo form="postfix">&#x0007D;</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(2)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->\\
+Definition: Symmetric Difference:\\
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+ A \bigtriangleup B := (A \backslash B) \cup (B \backslash A)
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>A</mi>
+			<mo>&#x025B3;</mo>
+			<mi>B</mi>
+			<mo>:</mo>
+			<mo>=</mo>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>A</mi>
+				<mo>&#x0005C;</mo>
+				<mi>B</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+			<mo>&#x0222A;</mo>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>B</mi>
+				<mo>&#x0005C;</mo>
+				<mi>A</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(3)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->\\
+Definition: Potenzmenge:\\
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+P(M) := \lbrace A : A \subset P \rbrace
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>P</mi>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>M</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+			<mo>:</mo>
+			<mo>=</mo>
+			<mrow>
+				<mo form="prefix">&#x0007B;</mo>
+				<mi>A</mi>
+				<mo>:</mo>
+				<mi>A</mi>
+				<mo>&#x02282;</mo>
+				<mi>P</mi>
+				<mo form="postfix">&#x0007D;</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(4)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+The Potenzmenge is the set of all subsets of M.\\
+Definition: Cartesian Product:\\
+The cartesian Product of the sets <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}A_{1}, ... , A_{n}
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>A</mi>
+		<mn>1</mn>
+	</msub>
+	<mo>,</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>,</mo>
+	<msub>
+		<mi>A</mi>
+		<mi>n</mi>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb --> is defined as
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+ A_{1} \times ... \times A_{n} := \lbrace (a_{1}, ... ,a_{n}) : a_{i} \in A_{i} : \forall i = \lbrace 1,...,n\rbrace \rbrace
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<msub>
+				<mi>A</mi>
+				<mn>1</mn>
+			</msub>
+			<mo>&#x000D7;</mo>
+			<mo>.</mo>
+			<mo>.</mo>
+			<mo>.</mo>
+			<mo>&#x000D7;</mo>
+			<msub>
+				<mi>A</mi>
+				<mi>n</mi>
+			</msub>
+			<mo>:</mo>
+			<mo>=</mo>
+			<mrow>
+				<mo form="prefix">&#x0007B;</mo>
+				<mrow>
+					<mo form="prefix">(</mo>
+					<msub>
+						<mi>a</mi>
+						<mn>1</mn>
+					</msub>
+					<mo>,</mo>
+					<mo>.</mo>
+					<mo>.</mo>
+					<mo>.</mo>
+					<mo>,</mo>
+					<msub>
+						<mi>a</mi>
+						<mi>n</mi>
+					</msub>
+					<mo form="postfix">)</mo>
+				</mrow>
+				<mo>:</mo>
+				<msub>
+					<mi>a</mi>
+					<mi>i</mi>
+				</msub>
+				<mo>&#x02208;</mo>
+				<msub>
+					<mi>A</mi>
+					<mi>i</mi>
+				</msub>
+				<mo>:</mo>
+				<mo>&#x02200;</mo>
+				<mi>i</mi>
+				<mo>=</mo>
+				<mo form="prefix">&#x0007B;</mo>
+				<mn>1</mn>
+				<mo>,</mo>
+				<mo>.</mo>
+				<mo>.</mo>
+				<mo>.</mo>
+				<mo>,</mo>
+				<mi>n</mi>
+				<mo form="postfix">&#x0007D;</mo>
+				<mo form="postfix">&#x0007D;</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(5)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+Are <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}A_{1} = ... = A_{n}\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>A</mi>
+		<mn>1</mn>
+	</msub>
+	<mo>=</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>=</mo>
+	<msub>
+		<mi>A</mi>
+		<mi>n</mi>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+we can also write <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ A^{n}\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msup>
+		<mi>A</mi>
+		<mi>n</mi>
+	</msup>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+ Definition: obere und untere Schranke:\\
+TODO: add the content from here in the book
+\section{Function, Relations}
+Definition: Function:\\
+Are A, B sets then a function f from A to B is a function that 
+maps every <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ a \in A
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>a</mi>
+	<mo>&#x02208;</mo>
+	<mi>A</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> to some
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ b \in B
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>b</mi>
+	<mo>&#x02208;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->.
+We write for a function from A to B:
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+    f: A \rightarrow B, a \mapsto f(a)
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>f</mi>
+			<mo>:</mo>
+			<mi>A</mi>
+			<mo>&#x02192;</mo>
+			<mi>B</mi>
+			<mo>,</mo>
+			<mi>a</mi>
+			<mo>&#x021A6;</mo>
+			<mi>f</mi>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>a</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+Definition: Bild, Urbild:\\
+TODO: continue here
+\section{Numbers}
+\section{Proof Techniques}
+Definition: direct Proof:\\
+Man geht von der (gegebenen, wahren) Vorraussetzung (Aussage) A aus und zeigt durch Umformungen oder Folgern, dass aus A die Aussage B folgt. Mathematisch ausgedrueckt untersucht man <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ A \Rightarrow B
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>A</mi>
+	<mo>&#x021D2;</mo>
+	<mi>B</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+Definition: indirect Proof:\\
+Der indirekte Beweis ist einer der elegantesten und auch einfachsten Beweise. Man geht dabei so vor: \\
+1. Man geht von Gegenteil der Behauptung aus (dies ist die Annahme).\\
+2. Man versucht diese Annahme zu einem Widerspruch zu fuehren.\\
+3. Wenn der Beweisgang legitim und logisch war, muss die Annahme falsch gewesen sein und damit die Behauptung wahr.\\
+Definition: Induction:\\
+Wir moechten uns der vollstaendingen Induktion nun mithilfe der sogenannten Peano-Axiome annaehern, die folgendes besagen:\\
+TODO: continue here
+\section{Groups, Rings, Fields}
+Gruppen, Ringe und Koerper. \\
+Definition Gruppe:\\
+Eine Gruppe <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ (G,
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo form="prefix">(</mo>
+	<mi>G</mi>
+	<mo>,</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+
+\section{Linear Algebra}
+\subsection{Vector Spaces}
+\subsection{Sub Vector Spaces}
+\section{Analysis}
+Sei M eine Menge. Eine Metrik ist eine abbildung <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ d: M x M \rightarrow R
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>d</mi>
+	<mo>:</mo>
+	<mi>M</mi>
+	<mi>x</mi>
+	<mi>M</mi>
+	<mo>&#x02192;</mo>
+	<mi>R</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> auf M x M fuer die folgende 3 Axiome definiert sind: 
+Positiv definiertheit, <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \forall x,y \in M gilt d(x,y) >=0\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>&#x02200;</mo>
+	<mi>x</mi>
+	<mo>,</mo>
+	<mi>y</mi>
+	<mo>&#x02208;</mo>
+	<mi>M</mi>
+	<mi>g</mi>
+	<mi>i</mi>
+	<mi>l</mi>
+	<mi>t</mi>
+	<mi>d</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>x</mi>
+		<mo>,</mo>
+		<mi>y</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>&#x0003E;</mo>
+	<mo>=</mo>
+	<mn>0</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->  Gleichheit gilt wenn <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} x=y
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	<mo>=</mo>
+	<mi>y</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+und Symmetrie, Es gilt d(x,y) = d(y,x) fuer alle x,y in M.
+und Dreiecksungleichung. Es gilt:
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ d(x,y) <= d(x,z) + d(z,y) \forall x,y,z \in M
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>d</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>x</mi>
+		<mo>,</mo>
+		<mi>y</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>&#x0003C;</mo>
+	<mo>=</mo>
+	<mi>d</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>x</mi>
+		<mo>,</mo>
+		<mi>z</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>+</mo>
+	<mi>d</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>z</mi>
+		<mo>,</mo>
+		<mi>y</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>&#x02200;</mo>
+	<mi>x</mi>
+	<mo>,</mo>
+	<mi>y</mi>
+	<mo>,</mo>
+	<mi>z</mi>
+	<mo>&#x02208;</mo>
+	<mi>M</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Das Paar (M,d) nennt man einen metrischen Raum.
+
+Definition offene Kugel, abgeschlossene Kugel
+Seien (M,d) ein metrischer Raum, <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ x_{0} \in M , r>0
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>x</mi>
+		<mn>0</mn>
+	</msub>
+	<mo>&#x02208;</mo>
+	<mi>M</mi>
+	<mo>,</mo>
+	<mi>r</mi>
+	<mo>&#x0003E;</mo>
+	<mn>0</mn>
+</mrow>
+</math>
+<!-- end MathToWeb --> Die Menge <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ U(x_{0},r):={x\in M : d(x,x_{0})<r}
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>U</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<msub>
+			<mi>x</mi>
+			<mn>0</mn>
+		</msub>
+		<mo>,</mo>
+		<mi>r</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>:</mo>
+	<mo>=</mo>
+	<mrow>
+		<mi>x</mi>
+		<mo>&#x02208;</mo>
+		<mi>M</mi>
+		<mo>:</mo>
+		<mi>d</mi>
+		<mrow>
+			<mo form="prefix">(</mo>
+			<mi>x</mi>
+			<mo>,</mo>
+			<msub>
+				<mi>x</mi>
+				<mn>0</mn>
+			</msub>
+			<mo form="postfix">)</mo>
+		</mrow>
+		<mo>&#x0003C;</mo>
+		<mi>r</mi>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> bezeichnen als d-offene Kugel.
+Die Menge 
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ B(x_{0},r):={x\in M : d(x,x_{0})\leq r}
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>B</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<msub>
+			<mi>x</mi>
+			<mn>0</mn>
+		</msub>
+		<mo>,</mo>
+		<mi>r</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>:</mo>
+	<mo>=</mo>
+	<mrow>
+		<mi>x</mi>
+		<mo>&#x02208;</mo>
+		<mi>M</mi>
+		<mo>:</mo>
+		<mi>d</mi>
+		<mrow>
+			<mo form="prefix">(</mo>
+			<mi>x</mi>
+			<mo>,</mo>
+			<msub>
+				<mi>x</mi>
+				<mn>0</mn>
+			</msub>
+			<mo form="postfix">)</mo>
+		</mrow>
+		<mo>&#x02264;</mo>
+		<mi>r</mi>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> bezeichnen also d-abgeschlossene Kugel.
+
+Definition Umgebung
+Sei (M,d) ein metrischer Raum. Eine Teilmenge <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ U \subset M 
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>U</mi>
+	<mo>&#x02282;</mo>
+	<mi>M</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> heisst Umgebung eines Punktes <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ x \in M 
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	<mo>&#x02208;</mo>
+	<mi>M</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> falls <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \epsilon > 0 ex. sodass U(x,\epsilon) \subset U
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003F5;</mi>
+	<mo>&#x0003E;</mo>
+	<mn>0e</mn>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mi>s</mi>
+	<mi>o</mi>
+	<mo>&#x02146;</mo>
+	<mi>a</mi>
+	<mi>s</mi>
+	<mi>s</mi>
+	<mi>U</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>x</mi>
+		<mo>,</mo>
+		<mi>&#x003F5;</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>&#x02282;</mo>
+	<mi>U</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Insbesondere ist <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ U(x,\epsilon) \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>U</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>x</mi>
+		<mo>,</mo>
+		<mi>&#x003F5;</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> 
+ selbst eine Umgebung von x.
+ Man nennt <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+  U(x,\epsilon) die \epsilon Umgebung von x.
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>U</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>x</mi>
+		<mo>,</mo>
+		<mi>&#x003F5;</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>&#x02146;</mo>
+	<mi>i</mi>
+	<mi>e</mi>
+	<mi>&#x003F5;</mi>
+	<mi>U</mi>
+	<mi>m</mi>
+	<mi>g</mi>
+	<mi>e</mi>
+	<mi>b</mi>
+	<mi>u</mi>
+	<mi>n</mi>
+	<mi>g</mi>
+	<mi>v</mi>
+	<mi>o</mi>
+	<mi>n</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+\chapter{Programming}
+\section{Linux and Shell}
+There are shells. default is maybe bash.
+\begin{verbatim}
+    pwd                 //prints current directory
+    touch test.txt      //makes a new file called test.txt in the current directory
+    cat test.txt        //prints the contents of test.txt to the terminal
+    mkdir testdirectory //makes a new folder called testdirectory
+    cd testdirectory    //moves into the new folder
+    cd ..               //moves up one directory
+    ls                  //lists all the files in the folder, there are none because the folder was just created
+    echo "hello"        u
+    echo "hello" | wc   // a | pipe symbol pipes the output of one command to the input of another
+    file test.txt       //display information about the file
+\end{verbatim}
+\section{vim (neovim)}
+When in normal mode:
+\begin{verbatim}
+    j,k,h,l,3j          //these are the movement keys
+    :                   //enter command mode
+    i                   //enter insert mode 
+    v                   //enter visual mode (selection)
+    w,4w                //jump to beginning of next word, jump 4 words
+    b                   //jump to beginning of next word
+    dd, 3dd             //delete line, delete 3 lines
+\end{verbatim}  
+When in command mode:
+\begin{verbatim}
+    :w              //write to the file from the buffer
+    :wq             //write to the file and quit vim
+    :q              //quit vim
+    :r test.txt     //reads the contents of test.txt and places them in the current file
+\end{verbatim}
+\section{Git and Github}
+\begin{verbatim}
+    //clones a repository
+    git clone https://github.com/pointbazaar/simpledraw.git 
+    git commit -a               // commits all changes
+    git add .                   // adds all the files to git tracking
+    git commit -am "fix"        // commits all changes and adds the commit message (preferred)
+    git push                    // pushes changes upstream
+    git pull                    // pulls the most recent changes to the local repository
+\end{verbatim}
+If there are conflicts that can't be auto-merged, you can use git pull and then edit the affected files,
+then commit then push.  
+\section{C}
+\subsection{Data Types}
+int, float, double
+\subsection{Pointers}
+\subsection{Functions}
+
+\section{Haskell}
+from the book "Haskell Programming from first Principles"
+\subsection{All you need is lambda}
+Haskell is a pure functional programming language.
+A function is a relation between two sets, a set of inputs and a set of outputs.
+The set of inputs is the domain and the set of outputs the codomain.
+A set is a collection of unique values. Example:
+\begin{verbatim}
+f: 1 -> A
+f: 2 -> B
+f: 3 -> C
+\end{verbatim}
+It is important that the function always return the same value given the same input.
+Functional programming is a programming paradigm that relies on definition and application of functions as the basis for programs.
+Contrast this with the sequential instructions in imperative programming languages. Functions in haskell are modeled on mathematical functions.
+The essence of functional programming is that programs are a combination of expressions to be evaluated. Expressions are a superset that include concrete values, variables, functions. Functions have a more specific definition: They are expressions that are applied to an argument,
+and once applied, can be reduced or evaluated. In Functional programming, Functions are first-class citizens, so they can be used as arguments and values to other functions.
+Functional programming is very useful for parallel and concurrent processing and working with large codebases.
+Modeling functions after mathematical functions makes it easy to refactor them, reason about them, compose them, and evaluate them in parallel.
+\\
+Functions, also called lambdas consist of two parts, the head and the body. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \lambda  x . x \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> \\
+This is a lambda abstraction of x. Note that this is the identity function <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} a \phi = a \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>a</mi>
+	<mi>&#x003D5;</mi>
+	<mo>=</mo>
+	<mi>a</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+One difference is that this is an anonymous function, it has no name. \\
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} (\lambda  x.) x \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003BB;</mi>
+		<mi>x</mi>
+		<mo>.</mo>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mi>x</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> The Head of the lambda. It includes a single variable that is bound when the function is applied.\\
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \lambda  x. (x) \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>x</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> The Body of the lambda. This is the expression the lambda returns when called \\
+\textbf{Beta Reduction}
+When you apply the function, you substitute the input expression for all instances of bound variables within the abstraction, a process known as beta-reduction. At the same time you eliminate the head that binds the variables. When there are no more heads, or lambdas left, you're done. A computation therefore consists of an initial lambda expression(or two, if you want to seperate the function and its input) plus a finite sequence of lambda terms, each deduced from the preceding term by one application of beta-reduction.\\
+The function <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \lambda x.xy
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+	<mi>y</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+might be applied to an argument, z like this: <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ (\lambda x.xy)z
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003BB;</mi>
+		<mi>x</mi>
+		<mo>.</mo>
+		<mi>x</mi>
+		<mi>y</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mi>z</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+We would bind the argument x to z and replace any occurrence of the bound variable x in the body of the function with z to see the result. We'd be left with zy which is "z applied to y" . This means that z is a function expecting an argument, but we can't apply (or reduce) it until we know the terms of z. This can't be reduced any further because we don't know (or need to know) the terms of z or y and nothing remains to be applied.\\
+1. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \lambda x.xy \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+	<mi>y</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+We're going to show you more steps than most lambda literature will bother with, so you know why everything happens. The above is the lambda we're going to apply to an argument in the next step.\\
+2. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}(\lambda x.xy)z \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003BB;</mi>
+		<mi>x</mi>
+		<mo>.</mo>
+		<mi>x</mi>
+		<mi>y</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mi>z</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+We apply the lamda to the argument z. The argument x is bound to z. There are no more arguments to apply in the head so the enclosing lambda has been applied out of existence.
+\\
+3. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}(\lambda [x:=z].xy)z \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003BB;</mi>
+		<mrow>
+			<mo form="prefix">[</mo>
+			<mi>x</mi>
+			<mo>:</mo>
+			<mo>=</mo>
+			<mi>z</mi>
+			<mo form="postfix">]</mo>
+		</mrow>
+		<mo>.</mo>
+		<mi>x</mi>
+		<mi>y</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mi>z</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Now we can replace all occurrences of x with z. The notation {x:=z} indicates that x is bound to z, so z will be substituted for all occurrences of x in the expression.
+\\
+4. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}zy \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>z</mi>
+	<mi>y</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Drop the head of the lambda since it's been applied. We can reduce this no further.
+\\
+Let's use an example that mixes some arithmetic into our lambda calculus.
+We use parentheses here to clarify that the body expression is x+1  . In other words, we are not applying the function to the 1.
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ (\lambda x.x+1)
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo form="prefix">(</mo>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+	<mo>+</mo>
+	<mn>1</mn>
+	<mo form="postfix">)</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+This reduction is really all we can do in the lambda calculus. We keep following the rules of application, substituting arguments in for the bound variables until there are no more heads left to evaluate or no more arguments to apply them to.\\
+\textbf{Bound and free variables}
+We have seen how the head of a lambda abstraction binds variables. The purpose of the head of the function is to tell us which variables to replace when we apply our function, that is, to bind the variables.
+A bound variable must has the same value throughout the expression. But sometimes the body expression has variables that are not named in the head.
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+    \lambda x.xy
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>&#x003BB;</mi>
+			<mi>x</mi>
+			<mo>.</mo>
+			<mi>x</mi>
+			<mi>y</mi>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+The x here is a bound variable because it shows up in the head of the function aswell as the body. But the y is not mentioned in the head of this function, so it is a free variable. When we apply this function to an argument, nothing can be done with the y. It remains unreducible.
+We can bind multiple variables in a function:
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+    \lambda xy.xy
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>&#x003BB;</mi>
+			<mi>x</mi>
+			<mi>y</mi>
+			<mo>.</mo>
+			<mi>x</mi>
+			<mi>y</mi>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(2)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+However, it is important to note that we have now actually created a function with multiple, nested heads. When we go through the beta-reduction, we eliminate one head at a time, starting frmo the outermost, or leftmost head. 
+More on this in just a moment. We'll demonstrate how this is the case when we talk about multiple arguments and currying.\\
+\textbf{Alpha Equivalence}
+Ordinarily when people express the identity function in lambda calculus, you'll see something like <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \lambda x.x \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> 
+There is a form of equivalence between lambda terms called alpha equivalence. This means that
+
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation} \lambda x.x = \lambda y.y  = \lambda d.d \end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>&#x003BB;</mi>
+			<mi>x</mi>
+			<mo>.</mo>
+			<mi>x</mi>
+			<mo>=</mo>
+			<mi>&#x003BB;</mi>
+			<mi>y</mi>
+			<mo>.</mo>
+			<mi>y</mi>
+			<mo>=</mo>
+			<mi>&#x003BB;</mi>
+			<mi>d</mi>
+			<mo>.</mo>
+			<mi>d</mi>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(3)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+
+all mean the some thing. They're all the identity function. Take one argument, kick it back out. This equivalence applies only to bound variables where you know for a fact within the scope of the lambda that they will be the same, even if they have different names. This intuition does not apply for free variables as they are not defined by the enclosing lambda alone.\\
+\textbf{Multiple Arguments}
+Each lambda accepts one argument. Functions that require multiple arguments have multiple, nested heads. When you apply it once and eliminate the first (leftmost) head, the next one is applied and so on. This formulation was originally discovered by Schoenfinkel in the 1920s but was later rediscovered after Haskell Curry and is called currying.
+What we mean by this description is that the following:
+
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \lambda xy.x \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mi>y</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+
+is a convenient short-hand for tow nested lambdas (one for each argument x and y):
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}  \lambda x.(\lambda y.x) \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003BB;</mi>
+		<mi>y</mi>
+		<mo>.</mo>
+		<mi>x</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+
+
+When you apply the first argument, you're binding x, eliminating the outer lambda, and have <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \lambda y.x  \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>y</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> with x being whatever the outer lambda was bound to.
+To try to make this a little more concrete, let's suppose that we apply these lambdas to specific values. First, a simple example with the identity function:
+1. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \lambda x.x \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+2. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} (\lambda x.x) \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo form="prefix">(</mo>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+	<mo form="postfix">)</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+3. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} (\lambda 1.1) \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo form="prefix">(</mo>
+	<mi>&#x003BB;</mi>
+	<mn>1.1</mn>
+	<mo form="postfix">)</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+4. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ 1
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Now with our "multiple" argument lambda:
+1. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \lambda xy.x
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mi>x</mi>
+	<mi>y</mi>
+	<mo>.</mo>
+	<mi>x</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+2. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ (\lambda x.(\lambda y.x)) 1 2
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003BB;</mi>
+		<mi>x</mi>
+		<mo>.</mo>
+		<mo form="prefix">(</mo>
+		<mi>&#x003BB;</mi>
+		<mi>y</mi>
+		<mo>.</mo>
+		<mi>x</mi>
+		<mo form="postfix">)</mo>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mn>12</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+We're goingt to apply these two lambdas, one nested within the other.
+3. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ (\lambda y.1) 2
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003BB;</mi>
+		<mi>y</mi>
+		<mn>.1</mn>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mn>2</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Now we apply the seconds lambda to the second argument. x is bound to 1 now.
+4. <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \lambda 2.1
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003BB;</mi>
+	<mn>2.1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Here we toss the head because the last lambda was applied to 2, but there are no variables in the body expression left to bind it to.
+5.<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ 1
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+The final result, we did nothing with the second argument y because it didnt occur anywhere in the body expression.
+Here applying the outer lambda which handled the argument x to 1 served to bind the variable x to a constant value 1. You'll see most examples working in the lambda calculus refer to abstract variables not bound to particular, concrete values. This is because the additional information is irrelevant. For your purposes, you can see the lambda calculus as being a game with a few simple rules for transforming lambdas, but no specific "meaning". We've just introduced concrete values to make the reduction somewhat easier to see.\\
+Another example, this time one which ends in an irreducible lamda. We're going to use different variables to help make the reduction easier to read, but it's worth emphasizing that the name of the variable (the letter) has no meaning or significance.\\
+\textbf{Evaluation is simplification: } There are multiple "normal forms" in lambda calculus, but here when we refer to normal form we mean beta normal form. Beta normal form is when you cannot beta reduce (apply lambdas to arguments) the terms any further. This corresponds to a "fully evaluated" expression. In programming, we'd call this a "fully executed" program.\\
+How do you refer to the number two? Do you say 2000/1000 each time or do you just say 2? The former, 2000/1000, is not fully evaluated because the division function has been fully applied (two arguments) and there's a simpler form it can be reduced to, the number two.\\
+Similarly, the normal form of the following 600:
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ (10+2)*100/2
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mn>10</mn>
+		<mo>+</mo>
+		<mn>2</mn>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>*</mo>
+	<mn>100</mn>
+	<mo>&#x0002F;</mo>
+	<mn>2</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+We cannot reduce the number 600 any further. There are no more functions that we can beta reduce. Bringing this idea back over to the lambda calculus, the identity function\\
+
+\textbf{Combinators}\\
+\textbf{Divergence}\\
+\textbf{Summary}\\
+\textbf{Exercises}\\
+\textbf{Answers}\\
+\textbf{Definitions}\\
+\textbf{Follow-up resources}\\
+\textbf{Hello Haskell}\\
+\textbf{Strings}\\
+
+
+\subsection{Types}
+\subsection{Typeclasses}
+\subsection{More functional patters}
+\subsection{Recursion}
+\subsection{Lists}
+\subsection{Folding Lists}
+\subsection{Algebraic Datatypes}
+\subsection{Signaling Adversity with maybe and either}
+\subsection{Building Projects in Haskell}
+\subsection{Testing}
+\subsection{Monoid, Semigroup}
+\subsection{Functor}
+\subsection{Applicative}
+\subsection{Monad}
+\subsection{Abstract Structure Applied}
+\subsection{Foldable}
+\subsection{Traversable}
+\subsection{Reader}
+\subsection{State}
+\subsection{Parser Combinators}
+\subsection{Composing Types}
+\subsection{Monad Transformers}
+
+
+
+
+\section{Java}
+.java files are compiled by javac into jvm bytecode in .class files.
+These can be interpreted by the JavaVirtualMachine.\\
+The .java File always has to be the same name as the class. Example:
+\begin{verbatim}
+//Example.java
+public class Example{
+    //...
+}
+\end{verbatim}
+to save space, there will only be the method and no class declared in the examples
+\subsection{Arithmetic, Comparison}
+The \textbf{==} operator checks if primitive data types like ints are equal.
+It checks Objects for reference equality.
+The \textbf{.equals()} function checks 2 Objects for value equality
+\subsection{Operator Reference}
+\begin{center}
+\begin{tabular}{c|c}
+    Operator & How to write \\
+    postfix & expr++ expr-- \\
+    unary & ++expr --expr -expr +expr \\
+    multiplicative & * /  \\
+    additive & + - \\
+    shift & \<< \>> \>>> \\
+    relational & < > <= >= instanceof\\
+    equality & == !=\\
+    bitwise and & \&\\
+    bitwise XOR & |\\
+    logical and & "&&"\\
+    logical or & ||\\
+    ternary & ? : \\
+    assignment & = += -= *= /= \%= \&= ^= <<= >>= >>>= \\
+    
+\end{tabular}
+\end{center}
+\subsection{Data Types}
+There is a difference between primitive Data Types and Class Tyes\\
+Integer <-> int
+Character <-> char
+Double <-> double
+
+\subsubsection{char}
+\begin{verbatim}
+public static void main(String[] args){
+    char a='a';
+    char c='c';
+    System.out.println(c+""+a); //"ca"
+}
+\end{verbatim}
+
+\subsubsection{String}
+\begin{verbatim}
+public static void main(String[] args){
+    String s="";
+    s+="spider";
+    s+="\n";
+    System.out.println(s); //"spider"
+    System.out.println(s.length()); //5
+    System.out.println(s.charAt(0)); //'s'
+    System.out.print("hallo \n");
+}
+\end{verbatim}
+int, 
+Integer, 
+double, 
+Double, 
+long 
+int, 
+\subsubsection{boolean}
+\begin{verbatim}
+public static void main(String[] args){
+    boolean a=true;
+    boolean b=false;
+    if(a){
+        System.out.println(b);
+    }
+}   
+\end{verbatim}
+\subsubsection{Array}
+\begin{verbatim}
+public static void main(String[] args){
+    int[] a= new int[3];
+    a[0]=3;
+    a[1]=2;
+    a[2]=1;
+    Arrays.sort(a); //sorts the int array -> {1,2,3}
+}
+\end{verbatim}
+
+now an example with multidimensional arrays
+\begin{verbatim}
+public static void main(String[] args){
+    int m=3;int n=2;
+    int[][] matrix=new int[m][n];
+    matrix[2][1]=1; //setting the element at the bottom right to 1
+}
+\end{verbatim}
+\subsubsection{ArrayList}
+ArrayList is like an array, but unlimited in size
+\begin{verbatim}
+import java.util.ArrayList;
+public class ArrayListExample{
+    public static void main(String[] args){
+        ArrayList<Integer> numbers=new ArrayList<Integer>();
+        numbers.add(1); //adding item to list
+        System.out.println(numbers.get(0)); //getting the item at index 0 and printing it
+        for(int i=0;i<numbers.size();i++){
+            System.out.println(numbers.get(i)); //printing all the numbers in the ArrayList
+        }
+    }
+}
+\end{verbatim}
+\subsubsection{HashMap}
+\begin{verbatim}
+import java.util.HashMap;
+public class HashMapExample{
+    public static void main(String[] args){
+        HashMap<String, Integer> phonebook= new HashMap();
+        phonebook.put("eric", 4954375737);
+        for(int i=0;i<phonebook.size();i++){
+            System.out.println(numbers.get(i)); //printing all the numbers in the ArrayList
+        }
+    }
+}
+\end{verbatim}
+\subsection{Branching, if, for, while, switch, ternary operator}
+\subsubsection{if}
+\begin{verbatim}
+public static void main(String[] args){
+    boolean rainy=true; boolean sunny=false;
+    if(rainy==true){                    //evaluates to true because rainy equals true
+        System.out.println("it rains"); 
+    }
+    //multiple conditions
+    //logical conjunction, and
+    if(rainy && sunny){
+        System.out.println("rain and shine");
+    }
+    //logical disjuction, or
+    if(rainy || sunny){
+        System.out.println();
+    }
+}
+\end{verbatim}
+\subsubsection{while}
+\begin{verbatim}
+public static void main(String[] args){
+    boolean rainy=true;
+    while(rainy==true){                    //evaluates to true because rainy equals true
+        System.out.println("it rains");    //it will never stop printing "it rains" because the condition is always true
+    }
+}
+\end{verbatim}
+\subsubsection{for}
+\begin{verbatim}
+public static void main(String[] args){
+    for(int i=0;i<10;i++){
+        System.out.println(i);
+    }
+}
+\end{verbatim}
+\subsubsection{switch}
+\begin{verbatim}
+public static void main(String[] args){
+    int n=2;
+    switch(n){
+        case 0:
+            System.out.println(0);
+            break;
+        case 1:
+            break;
+        case 2:
+            System.out.println(2);
+            break;
+        default:
+            break;
+    }
+}
+\end{verbatim}
+\subsubsection{ternary operator "()?():()}
+TODO: add examples
+TODO: add continue, break
+\subsection{Functions}
+\subsubsection{Simple Functions with primitive return type}
+\subsubsection{Functions with Object return type}
+\begin{verbatim}
+class Car{
+    public Car(){}
+    public int year=2000;
+    public int cylinders=3;
+    public String company="Volvo";
+}
+public class ObjectExample{
+    public static void main(String[] args){
+        Car mycar = getnewcar();
+        System.out.println(mycar.company);
+    }
+    public static Car getnewcar(){
+        Car car = new Car();
+        car.year="2017";
+        return car;
+    }
+}
+\end{verbatim}
+\subsubsection{Recursive Functions}
+\begin{verbatim}
+//returns the nth fibonacci number
+public static int fib(int n){
+    //this is what we call the base case. Recursion stops here.
+    if(n==1 || n<1){return 1;}
+    
+    //this is a recursive call. The function calls itself.
+    return fib(n-1)+fib(n-2);
+}
+\end{verbatim}
+\subsubsection{Pure Functions}
+Pure functions are those that have no side effects besides returning their inputs.
+They just return something and don't modify things outside their scope.
+
+\subsection{Objects}
+\subsubsection{Modifiers: public, private, static, virtual}
+private class variables and functions cannot be called from outside the class.
+public class variables and functions can.
+
+static means that you can access a variable or function via the class name.
+so instead of writing object.variable or object.function() you write Object.variable or Object.function
+\subsection{StdIn, StdOut, StdDraw from java book}
+usage:
+\begin{verbatim}
+while(StdIn.isEmpty()){
+    System.out.println(StdIn.getInt());
+}
+\end{verbatim}
+\subsubsection{StdIn}
+\begin{verbatim}
+boolean isEmpty() //returns true, if there are no more values and EOF is encountered
+int readInt()
+double readDouble()
+long readLong()
+boolean readBoolean()
+char readChar()
+String readString()
+String readLine()
+String readAll()
+\end{verbatim}
+\subsubsection{StdDraw}
+\begin{verbatim}
+void line(double x0, double y0, double x1, double y1) 
+void point(double x, double y)
+void text(double x, double y, String s)
+void circle(double x, double y, double r)
+void filledCircle(double x, double y, double r)
+void square(double x, double y, double r)
+void filledSquare(double x, double y, double r)
+void polygon(double[] x, double[] y)
+void filledPolygon(double[] x, double[] y)
+
+void setXscale(double x0, double x1) //set x coordinate range
+void setYscale(double y0, double y1) //set y coordinate range
+void setPenRadius(double r) 
+void setPenColor(Color c)
+void setFont(Font f)
+void setCanvasSize(int w, int h) //set window size
+void clear(Color c)  //clears the canvas
+void show(int dt)  //show the canvas, wait dt milliseconds
+void save(String filename) //save canvas picture into .png or .jpg
+\end{verbatim}
+\subsection{The Standard Library useful methods reference}
+I only included the methods and classes i thought were most useful\\
+These methods are battle tested and should work reliably. Simple and primitive data structures are 
+better if there is a way to use them. Writing your own data types should be a last resort.
+java.net,
+java.util,
+java.util.ArrayList,
+java.util.Collections
+
+\subsubsection{java.lang.String}
+\begin{verbatim}
+.indexOf(String s)              //returns int\\
+.lastIndexOf(String s)          //returns int\\
+.split(String regex)            //returns String[]\\
+.substring(int begin,int end)   //returns String\\
+.toCharArray()                  //returns char[]\\
+.toLowerCase()                                  \\
+.toUpperCase()                                  \\
+.trim()                     //leading and trailing whitespace removed\\
+.length()           \\
+.charAt(int index)\\
+.contains(String match)\\
+.equals()
+\end{verbatim}
+\subsubsection{java.lang.StringBuilder}
+\begin{verbatim}
+StringBuilder(String str) //makes a new String builder
+\end{verbatim}
+\subsubsection{java.lang.StringBuffer}
+\begin{verbatim}
+StringBuffer(String str)\\
+.reverse()
+\end{verbatim}
+\subsubsection{java.util.Arrays}
+\begin{verbatim}
+Arrays.asList(T... a) //argument: an array, return type: a list of the specified array\\
+Arrays.sort(T[] arr)   //argument: an array, return type: none //it changes the array \\
+Arrays.toString() //returns a string representing the contents of the array\\
+Arrays.binarySearch(T... a, T key) //returns the index of the key if found or -1 if not found\\
+Arrays.copyOfRange(int from,int to)  \\
+Arrays.deepEquals(T[] a,T[] b) \\
+Arrays.fill(T[] arr, T value) \\
+\end{verbatim}
+\subsubsection{java.util.LinkedList}
+\begin{verbatim}
+new LinkedList();
+.add(E e);
+.addFirst(E e);
+.addLast(E e);
+.clear();
+.contains(Object o);
+.element();             //retrieves but does not remove the head
+.get(int index);
+.getFirst();
+.getLast();
+.indexOf(Object o);
+.lastIndexOf(Object o);
+.pop();
+.push(E e);
+.size();
+\end{verbatim}
+\subsubsection{java.util.Stack}
+
+
+new Stack();
+.empty();       //tests if stack is empty
+.peek();
+.pop();
+.push(Object o);
+.search(Object o); //returns the 1 based position of the item on the stack
+
+
+
+
+\subsubsection{java.util.HashMap}
+//these methods are defined on objects of type HashMap. \\
+.clear() //removes all mappings\\
+.containsKey(Object key) //returns true if the key is in the map\\\
+.get(Object key) //returns the value to which the key is mapped\\
+.put(Object key, Object value) //makes a new entry for the key,value pair\\
+.remove(Object key) //removes the key and its value\\
+.size() 
+\subsection{LibGDX Game Development}
+\section{Javascript}
+\subsection{Data Types}
+\begin{verbatim}
+var a=1;
+var s="i'm a string";
+var arr=[1,2,3,4];
+var makenumber = function(a,b){
+    return a*b;
+}
+\end{verbatim}
+
+\subsection{Functions}
+\subsubsection{functions that return values}
+\begin{verbatim}
+var multiply=function(a,b){
+    return a*b;
+}
+\end{verbatim}
+\subsubsection{functions that return objects}
+\begin{verbatim}
+var getphonebook(name,number){
+    var pb = new Object();
+    pb.name=number;
+    return pb;
+}
+\end{verbatim}
+\subsubsection{functions that return functions (functional programming)}
+\begin{verbatim}
+//here we return a function that can determine if a is less than b
+var getcomparator=function(){
+    var comp=function(a,b){
+        return a<b;
+    }
+    return comp;
+}
+\end{verbatim}
+\subsubsection{the great functions and how to use them}
+\begin{verbatim}
+var arr=[1,2,3];
+arr.map(function(x){
+    return x+1;
+});
+\end{verbatim}
+\section{HTML5}
+How to make webpage.
+Basic setup:
+\begin{verbatim}
+<html>
+    <head>
+    </head>
+
+    <body>
+    </body>
+</html>
+\end{verbatim}
+\section{CSS3}
+How to style webpage
+\begin{verbatim}
+.box{
+    padding-top:5cm;
+}
+a {
+    background-color:red;
+}
+#free {
+    color: red;
+}
+\end{verbatim}
+
+\section{Javascript Canvas API}
+How to use the canvas API. This is from the "HTML5 Canvas Book by Steve Fulton and Jeff Fulton"
+\subsection{Intro to HTML5 Canvas}
+The basic setup:
+\begin{verbatim}
+//The index.html
+<html>
+    <head> <script src="canvasapp.js"></script>
+    </head>
+    <body> <canvas id="canvasone" width="500" height="300">
+    </body>
+</html>
+//the canvasapp.js
+window.addEventListener("load",canvasapp,false);
+
+function canvasapp(){
+    var cnvs=document.getElementById("canvasone");
+    var ctx=cnvs.getContext("2d");
+    ctx.fillStyle="#000000";
+    ctx.fillRect(0,0,500,300);
+    ctx.fillText("Hello World!",195,80);
+}
+\end{verbatim}
+\subsection{Drawing on the Canvas}
+\subsection{The HTML5 Canvas Text API}
+\subsection{Images on the Canvas}
+\subsection{Math,Physics,Animation}
+\subsubsection{Moving in a straight line}
+Listing  5.4 Ball Bounce
+(js code)
+\begin{verbatim}
+window.addEventListener("load",canvasApp,false);
+function canvasApp(){
+    function drawScreen(){
+        context.fillStyle="#EEEEEE";
+        context.fillRect(0,0,theCanvas.width,theCanvas.height);
+        context.strokeStyle="#000000";
+        context.strokeRect(1,1,theCanvas.width-2,theCanvas.height-2); //Box
+        ball.x+=xunits;
+        ball.y+=yunits;
+        context.fillStyle="#000000";
+        context.beginPath();
+        context.arc(ball.x,ball.y,15,0,Math.PI*2,true);
+        context.closePath();
+        context.fill();
+        if(ball.x > theCanvas.width || ball.x<0){
+            angle=180-angle;
+            updateBall();
+        }else if(ball.y> theCanvas.height || ball.x < 0){
+            angle=360-angle;
+            updateBall();
+        }
+    }
+    function updateBall(){
+        radians=angle*Math.PI/180;
+        xunits=Math.cos(radians)*speed;
+        yunits=Math.sin(radians)*speed;
+    }
+    
+    var speed=5;
+    var p1={x:p1.x, y:p1.y};
+    var angle =35;
+    var radians=0;
+    var xunits=0;
+    var yunits=0;
+    var ball={x:p1.x, y:p1.y};
+    updateBall();
+    
+    theCanvas=document.getElementById("canvasone");
+    context=theCanvas.getContext("2d");
+    
+    function gameLoop(){
+        window.setTimeout(gameLoop,20);
+        drawScreen();
+    }
+    gameLoop();
+}
+\end{verbatim}
+\subsubsection{Bouncing off walls}
+\subsubsection{Curve and Circular Movement}
+\subsubsection{Simple Gravity, Elasticity, and Friction}
+\subsubsection{Easing}
+\subsubsection{Box2D and the Canvas}
+\subsubsection{Interactivity with Box2D}
+\subsection{Mixing HTML5 Video and Canvas}
+\subsection{Working with Audio}
+\subsection{Canvas Games: Part 1}
+\subsection{Canvas Games: Part 2}
+
+
+
+\chapter{LateX}
+\section{basic document}
+\begin{verbatim}
+\documentclass[a4paper,11pt,openany]{book}
+\usepackage[margin=1.5cm,padding=0.1cm]{geometry}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\begin{document}
+
+\tableofcontents
+\end{document}
+\end{verbatim}
+The begin and end tags are very common. The documentclass tells latex what type of content should be rendered.
+The openany tag saves space by not creating blank pages. The geometry package allows for smaller borders and more content.
+
+\section{Mathematikmodus}
+Im Mathematikmodus stehen dem Anwender viele zusaetzliche Strukturen und Zeichen zur Verfuegung. Allerdings ist dieser Modus fuer den Textsatz ungeeignet, da Leerzeichen ignoriert und Abstaende nach ganz anderen Regeln (wie sie in mathematischen Formeln gelten) gesetzt werden.
+\subsection{Varianten}
+Tex verfuegt (vereinfacht gesagt) ueber zwei Varianten des Mathematikmodus. Die eine wie hier <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \downarrow
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>&#x02193;</mo>
+</mrow>
+</math>
+<!-- end MathToWeb --> wird zum Satz innerhalb einer Zeile, also in einem Absatz verwendet. Die zweite Form setzt das Material als "abgesetzte Formel", also einen eigenen Absatz:
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+    e=mc^{2} \leftarrow wie hier \rightarrow c=\sqrt{\frac{e}{m}}
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>e</mi>
+			<mo>=</mo>
+			<mi>m</mi>
+			<msup>
+				<mi>c</mi>
+				<mn>2</mn>
+			</msup>
+			<mo>&#x02190;</mo>
+			<mi>w</mi>
+			<mi>i</mi>
+			<mi>e</mi>
+			<mi>h</mi>
+			<mi>i</mi>
+			<mi>e</mi>
+			<mi>r</mi>
+			<mo>&#x02192;</mo>
+			<mi>c</mi>
+			<mo>=</mo>
+			<msqrt>
+				<mrow>
+					<mfrac linethickness="1">
+						<mi>e</mi>
+						<mi>m</mi>
+					</mfrac>
+				</mrow>
+			</msqrt>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+Obwohl beide Varianten im Prinzip genau die gleichen Strukturen unterstuetzen, gibt es doch eine Reihe von Unterschieden. So werden etwa Grenzen an Symbolen unterschiedlich dargestellt, Abstaende und Schriftgroessen der Formelelemente variieren, usw.
+Diese Moeglichkeiten gibt es, Formeln in Absaetzen zu erzeugen: $ beginnt und beendet eine Textformel, besser ist es aber, dies mit <!-- begin MathToWeb -->
+<!-- (your LaTeX) \( bzw \) -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>b</mi>
+	<mi>z</mi>
+	<mi>w</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> zu tun. Auch eine Umgebungsform gibt es dafuer: {math}.
+Analoge Moeglichkeiten gibt es auch fuer abgesetzte Formeln: <!-- begin MathToWeb -->
+<!-- (your LaTeX) $$ sollte nicht verwendet werden $$ -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+</mrow>
+</math>
+<mi>s</mi><mi>o</mi><mi>l</mi><mi>l</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>i</mi><mi>c</mi><mi>h</mi><mi>t</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>w</mi><mi>e</mi><mi>n</mi><mo>&#x02146;</mo><mi>e</mi><mi>t</mi><mi>w</mi><mi>e</mi><mi>r</mi><mo>&#x02146;</mo><mi>e</mi><mi>n</mi>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->, weil diese die vertikalen Abstaende in LaTex Dokumenten verzerrt. Stattdessen wird <!-- begin MathToWeb -->
+<!-- (your LaTeX) \[ und \] -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation-square" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>u</mi>
+			<mi>n</mi>
+			<mi>d</mi>
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb --> empfohlen, die Umgebungsform heisst hier {displaymath}. Fuer spezielle Varianten abgesetzter Formeln gibt es viele weitere Umbegbungen. Die wichtigsten sind:
+{equation}: Die Umgebung fuer eine einzige Abgesetze Formel, die mit einer Nummer versehen wird.
+{eqnarray}: Eine Umgebung fuer Gleichungssysteme, die wie eine dreispaltige Tabelle aufgebaut ist. Bis zu zwei & duerfen in jeder Zeile eingesetzt werden, um die Ausrichtung vorzunehmen. Jede Zeile wird voreingestellt nummeriert, sofert dies nicht \\nonumber unterdrueckt.  \\lefteqn erlaubt die Nummer auf der anderen als der voreingestellten Seite zu setzen.
+{eqnarray*}: Eine Variante von {eqnarray}, in der Gleichungssysteme ohne Nummerierung gesetzt werden.\\
+Ein besonderest Makro ist \\ensuremath. Es stellt sicher, dass der Inhalt seines obligatorischen Arguments im Mathematikmodus formatiert wird. Erfolgt der Aufruf im Textmodus, aktiviert das Makro automatisch den Modus fuer eingebettete Formeln. Dieses Makro wird hauptsaechlich bei der Definition neuer Makros verwendet.
+Das Makropaket amstex unterstuetzt viele Varianten und erweiterungen dieser Umgebungen (und vieles mehr, was fuer den Mathematiksatz und das Publizieren in Mathematikjournalen nuetzlich ist).
+\subsection{Schriften in Formeln}
+Voreingestellt sucht Tex im Mathematikmodus die im Kontext richtigen Schriften automatisch aus. Dabei werden viele in der professionellen Typographie geltenden Regeln beruecksichtigt. Lediglich in einigen mehrdeutigen Situationen kann es erforderlich sein, manuell einzugreifen. In diesem Fall ist es nicht moeglich, die normalen im Textmodus einsetzbaren Makros wie \\text... oder die Deklarationsformen einzusetzen, sie funktionieren in Formeln nicht. Stattdessen gibt es spezielle Varianten, die hier einzusetzen sind. Die Textformen heissen \\mathbf, \\mathit, \\mathrm, \\mathsf, \\mathtt und \\mathcal(Kalligraphieschrift). Als Deklarationsbefehle gibt es oft nur \\boldmath und \\unboldmath.
+\subsection{Text im Mathematikmodus}
+In manchen Situationen is es erforderlich, Text als solchen innerhalb einer Formel darzustellen. In diesem Fall ist es oft die einfachste Moeglichkeit, in innerhalb einer \\mbox zu setzen., wobei  dort natuerlich auch wieder alle normalen Formatierungen aus dem Textmodus zulaessig sind. Natuerlich koennen auch \\parboxen oder {minipage}s verwendet werden. Komplexere Strukturen lassen sich oft relativ einfach in Form einer Tabelle (die ebenfalls eine Box umgibt) einbauen.
+AMS-Tex unterstuetzt den Textsatz in Formeln mit eigenen Makros.\\
+Here we have the most commen math expressions in a table,
+together with the \backslash commands to use them.
+
+
+\begin{center}
+    <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+    \begin{tabular}{c|l|c|l|c|l|c|l}
+     \vee &vee &\wedge &wedge   & \sqcup &sqcup  & \ast &ast \\
+     \div&div&\sqcap&sqcap &\bullet &bullet&\setminus&setminus \\
+     \star   & a        &\mp      & \times  \\
+     \ominus & a        &\cap      &\oplus      \\
+     \cup    & a        &\oslash   &\uplus     \\
+     \circ   & \otimes  &\wr       & \pm      \\
+         
+         
+          
+    \end{tabular}
+    \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	\begin{tabular}{c<mo>|</mo>
+	<mi>l</mi>
+	<mo>|</mo>
+	<mi>c</mi>
+	<mo>|</mo>
+	<mi>l</mi>
+	<mo>|</mo>
+	<mi>c</mi>
+	<mo>|</mo>
+	<mi>l</mi>
+	<mo>|</mo>
+	<mi>c</mi>
+	<mo>|</mo>
+	<mi>l</mi>
+	}
+	<mo>&#x02228;</mo>
+	&<mi>v</mi>
+	<mi>e</mi>
+	<mi>e</mi>
+	&<mo>&#x02227;</mo>
+	&<mi>w</mi>
+	<mi>e</mi>
+	<mo>&#x02146;</mo>
+	<mi>g</mi>
+	<mi>e</mi>
+	&<mo>&#x02294;</mo>
+	&<mi>s</mi>
+	<mi>q</mi>
+	<mi>c</mi>
+	<mi>u</mi>
+	<mi>p</mi>
+	&<mo>&#x0002A;</mo>
+	&<mi>a</mi>
+	<mi>s</mi>
+	<mi>t</mi>
+	<mo>\</mo>
+	<mo>&#x000F7;</mo>
+	&<mo>&#x02146;</mo>
+	<mi>i</mi>
+	<mi>v</mi>
+	&<mo>&#x02293;</mo>
+	&<mi>s</mi>
+	<mi>q</mi>
+	<mi>c</mi>
+	<mi>a</mi>
+	<mi>p</mi>
+	&<mi>&#x02022;</mi>
+	&<mi>b</mi>
+	<mi>u</mi>
+	<mi>l</mi>
+	<mi>l</mi>
+	<mi>e</mi>
+	<mi>t</mi>
+	&<mo>&#x02216;</mo>
+	&<mi>s</mi>
+	<mi>e</mi>
+	<mi>t</mi>
+	<mi>m</mi>
+	<mi>i</mi>
+	<mi>n</mi>
+	<mi>u</mi>
+	<mi>s</mi>
+	<mo>\</mo>
+	<mo>&#x022C6;</mo>
+	&<mi>a</mi>
+	&<mo>&#x02213;</mo>
+	&<mo>&#x000D7;</mo>
+	<mo>\</mo>
+	<mo>&#x02296;</mo>
+	&<mi>a</mi>
+	&<mo>&#x02229;</mo>
+	&<mo>&#x02295;</mo>
+	<mo>\</mo>
+	<mo>&#x0222A;</mo>
+	&<mi>a</mi>
+	&<mo>&#x02298;</mo>
+	&<mo>&#x0228E;</mo>
+	<mo>\</mo>
+	<mo>&#x02218;</mo>
+	&<mo>&#x02297;</mo>
+	&<mo>&#x02240;</mo>
+	&<mo>&#x000B1;</mo>
+	<mo>\</mo>
+\end{tabular}
+</mrow>
+</math>
+<!-- end MathToWeb -->
+\end{center}
+
+\subsection{Mathematische Symbole}
+Tex teilt die in Formeln auftretenden mathematischen Symoble in sieben bzw acht Klassen ein. Fuer jede dieser Klassen gelten spezielle Satzregeln, was zu den guten Ergebnissen fuehrt. Einige Symbole koennen in mehreren Klassen vorhanden sein, wo sie unter verschiedenen Namen angesprochen werden.
+
+\begin{center}
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+    \begin{tabular}{c|c}
+        \approx &  \\
+        \cong & \\
+        \equiv & \\
+        > & \\
+        \geq & \\
+        \leq & \\
+        \in & \\ 
+        \mid & \\
+        \ni & \\
+        \perp & \\
+        < & \\
+        \sim & \\
+        \subset & \\
+        \subseteq & \\
+        = & \\
+        \subset & \\
+        \supseteq & \\
+        
+    \end{tabular}
+    \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	\begin{tabular}{c<mo>|</mo>
+	<mi>c</mi>
+	}
+	<mo>&#x02248;</mo>
+	&<mo>\</mo>
+	<mo>&#x02245;</mo>
+	&<mo>\</mo>
+	<mo>&#x02261;</mo>
+	&<mo>\</mo>
+	<mo>&#x0003E;</mo>
+	&<mo>\</mo>
+	<mo>&#x02265;</mo>
+	&<mo>\</mo>
+	<mo>&#x02264;</mo>
+	&<mo>\</mo>
+	<mo>&#x02208;</mo>
+	&<mo>\</mo>
+	<mo>&#x02223;</mo>
+	&<mo>\</mo>
+	<mo>&#x0220B;</mo>
+	&<mo>\</mo>
+	<mo>&#x022A5;</mo>
+	&<mo>\</mo>
+	<mo>&#x0003C;</mo>
+	&<mo>\</mo>
+	<mo>&#x0223C;</mo>
+	&<mo>\</mo>
+	<mo>&#x02282;</mo>
+	&<mo>\</mo>
+	<mo>&#x02286;</mo>
+	&<mo>\</mo>
+	<mo>=</mo>
+	&<mo>\</mo>
+	<mo>&#x02282;</mo>
+	&<mo>\</mo>
+	<mo>&#x02287;</mo>
+	&<mo>\</mo>
+\end{tabular}
+</mrow>
+</math>
+<!-- end MathToWeb -->
+\end{center}
+
+\subsection{Pfeilsymbole}
+In vielen Formeln treten Pfeilsymbole mit teilweise recht unterschiedlichen Funktionen auf. Latex unterstuetzt viele Varianten.
+
+\begin{center}
+    \begin{tabular}{c|c|c}
+        \ rightarrow & \ leftarrow & \ lbrack \\
+        \ Leftarrow & \ rbrack & \ lfloor \\
+        \ Leftrightarrow & \ rfloor & \ lceil \\
+        \ mapsto &\ Rightarrow & \ rceil \\
+        \ leadsto & & \ lbrace \\
+        \ bigcap &  & \ rbrace \\
+        \ bigcup &  & \ langle \\
+        \ int &    & \ rangle \\
+        \ bigoplus & \ lgroup \\
+        \ prod & & \ rgroup \\
+        \ sum & & \ lmoustache \\
+        \ rmoustache & & \\
+        
+    \end{tabular}
+\end{center}
+
+\subsection{Funktion}
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \arccos \cos \csc \exp \ker \limsup \min \sinh \deg \lim \arcsin
+ \gcd \coth \ln \Pr \arctan \sup \cot \det \hom
+ \cosh \log \sec \tan \arg \liminf \dim \inf \lg \max \tanh \sin
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>arccos</mi>
+	<mi>cos</mi>
+	<mi>csc</mi>
+	<mi>exp</mi>
+	<mi>ker</mi>
+	<mi>lim sup</mi>
+	<mi>min</mi>
+	<mi>sinh</mi>
+	<mi>deg</mi>
+	<mi>lim</mi>
+	<mi>arcsin</mi>
+	<mi>gcd</mi>
+	<mi>coth</mi>
+	<mi>ln</mi>
+	<mi>Pr</mi>
+	<mi>arctan</mi>
+	<mi>sup</mi>
+	<mi>cot</mi>
+	<mi>det</mi>
+	<mi>hom</mi>
+	<mi>cosh</mi>
+	<mi>log</mi>
+	<mi>sec</mi>
+	<mi>tan</mi>
+	<mi>arg</mi>
+	<mi>lim inf</mi>
+	<mi>dim</mi>
+	<mi>inf</mi>
+	<mi>lg</mi>
+	<mi>max</mi>
+	<mi>tanh</mi>
+	<mi>sin</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+
+\subsection{Griechische Buchstaben}
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \alpha \beta \gamma \delta \epsilon \varepsilon \zeta \eta \theta \vartheta \iota \kappa \lambda \mu \nu \Gamma \Delta \Theta \Lambda \xi \pi \varpi \rho \varrho \sigma \varsigma \tau \upsilon \phi \varphi \chi \psi \omega \Xi \Pi \Sigma \Upsilon \Phi \Psi \Omega
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003B1;</mi>
+	<mi>&#x003B2;</mi>
+	<mi>&#x003B3;</mi>
+	<mi>&#x003B4;</mi>
+	<mi>&#x003F5;</mi>
+	<mi>&#x003B5;</mi>
+	<mi>&#x003B6;</mi>
+	<mi>&#x003B7;</mi>
+	<mi>&#x003B8;</mi>
+	<mi>&#x003D1;</mi>
+	<mi>&#x003B9;</mi>
+	<mi>&#x003BA;</mi>
+	<mi>&#x003BB;</mi>
+	<mi>&#x003BC;</mi>
+	<mi>&#x003BD;</mi>
+	<mi>&#x00393;</mi>
+	<mi>&#x00394;</mi>
+	<mi>&#x00398;</mi>
+	<mi>&#x0039B;</mi>
+	<mi>&#x003BE;</mi>
+	<mi>&#x003C0;</mi>
+	<mi>&#x003D6;</mi>
+	<mi>&#x003C1;</mi>
+	<mi>&#x003F1;</mi>
+	<mi>&#x003C3;</mi>
+	<mi>&#x003C2;</mi>
+	<mi>&#x003C4;</mi>
+	<mi>&#x003C5;</mi>
+	<mi>&#x003D5;</mi>
+	<mi>&#x003C6;</mi>
+	<mi>&#x003C7;</mi>
+	<mi>&#x003C8;</mi>
+	<mi>&#x003C9;</mi>
+	<mi>&#x0039E;</mi>
+	<mi>&#x003A0;</mi>
+	<mi>&#x003A3;</mi>
+	<mi>&#x003D2;</mi>
+	<mi>&#x003A6;</mi>
+	<mi>&#x003A8;</mi>
+	<mi>&#x003A9;</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+
+\subsection{weitere Mathematische Symbole}
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+    \angle angle \backslash backslash \bot bot \exists exists \forall forall \emptyset emptyset
+    \infty infty \Box Box \neg neg \surd surd \top top \triangle triangle
+
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo>&#x02220;</mo>
+	<mi>a</mi>
+	<mi>n</mi>
+	<mi>g</mi>
+	<mi>l</mi>
+	<mi>e</mi>
+	<mo>&#x0005C;</mo>
+	<mi>b</mi>
+	<mi>a</mi>
+	<mi>c</mi>
+	<mi>k</mi>
+	<mi>s</mi>
+	<mi>l</mi>
+	<mi>a</mi>
+	<mi>s</mi>
+	<mi>h</mi>
+	<mo>&#x022A5;</mo>
+	<mi>b</mi>
+	<mi>o</mi>
+	<mi>t</mi>
+	<mo>&#x02203;</mo>
+	<mi>e</mi>
+	<mi>x</mi>
+	<mi>i</mi>
+	<mi>s</mi>
+	<mi>t</mi>
+	<mi>s</mi>
+	<mo>&#x02200;</mo>
+	<mi>f</mi>
+	<mi>o</mi>
+	<mi>r</mi>
+	<mi>a</mi>
+	<mi>l</mi>
+	<mi>l</mi>
+	<mo>&#x02205;</mo>
+	<mi>e</mi>
+	<mi>m</mi>
+	<mi>p</mi>
+	<mi>t</mi>
+	<mi>y</mi>
+	<mi>s</mi>
+	<mi>e</mi>
+	<mi>t</mi>
+	<mo>&#x0221E;</mo>
+	<mi>i</mi>
+	<mi>n</mi>
+	<mi>f</mi>
+	<mi>t</mi>
+	<mi>y</mi>
+	\BoxBox<mo>&#x000AC;</mo>
+	<mi>n</mi>
+	<mi>e</mi>
+	<mi>g</mi>
+	<mo>&#x0221A;</mo>
+	<mi>s</mi>
+	<mi>u</mi>
+	<mi>r</mi>
+	<mi>d</mi>
+	<mo>&#x022A4;</mo>
+	<mi>t</mi>
+	<mi>o</mi>
+	<mi>p</mi>
+	<mi>&#x025B5;</mi>
+	<mi>t</mi>
+	<mi>r</mi>
+	<mi>i</mi>
+	<mi>a</mi>
+	<mi>n</mi>
+	<mi>g</mi>
+	<mi>l</mi>
+	<mi>e</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+
+\chapter{Algorithms}
+\section{O Kalkuel}
+Faster algorithms, which use less Resources are preferred over inefficient ones.
+To calculate the growth of runtime depending on input size, these rules can be used.
+
+Different Running time classes:
+O(1),O(n),O(n log n),O(n squared), O(n cubed), O(x to the n)
+
+\section{Sorting}
+\subsection{Insertion Sort}
+Insertion sort builds a sorted subarray by inserting the elements into the right place in that array. 
+In this way the array grows and in the end the entire array is sorted.
+Running time in O(n**2)
+\subsection{Selection Sort}
+This works by choosing the smallest element in our nonsorted subarray, removing it and inserting it at the end of our sorted subarray.
+Running time is in O(n**2)
+\subsection{Bubble Sort}
+Bubble sort is in O(n*n)
+it works by looping through the list and swapping two elements if the right neigbor of an element is smaller
+than the element itself.
+\subsection{Heap Sort}
+Heap Sort consists of building a max-heap,
+then popping of the first(greatest element and putting it at the end of our sorted array.
+This algorithm can work in-situ and has a running time of O(n log(n))
+
+\subsection{Quicksort}
+Quicksort is of the same running time as mergesort, with the advantage of it being in-situ, meaning it is nonrecursive and doesnt need more than a fixed amount of additional memory.
+\subsection{Mergesort}
+Mergesort splits the array in 2 arrays until they have length 1. Then it recursively merges them into one sorted array.
+\subsection{Counting Sort}
+\subsection{Radixsort}
+
+\subsection{Bucketsort}
+\section{Searching}
+\subsection{Binary Search}
+for searching a sorted array, running time in O(log(n))
+\subsection{Linear Search}
+just search the entire input from beginning to end. Running time in O(n)
+
+\section{Searching in Texts}
+
+Gegeben: Zeichensatz Z, T= a0,...,a n-1 mit a i elem. Z
+und Muster P = b0, ... ,b m-1 mit b i elem Z
+
+Aufgabe: Berechne i elem N 0 mit 
+0 <= i <= n-m und i ist die Anfangsposition  \\
+des Musters P im Text T, d.h., ai=b0, ai+1=b1, ... , a i+m-1 =b m-1 oder \\
+i=n falls das Muster P nicht im Text T enthalten ist.
+\subsection{Naive Suche}
+Methode: \\
+Durchsuche den gesamten Text schrittweise von links nach rechts und vergleiche bei jeder Position von links das Muster zeichenweise
+mit dem Text.
+Vergleiche das Zeichen im Text auf Position i + j mit dem Zeichen im
+Muster auf Position j f??r i = 0, . . . , n ??? m und j = 0, . . . , m ??? 1.
+Verschiebe das Wort bei einem Mismatch um eine Position nach rechts.
+Erh??he i auf i + 1 und wiederhole der Vergleich f??r j = 0, . . . , m ??? 1.
+Wurde ein Vorkommen des Musters im Text gefunden, gebe den Index i
+zur??ck, ansonsten n
+\begin{verbatim}
+int naive search (char T [ ], int n, char P[ ], int m)
+{
+    if ((m > 0) ??? (n ??? m)) {
+        int i := 0;
+        int j := 0;
+        while ((i <= n ??? m) ??? (j <= m ??? 1)) {
+            if (T [i + j] = P[j]) {
+                j + +;
+            }
+            else {
+                i := i + 1;
+                j := 0;
+            }
+        }
+        if (j = m) {
+            return(i);
+        }
+    }
+    return(n);
+}
+\end{verbatim}
+Analyse: Der naive Algorithmus f??hrt im ung??nstigsten Fall
+(n ??? m + 1) ?? m ??? O(n ?? m)
+viele Vergleiche durch.
+\subsection{Knuth Morris Pratt}
+Das Verfahren von Knuth-Morris-Pratt:\\
+Methode: \\
+Vergleiche das Zeichen im Text auf Position i mit dem Zeichen
+im Muster auf Position j.
+Wenn das Zeichen im Text auf Position i mit dem Zeichen im Muster auf
+Position j ??bereinstimmt, dann erh??he i und j um 1.
+Wenn das Zeichen im Text auf Position i mit dem Zeichen im Muster auf
+Position j nicht ??bereinstimmt, dann setze j auf die gr????te Position l
+zwischen 0 und j ??? 1 zur??ck, so das b 0 , . . . , b l???1 = a i???l , . . . , a i???1 .
+\\
+Speichere diese Positionen im next-Array.
+
+Berechnung des next arrays\\
+\begin{verbatim}
+
+void init next array (int next[ ], char P[ ], int m)
+{
+    if (m > 0) {
+        int i := 0;
+        int j := ???1;
+        next[0] := ???1;
+        while (i < m ??? 1) {
+            if ((j = ???1) ??? (P[i] = P[j])) {
+                i + +;
+                j + +;
+                next[i] := j; }
+            }else {
+                j := next[j];
+            }
+        }
+    }
+}
+\end{verbatim}
+Textsuche mit berechneten next array
+\\
+\begin{verbatim}
+int kmp search (char T [ ], int n, char P[ ], int m, int next[ ])
+{
+    if ((m > 0) ??? (n ??? m)) {
+        int i := 0;
+        int j := 0;
+        while ((i < n) ??? (j < m)) {
+            if ((j = ???1) ??? (T [i] = P[j])) {
+                i + +;
+                j + +;
+            }else{
+                j := next[j];
+            }
+        }
+        if (j = m) {
+            return(i ??? m);
+        }
+    }
+    return(n);
+}
+\end{verbatim}
+
+Analyse:\\
+Variable j kann nur so oft erniedrigt werden, wie sie zuvor erh??ht wurde.
+Variable j wird immer zusammen mit Variable i erh??ht.
+Also wird j nur so oft erniedrigt, wie i erh??ht wird.
+Ist das next-Array bekannt, so hat das Verfahren eine lineare Laufzeit
+O(n).
+Da das next-Array in O(m) Schritten aufgebaut werden kann, ben??tigt
+der gesamte Algorithmus O(n + m) Schritte.\\
+Verbessertes next-Array
+Das verbesserte next-Array next???[ ] ber??cksichtig zus??tzlich die
+Information, dass im Text ein Zeichen steht, dass dem Zeichen im Wort
+nicht entspricht.
+\\
+Berechnung des next' Arrays
+\begin{verbatim}
+void init next array (int next 0 [ ], char P[ ], int m)
+{
+    if (m > 0) {
+    int i := 0;
+    int j := ???1;
+    next 0 [0] := ???1;
+        while (i < m ??? 1) {
+            if ((j = ???1) ??? (P[i] = P[j])) {
+                i + +;
+                j + +;
+                if (P[i] = P[j]) {
+                    next 0 [i] := next 0 [j];
+                }else {
+                    next 0 [i] := j;
+                }
+            }else {
+                j := next 0 [j];
+            }
+        } 
+    } 
+}
+\end{verbatim}
+\subsection{Boyer and Moore}
+\textbf{Das Verfahren von Boyer-Moore: }
+Methode:
+Bei dem Verfahren von Boyer und Moore werden die Zeichen im Muster
+von rechts nach links mit den Zeichen im Text verglichen.
+Variable i kennzeichnet die Stelle im Text, die mit dem letzten Zeichen
+im Muster verglichen wird.
+Variable i beginnt bei m ??? 1 und erh??ht sich bis maximal auf n ??? 1.
+Verglichen werden die Zeichen T [i ??? j] und P[(m ??? 1) ??? j] f??r
+j = 0, . . . , m ??? 1.
+Kommt es beim Vergleich der Zeichen zu einem Mismatch, dann wird
+das Muster so weit wie m??glich nach rechts verschoben, jedoch maximal
+um die Musterl??nge.
+
+\begin{verbatim}
+int bm suche (char T [ ], int n, char P[ ], int m)
+{
+    if (m > n) {
+        return (n);
+    }
+    int i := m ??? 1;
+    int j := 0;
+    while ((j ??? m ??? 1) ??? (i ??? n ??? 1)) {
+        if (T [i ??? j] = P[(m ??? 1) ??? j]) {
+            j + +;
+        }else {
+            i := i + "Musterverschiebung";
+            j := 0;
+        }
+    }
+    if (j > m ??? 1) {
+        return (i ??? (m ??? 1));
+    }else {
+        return (n);
+    }
+}
+\end{verbatim}
+In Zeile 13 ist beim vereinfachten Verfahren von Boyer und Moore die
+Musterverschiebung
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+1,= max.delta(T [i ??? j]) ??? j
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mn>1</mn>
+	<mo>,</mo>
+	<mo>=</mo>
+	<mi>m</mi>
+	<mi>a</mi>
+	<mi>x</mi>
+	<mo>.</mo>
+	<mo>&#x02146;</mo>
+	<mi>e</mi>
+	<mi>l</mi>
+	<mi>t</mi>
+	<mi>a</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>T</mi>
+		<mrow>
+			<mo form="prefix">[</mo>
+			<mi>i</mi>
+			???<mi>j</mi>
+			<mo form="postfix">]</mo>
+		</mrow>
+		<mo form="postfix">)</mo>
+	</mrow>
+	???<mi>j</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Beachte:
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+???j ??? delta(T [i ??? j]) ??? j ??? m
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	???<mi>j</mi>
+	???<mo>&#x02146;</mo>
+	<mi>e</mi>
+	<mi>l</mi>
+	<mi>t</mi>
+	<mi>a</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>T</mi>
+		<mrow>
+			<mo form="prefix">[</mo>
+			<mi>i</mi>
+			???<mi>j</mi>
+			<mo form="postfix">]</mo>
+		</mrow>
+		<mo form="postfix">)</mo>
+	</mrow>
+	???<mi>j</mi>
+	???<mi>m</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Bemerkungen:
+Kommt es zu einem Mismatch zwischen T [i ??? j] und P[(m ??? 1) ??? j],
+dann wird das Muster so weit nach rechts verschoben, bis das Zeichen
+T [i ??? j] im Text ??ber dem rechtesten Vorkommen von T [i ??? j] im
+Muster P steht.\\
+
+Kommt das Zeichen T [i ??? j] im Muster gar nicht vor, dann wird das Muster um seine gesamte L??nge verschoben.
+Das Muster wird jedoch mindestens um eine Position nach rechts geschoben.
+Obwohl obiges Verfahren eine worst-case-Laufzeit von O(n ?? m) hat
+(Beispiel: T = 00 ?? ?? ?? 0, P = 100 ?? ?? ?? 0), hat es sich in der Praxis
+ausgezeichnet bew??hrt.
+F??r gen??gend kurze Muster und hinreichend gro??e Zeichens??tze werden
+im Mittel O(n/m) viele Schritte durchgef??hrt.
+Das Muster wird dann also nahezu immer um seine Gesamtl??nge nach
+rechts verschoben.\\
+
+Kleine Modifikationen
+Der delta-Wert f??r das letzte Zeichen P[m ??? 1] im Muster P kann auch
+auf das zweite Vorkommen des Zeichens im Muster (von rechts gez??hlt)
+gesetzt werden, da ein delta-Wert von 0 einer Musterverschiebung von 0
+entspricht.\\
+
+Jetzt wird das Muster so weit nach rechts geschoben, dass das zweite
+Vorkommen von rechts des letzten Zeichens im Muster mit der Position
+i ??? j im Text verglichen wird.
+Musterverschiebung
+= max
+1,
+delta???(T [i ??? j]) ??? j
+21 / 38Suchen in Texten - Boyer-Moore
+Falls j > 0 ist, kann das Muster auch um delta???(P[m ??? 1]) verschoben
+werden.
+Hier wird das zweite Vorkommen von P[m ??? 1] der Position i im Text
+zugeordnet. Das macht jedoch nur Sinn, wenn dieses Zeichen dort im
+Text auch steht, also wenn T [i] = P[m ??? 1] ist, was der Fall sein muss,
+wenn j bereits gr????er als 0 ist.
+Musterverschiebung
+1,
+delta???(T [i ??? j]) ??? j,
+= max
+delta???(P[m ??? 1]) falls j > 0
+22 / 38Suchen in Texten - Boyer-Moore
+Das Muster kann auch um delta(T [i + 1]) + 1 erh??ht werden.
+Hier wird das Zeichens im Text auf Position i + 1 betrachtet und dem
+ersten Vorkommen von rechts im Muster zugeordnet.
+Musterverschiebung
+1,
+delta???(T [i ??? j]) ??? j,
+= max
+delta???(P[m
+??? 1]) falls j > 0,
+delta(T [i + 1]) + 1
+23 / 38Suchen in Texten - Boyer-Moore
+Verbesserung des einfachen Verfahrens von Boyer und Moore
+Die Sub-Muster im Muster k??nnen ??hnlich wie bei dem Verfahren von
+Knuth Morris und Pratt mit ber??cksichtigt werden.
+Genutzt wird die Information, dass auf den Positionen
+i, i ??? 1, . . . , i ??? (j ??? 1) im Text die gleichen Zeichen stehen, wie im
+Muster auf den Positionen (m ??? 1), (m ??? 1) ??? 1, . . . , (m ??? 1) ??? (j ??? 1).
+Die Musterverschiebung wird abh??ngig von j in einem beta-Wert
+gespeichert.
+Wird zus??tzlich noch die Information genutzt, dass auf Position i ??? j im
+Text ein anderes Zeichen steht als auf Position (m ??? 1) ??? j im Muster,
+dann ist es der verbesserte beta-Wert.\\
+
+Die beta Musterverschiebung f??r Muster P mit einem Mismatch bei j,
+das hei??t T [i ??? j] 6 = P[(m ??? 1) ??? j], ist der Wert beta(j).\\
+
+Es ist die kleinste Zahl k zwischen 1 und m ??? 1, sodass f??r
+l = 0, 1, . . . , l Ende
+P[(m ??? 1) ??? l]
+=/=
+P[(m ??? 1) ??? k ??? l].\\
+
+Der Endwert l Ende f??r den Laufindex l ist das Minimum von
+1 j ??? 1, da nur j ??? 1 Zeichen links der Position i im Text mit den
+Zeichen links der letzten Position m ??? 1 im Muster ??bereinstimmen,
+und
+2 (m ??? 1) ??? k, da ansonsten (m ??? 1) ??? k ??? l kleiner 0 ist.
+l Ende = min{j ??? 1, (m ??? 1) ??? k}
+Falls es keine solche Zahl k gibt, ist die Musterverschiebung 1.
+25 / 38Suchen in Texten - Boyer-Moore
+Musterverschiebung
+
+1,
+delta???(T [i ??? j]) ??? j,
+delta???(P[m ??? 1]) falls j > 0,
+= max
+delta(T
+[i + 1]) + 1,
+beta(j)
+
+Wird zus??tzlich noch P[(m ??? 1) ??? j] 6 = P[(m ??? 1) ??? k ??? j] ber??cksichtigt,
+dann erh??lt man den verbesserten beta???-Wert.
+Musterverschiebung
+1,
+delta???(T [i ??? j]) ??? j,
+delta???(P[m ??? 1]) falls j > 0,
+= max
+delta(T
+[i + 1]) + 1,
+beta 0 (j)\\
+Bemerkungen:
+Der beta-Wert beseitigt zwar die worst-case Instanzen bei der Textsuche
+(hier ohne Beweis), bringt aber in der Praxis eigentlich nichts. Deshalb
+wird in der Regel mit der vereinfachten Version gearbeitet.
+\section{Vorlesung 5: Hash Verfahren}
+Beim Hashing werden die Schluessel der Objekte zur Berechnung einer Position in einem Feld verwendet.
+
+Sei K eine Schluesselmenge und I eine eindeutige Indexmenge.
+
+(In der Regel 
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+I =\lbrace0,...,m-1\rbrace
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>I</mi>
+			<mo>=</mo>
+			<mrow>
+				<mo form="prefix">&#x0007B;</mo>
+				<mn>0</mn>
+				<mo>,</mo>
+				<mo>.</mo>
+				<mo>.</mo>
+				<mo>.</mo>
+				<mo>,</mo>
+				<mi>m</mi>
+				<mo>-</mo>
+				<mn>1</mn>
+				<mo form="postfix">&#x0007D;</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->wobei m die feldgroesse ist.)\\
+Die Hash funktion \\
+\textbf{h: K-> I}
+wird zum Suchen und platzieren von Elementen eingesetzt.
+Sie soll die Schluessel gleichmaessig auf die Indizes verteilen.\\
+Wenn mehrere Schluessel auf einen Index abgebildet werden, ist das eine Kollision.
+Bei einer Kollision muss ein Ersatzplatz gefunden werden.\\
+Welche Funktionen sind als Hash Funktionen geeignet?\\
+Ausblenden und Restbilden. \\
+Ausblenden: benutze nur einen Teil des schluessels(nicht alle stellen)
+Restbildung: Der schluessel k wird ganzzahlig durch die laenge der Hashtabelle dividiert.
+Der Rest wird als Index verwendet.\\
+<!-- %\begin{math} -->
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+h(k)=k mod \mid l \mid
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>h</mi>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>k</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+			<mo>=</mo>
+			<mi>k</mi>
+			<mi>m</mi>
+			<mi>o</mi>
+			<mi>d</mi>
+			<mo>&#x02223;</mo>
+			<mi>l</mi>
+			<mo>&#x02223;</mo>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(2)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+<!-- %\end{math}\\ -->
+Die besten Ergebnissze erhaelt man wenn l eine primzahl ist.
+Schluessel die nicht als zahlen interpretiert werden koennen, werden vorher geeignet umgerechnet.
+\subsection{Universelle Hash funktionen}
+Gesucht sind Hashfunktionen die im mittel akzeptabel sind.\\
+Sei <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+m=\mid I \mid und H eine endliche Menge von >= m Hash Funtkionen. 
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>m</mi>
+			<mo>=</mo>
+			<mo>&#x02223;</mo>
+			<mi>I</mi>
+			<mo>&#x02223;</mo>
+			<mi>u</mi>
+			<mi>n</mi>
+			<mo>&#x02146;</mo>
+			<mi>H</mi>
+			<mi>e</mi>
+			<mi>i</mi>
+			<mi>n</mi>
+			<mi>e</mi>
+			<mi>e</mi>
+			<mi>n</mi>
+			<mo>&#x02146;</mo>
+			<mi>l</mi>
+			<mi>i</mi>
+			<mi>c</mi>
+			<mi>h</mi>
+			<mi>e</mi>
+			<mi>M</mi>
+			<mi>e</mi>
+			<mi>n</mi>
+			<mi>g</mi>
+			<mi>e</mi>
+			<mi>v</mi>
+			<mi>o</mi>
+			<mi>n</mi>
+			<mo>&#x0003E;</mo>
+			<mo>=</mo>
+			<mi>m</mi>
+			<mi>H</mi>
+			<mi>a</mi>
+			<mi>s</mi>
+			<mi>h</mi>
+			<mi>F</mi>
+			<mi>u</mi>
+			<mi>n</mi>
+			<mi>t</mi>
+			<mi>k</mi>
+			<mi>i</mi>
+			<mi>o</mi>
+			<mi>n</mi>
+			<mi>e</mi>
+			<mi>n</mi>
+			<mo>.</mo>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+H heisst Universell wenn fuer jedes Paar von verschiedenen Schluesseln 
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+x,y \in K gilt:
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	<mo>,</mo>
+	<mi>y</mi>
+	<mo>&#x02208;</mo>
+	<mi>K</mi>
+	<mi>g</mi>
+	<mi>i</mi>
+	<mi>l</mi>
+	<mi>t</mi>
+	<mo>:</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+\mid\lbrace h \in H \mid h(x)=h(y) \rbrace \mid \leq \lceil \frac{\mid H \mid}{m} \rceil
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mo>&#x02223;</mo>
+			<mrow>
+				<mo form="prefix">&#x0007B;</mo>
+				<mi>h</mi>
+				<mo>&#x02208;</mo>
+				<mi>H</mi>
+				<mo>&#x02223;</mo>
+				<mi>h</mi>
+				<mrow>
+					<mo form="prefix">(</mo>
+					<mi>x</mi>
+					<mo form="postfix">)</mo>
+				</mrow>
+				<mo>=</mo>
+				<mi>h</mi>
+				<mrow>
+					<mo form="prefix">(</mo>
+					<mi>y</mi>
+					<mo form="postfix">)</mo>
+				</mrow>
+				<mo form="postfix">&#x0007D;</mo>
+			</mrow>
+			<mo>&#x02223;</mo>
+			<mo>&#x02264;</mo>
+			<mrow>
+				<mo form="prefix">&#x02308;</mo>
+				<mfrac linethickness="1">
+					<mrow>
+						<mo>&#x02223;</mo>
+						<mi>H</mi>
+						<mo>&#x02223;</mo>
+					</mrow>
+					<mi>m</mi>
+				</mfrac>
+				<mo form="postfix">&#x02309;</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(2)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+Fuer jedes Schluesselpaar x,y fuehrt hoechstens der m-te Teil der Hash Funktionen die beiden schluessel x,y zu einer Kollision.\\
+Die Wahrscheinlichkeit dass zwei Schluessel mit einer Hash Funktion aus H auf den gleichen Index abgebildet werden ist <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \frac{1}{m} \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mfrac linethickness="1">
+		<mn>1</mn>
+		<mi>m</mi>
+	</mfrac>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+Sei
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+p \geq m
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>p</mi>
+	<mo>&#x02265;</mo>
+	<mi>m</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> 
+eine Primzahl und \\
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+h(a,b) : \lbrace 0,...,p-1\rbrace \mapsto \lbrace 0,...,m-1 \rbrace 
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>h</mi>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>a</mi>
+				<mo>,</mo>
+				<mi>b</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+			<mo>:</mo>
+			<mrow>
+				<mo form="prefix">&#x0007B;</mo>
+				<mn>0</mn>
+				<mo>,</mo>
+				<mo>.</mo>
+				<mo>.</mo>
+				<mo>.</mo>
+				<mo>,</mo>
+				<mi>p</mi>
+				<mo>-</mo>
+				<mn>1</mn>
+				<mo form="postfix">&#x0007D;</mo>
+			</mrow>
+			<mo>&#x021A6;</mo>
+			<mrow>
+				<mo form="prefix">&#x0007B;</mo>
+				<mn>0</mn>
+				<mo>,</mo>
+				<mo>.</mo>
+				<mo>.</mo>
+				<mo>.</mo>
+				<mo>,</mo>
+				<mi>m</mi>
+				<mo>-</mo>
+				<mn>1</mn>
+				<mo form="postfix">&#x0007D;</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(3)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+mit
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+\textbf{ha,b(x)=((ax + b) mod p) mod m}
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mstyle mathvariant="bold">
+				<mi>h</mi>
+				<mi>a</mi>
+				<mo>,</mo>
+				<mi>b</mi>
+				<mrow>
+					<mo form="prefix">(</mo>
+					<mi>x</mi>
+					<mo form="postfix">)</mo>
+				</mrow>
+				<mo>=</mo>
+				<mrow>
+					<mo form="prefix">(</mo>
+					<mo form="prefix">(</mo>
+					<mi>a</mi>
+					<mi>x</mi>
+					<mo>+</mo>
+					<mi>b</mi>
+					<mo form="postfix">)</mo>
+					<mi>m</mi>
+					<mi>o</mi>
+					<mo>&#x02146;</mo>
+					<mi>p</mi>
+					<mo form="postfix">)</mo>
+				</mrow>
+				<mi>m</mi>
+				<mi>o</mi>
+				<mo>&#x02146;</mo>
+				<mi>m</mi>
+			</mstyle>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(4)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+Dann ist 
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+\lbrace h a,b \mid 1 \leq a < p, 0 \leq b < p \rbrace
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mrow>
+				<mo form="prefix">&#x0007B;</mo>
+				<mi>h</mi>
+				<mi>a</mi>
+				<mo>,</mo>
+				<mi>b</mi>
+				<mo>&#x02223;</mo>
+				<mn>1</mn>
+				<mo>&#x02264;</mo>
+				<mi>a</mi>
+				<mo>&#x0003C;</mo>
+				<mi>p</mi>
+				<mn>,0</mn>
+				<mo>&#x02264;</mo>
+				<mi>b</mi>
+				<mo>&#x0003C;</mo>
+				<mi>p</mi>
+				<mo form="postfix">&#x0007D;</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(5)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+eine universelle Klasse von Hash Funktionen (lineare Algebra)\\
+\subsection{Kollisionsaufloesung}
+Probleme treten auf bei der Platzierung, wenn der berechnete Platz nicht leer ist und bei der Suche, wenn der berechnete Platz ein anderes Element enthaelt.\\
+Zur Kollisionsaufloesung muss ein ersatzplatz gefunden werden.
+\subsubsection{1. Verkettung der Ueberlaeufer}
+Die Ueberlaeufer, die auch auf diesen schon besetzten Platz platziert werden sollen, koennen z.b.
+in einer linearen Liste verkettet werden, welche an den Hashtabelleneintrag angehaengt wird, der sich aus der Hash Funktion angewendet auf den Schluessel ergibt.\\
+Bei einer erfolglosen Suche nach schluessel k betrachten wir alle Elemente in der Liste an h(k)\\
+Die durchschnittliche Anzahl der Eintraege in h(k) ist n/m wenn n Eintraege auf m Listen verteilt sind.
+\textbf{Belegungsfaktor <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\alpha = n/m\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003B1;</mi>
+	<mo>=</mo>
+	<mi>n</mi>
+	<mo>&#x0002F;</mo>
+	<mi>m</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->}
+
+Im Mittel ist die Anzahl der bei der erfolglosen Suche nach einem Schluessel betrachteten Eintraege also 
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+C n=\frac{n}{m}=\alpha
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>C</mi>
+			<mi>n</mi>
+			<mo>=</mo>
+			<mfrac linethickness="1">
+				<mi>n</mi>
+				<mi>m</mi>
+			</mfrac>
+			<mo>=</mo>
+			<mi>&#x003B1;</mi>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+Beim einfuegen des j-ten Schluessels ist die durchschnittliche Listenlaenge gerade (j-1)/m\\
+Also betrachten wir bei einer spaeteren Suche nach dem j-ten Schluessel gerade 1+(j-1)/m Eintraege im Durchschnitt, wenn stets am Listenende eingefuegt wird und kein Datensatz entfernt wurde.\\
+Im Mittel ist die Anzahl der bei der erfolgreichen Suche nach einem Schluessel betrachteten Eintraege also
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+C _{n} = \frac{1}{n}\sum _{j=1} ^{n} (1+(j-1)/m) = 1 + \frac{n-1}{2m} \approx 1+ \frac{\alpha}{2}
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<msub>
+				<mi>C</mi>
+				<mi>n</mi>
+			</msub>
+			<mo>=</mo>
+			<mfrac linethickness="1">
+				<mn>1</mn>
+				<mi>n</mi>
+			</mfrac>
+			<mstyle displaystyle="true">
+				<munderover>
+					<mo>&#x02211;</mo>
+					<mrow>
+						<mi>j</mi>
+						<mo>=</mo>
+						<mn>1</mn>
+					</mrow>
+					<mi>n</mi>
+				</munderover>
+			</mstyle>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mn>1</mn>
+				<mo>+</mo>
+				<mo form="prefix">(</mo>
+				<mi>j</mi>
+				<mo>-</mo>
+				<mn>1</mn>
+				<mo form="postfix">)</mo>
+				<mo>&#x0002F;</mo>
+				<mi>m</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+			<mo>=</mo>
+			<mn>1</mn>
+			<mo>+</mo>
+			<mfrac linethickness="1">
+				<mrow>
+					<mi>n</mi>
+					<mo>-</mo>
+					<mn>1</mn>
+				</mrow>
+				<mrow>
+					<mn>2</mn>
+					<mi>m</mi>
+				</mrow>
+			</mfrac>
+			<mo>&#x02248;</mo>
+			<mn>1</mn>
+			<mo>+</mo>
+			<mfrac linethickness="1">
+				<mi>&#x003B1;</mi>
+				<mn>2</mn>
+			</mfrac>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(2)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+\subsubsection{2. Offene Hash Verfahren}
+Speichere die Ueberlaeufer in der Hashtabelle und nicht in zusaetzlichen Listen. Nur sinnvoll fuer <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\alpha < 1\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003B1;</mi>
+	<mo>&#x0003C;</mo>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->\\
+Ist die Hash Addresse h(k) belegt, so wird eine Ausweichposition gesucht.
+\textbf{Die Folge der zu betrachtenden Speicherplaetze fuer einen Schluessel nennt man Sondierungsfolge}\\
+Sei <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}h:K \rightarrow \lbrace 0,...,m-1 \rbrace \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>h</mi>
+	<mo>:</mo>
+	<mi>K</mi>
+	<mo>&#x02192;</mo>
+	<mrow>
+		<mo form="prefix">&#x0007B;</mo>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mo>.</mo>
+		<mo>.</mo>
+		<mo>.</mo>
+		<mo>,</mo>
+		<mi>m</mi>
+		<mo>-</mo>
+		<mn>1</mn>
+		<mo form="postfix">&#x0007D;</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> eine Hash Funktion und <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}s:\lbrace 0,...,m-1 \rbrace \times K \rightarrow N0 \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>s</mi>
+	<mo>:</mo>
+	<mrow>
+		<mo form="prefix">&#x0007B;</mo>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mo>.</mo>
+		<mo>.</mo>
+		<mo>.</mo>
+		<mo>,</mo>
+		<mi>m</mi>
+		<mo>-</mo>
+		<mn>1</mn>
+		<mo form="postfix">&#x0007D;</mo>
+	</mrow>
+	<mo>&#x000D7;</mo>
+	<mi>K</mi>
+	<mo>&#x02192;</mo>
+	<mi>N</mi>
+	<mn>0</mn>
+</mrow>
+</math>
+<!-- end MathToWeb --> eine Funktion sodass fuer jedes <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} k \in K \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>k</mi>
+	<mo>&#x02208;</mo>
+	<mi>K</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> , die Folge (h(k) - s(j,k)) mod m fuer j=0,1,...,m-1 eine Permutation aller Hash Addressen 0,...,m-1 ist, dann ist s eine Sondierungsfunktion fuer h.\\
+
+\underline{Lineares Sondieren}\\
+Beim linearen Sondieren ist fuer Schluessel k die Sondierungsfolge h(k), h(k)-1, h(k)-2 ,...,0,m-1,...,h(k)+1 \\
+Die Sondierungsfunktion ist damit <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+s(j,k)=j
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>s</mi>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>j</mi>
+				<mo>,</mo>
+				<mi>k</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+			<mo>=</mo>
+			<mi>j</mi>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+\underline{Nachteil}\\
+Das Verfahren neight zur \underline{primaeren Haeufung}, indem gewisse Bereiche keine Luecke mehr aufweisen.\\
+\underline{Quadratisches Sondieren}\\
+Es wird um h(k) herum mit quadratisch wachsendem Abstand nach einem freien Platz gesucht.\\
+Sondierungsfolge: h(k), (h(k)=1) mod m, (h(k) -1) mod m, (h(k) +4 ) mod m, (h(k) -4) mod m, ... \\
+Sondierungsfunktion: \\
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+s(j,k) = (\lceil j/2 \rceil)^{2} (-1)^{j}
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>s</mi>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>j</mi>
+				<mo>,</mo>
+				<mi>k</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+			<mo>=</mo>
+			<msup>
+				<mrow>
+					<mo form="prefix">(</mo>
+					<mrow>
+						<mo form="prefix">&#x02308;</mo>
+						<mi>j</mi>
+						<mo>&#x0002F;</mo>
+						<mn>2</mn>
+						<mo form="postfix">&#x02309;</mo>
+					</mrow>
+					<mo form="postfix">)</mo>
+				</mrow>
+				<mn>2</mn>
+			</msup>
+			<msup>
+				<mrow>
+					<mo form="prefix">(</mo>
+					<mo>-</mo>
+					<mn>1</mn>
+					<mo form="postfix">)</mo>
+				</mrow>
+				<mi>j</mi>
+			</msup>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(2)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+Wenn m eine Primzahl der Form 4i+3, <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}i \in N \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>i</mi>
+	<mo>&#x02208;</mo>
+	<mi>N</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->ist, dann ist garantiert, \\
+dass die Sondierungsfunktion Modulo m eine Permutation der Hash Addressen 0 bis m-1 ist.
+
+\underline{Nachteil}\\
+Zwei Schluessel k und k' mit h(k) = h(k') durchlaufen stets dieselbe Sondierungsfolge. Sie behindern sich also auf Ausweichplaetzen (sekundaere haeufung)
+
+
+\subsubsection{Double Hashing}
+\underline{Verbesserte Kollisionsaufloesung}
+Schluesselabhaengige Sondierung (double Hashing):
+Verwende fuer die Sondierungsfolge eine zweite Hash Funktion h' \\
+Sondierungsfolge:
+h(k), (h(k) -h'(k)) mod m, (h(k) -2*h'(k)) mod m, ..., (h(k) -(m-1) * h'(k)) mod m\\
+Sondierungsfunktion:
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+s(j,k)=j*h'(k)
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>s</mi>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>j</mi>
+				<mo>,</mo>
+				<mi>k</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+			<mo>=</mo>
+			<mi>j</mi>
+			<mo>*</mo>
+			<mi>h</mi>
+			<mo>'</mo>
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>k</mi>
+				<mo form="postfix">)</mo>
+			</mrow>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+Die Funktion h' muss so gewaehlt werden, dass die Sondierungsfolge eine Permutation der Hash addressen ist. Das bedeutet dass <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}h'(k)\not = 0
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>h</mi>
+	<mo>'</mo>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>k</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	\not<mo>=</mo>
+	<mn>0</mn>
+</mrow>
+</math>
+<!-- end MathToWeb --> sein muss und m nicht teilen darf.\\
+Ist m eine Primzahl und h(k) = k mod m so erfuellt 
+h'(k)=1+(k mod (m-2)) die erwarteten Anforderungen.
+\\
+\underline{Verbesserung der erfolgreichen Suche}
+Die durchschnittliche Suchzeit bei erfolgreicher Suche variiert bei Hash Verfahren ohne Haeufung mit unterschiedlicher Reihenfolge des einfuegens der Schluessel. \\
+In Faellen in denen wesentlich haeeufiger gesuch als eingefuegt wird, kann es sich lohnen, die Schluessel beim einfugen eines neuen Schluessels so zu reorganisieren dass die Suchzeit verkuerzt wird.\\
+\subsection{Brents Alogrithmus}
+\underline{Methode} Einfuegen eines Schluessels k: \\
+Beginne mit Hash Addresse i=h(k). \\
+Falls Position i belegt ist, betrachte die beiden Hash-Addressen b=(i-h'(k)) mod m und b'=(i-h'(k')) mod m, wobei k' der Schluessel auf Hash Addresse i ist.\\
+
+Ist b eine freie Hash Addresse dann positioniere Schluessel k auf Position b, ansonsten, ist b' eine freie Hash Addresse dann positioniere Schluessel k auf Position i und k' auf Position b', ansonsten fahre fort mit dem Versuch, k auf Posiition i=b zu positionieren.
+
+\section{Vorlesung 6: Suchbaeume}
+Ein Element (Knoten) knoten hat eine endliche  Anzahl an Nachfolgern (Soehne)\\
+ 
+Der Knoten ohne Vater heisst \textbf{Wurzel}
+Die Knoten ohne Nachfolger heissen \textbf{Blaetter}
+
+Knoten mit Nachfolger heissen \textbf{innere knoten}\\
+
+Eine Folge von Knoten <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} u_{1} ,..., u_{k} \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>u</mi>
+		<mn>1</mn>
+	</msub>
+	<mo>,</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>,</mo>
+	<msub>
+		<mi>u</mi>
+		<mi>k</mi>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb -->wobei ui mit <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}1<=i<=k \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mn>1</mn>
+	<mo>&#x0003C;</mo>
+	<mo>=</mo>
+	<mi>i</mi>
+	<mo>&#x0003C;</mo>
+	<mo>=</mo>
+	<mi>k</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> ein Nachfolger
+von u i-1 ist, heisst \textbf{Weg der Laenge k} bzw Weg mit k knoten.
+\\
+Baeume in denen jeder innere Knoten genau k Nachfolger hat, heissen \textbf{k-naere Baeume}
+
+Die \textbf{Hoehe eines Baumes} ist die Laenge eines laengsten weges von der Wurzel zu einem Blatt -1\\
+Dies ist die Anzahl der Nachfolger von der Wurzel bis zum Knoten u. Die Wurzel hat die Tiefe 0.
+\\
+Auf den Nachfolgern besteht in der Regel eine Ordnung, linker bzw. rechter Nachfolger, oder i-ter Nachfolger usw.
+Das sind \textbf{geordnete Baeume}\\
+
+Ein Baum heisst vollstaendig, wenn alle inneren Knoten die maximal moegliche Anzahl von Nachfolgern und alle Blaetter dieselbe Tiefe haben.
+\\
+\textbf{Ein Binaerbaum mit n inneren Knoten hat n+1 Blaetter.}
+\textbf{
+Seine Hoehe ist maximal <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}{\frac{(n-1)}{2}}\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mfrac linethickness="1">
+		<mrow>
+			<mo form="prefix">(</mo>
+			<mi>n</mi>
+			<mo>-</mo>
+			<mn>1</mn>
+			<mo form="postfix">)</mo>
+		</mrow>
+		<mn>2</mn>
+	</mfrac>
+</mrow>
+</math>
+<!-- end MathToWeb --> und mindestens <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \lceil log(n+1) \rceil \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo form="prefix">&#x02308;</mo>
+	<mi>l</mi>
+	<mi>o</mi>
+	<mi>g</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>n</mi>
+		<mo>+</mo>
+		<mn>1</mn>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo form="postfix">&#x02309;</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+}
+
+\textbf{Suchbaeume sind geordnete binaere Baeume die in den inneren Knoten Schluessel (oder Elemente mit Schluesseln) speichern}
+\\
+Sei u ein innerer Knoten, der den Schluessel k(u) speichert.
+Dann sind alle Schluessel im linken Teilbaum von u kleiner als k(u) und
+alle Schluessel im rechten Teilbaum von u groesser als k(u)\\
+
+Die Blaetter repraesentieren Intervalle zwischen den in den inneren Knoten gespeicherten Schluesseln.\\
+\subsubsection{Einen Schluessel in einem Suchbaum finden}
+Beginne bei der Wurzel p und vergleiche x mit dem bei p gespeicherten  Schluessel k(p)\\
+Ist x kleiner als k(p),  Setze die Suche mit dem linken Nachfolger von p fort.\\
+Ist x groesser als k(p), setze die Suche mit dem rechten Nachfolger von p  fort.
+\\
+Wird ein Blatt erreicht, ist Schluessel x nicht im Suchbaum gespeichert.
+\subsubsection{Einfuegen eines Schluessels x in einen Suchbaum}
+Suche den Schluessel x im Suchbaum. Falls x nicht im Suchbaum ist, endet die Suche in einem Blatt.
+Fuege dort den schluessel ein und erzeuge 2 neue Blaetter.
+\\
+Die Form des dabei enstehenden Suchbaums ist von der Reihenfolge des einfuegens abhaengig
+
+\subsubsection{Entfernen eines Schluessels x in einem Suchbaum}
+
+Suche den Schluessel x im Suchbaum. Falls x im Suchbaum ist,  sei u der Knoten mit k(u)=x.\\
+Sind beide Nachfolger von u Blaetter, dann mache u zu einem Blatt.\\
+Ist ein Nachfolger von ein Blatt, dann mache u zu einem blatt(//tausche mit einem nachfolger und schneide blatt u vom baum)\\
+
+Ist ein Nachfolger von u ein Blatt und der andere ein innerer Knoten dann haenge den anderen Nachfolger von u an den Vater von u.\\
+
+Sind beide Nachfolger von u innere Knoten, dann suche im rechten Teilbaum von u den Knoten v mit dem kleinsten Schluessel k(v).
+Schluessel k(v) ist immer groesser k(u). Der Knoten v heisst \textbf{symmetrischer Nachfolger} von u. Ersetze k(u) durch k(v) und entferne knoten v . Knoten u kann auch durch den \textbf{ symmetrischen Vorgaenger} von u ersetzt werden. Dies ist der Knoten v im linken Teilbaum von u mit dem groessten Schluessel k(v).\\
+\underline{Durchlaufanforderungen}
+Jeder Durchlauf startet an der Wurzel
+\underline{Hauptreihenfolge}
+Betrachte zuerste den Knoten selbst, dann den linken Teilbaum, dann den rechten Teilbaum.
+\underline{Nebenreihenfolge}
+Betrachte zuerst den linken Teilbaum, dann den rechten Teilbaum, dann den Knoten selbst.
+\underline{Symmetrische Reihenfolge} Betrachte zuerst den linken Teilbaum, dann den Knoten selbst, dann den rechten Teilbaum
+TODO: insert example from the slides\\
+\subsection{AVL Baeume}
+Der Aufwand der Operationen Suchen, Einfuegen und Entfernen ist im wesentlichen von der hoehe des Baumes abhaengig.
+\underline{Ziel: } Die hoehe des Suchbaumes soll auf O(log(n)) beschraenkt werden, damit die Such und Einfuege Operationen 
+hoechstens O(log(n)) vergleiche benoetigen.\\
+Ein Suchbaum ist \underline{hoehenbalanciert } wenn fuer jeden inneren Knoten u sich die Hoehe des rechten Teilbaumes von u von der 
+Hoehe des linken Teilbaumes von u hoechstens um 1 unterscheidet.\\
+
+Hoehenbalancierte Baeume werden auch \underline{AVL-Baeume} genannt.(nach den erfindern)\\
+Die hoehenbedingung sichert, dass AVL Baeume mit n inneren Knoten und n+1 Blaettern eine Hoehe aus O(log(n)) haben.
+\url{AVL- Baeume}
+Ein AVL Baum der Hoehe 1 mit minimaler Blattanzahl hat 2 Blaetter.
+Ein AVL Baum der Hoehe 2 mit minimaler Blattanzahl hat 3 Blaetter.
+
+Einen AVL Baum der hoehe h+2 mit minimaler Blattanzahl erhaelt man, wenn ein AVL Baum der hoehe h+1 und einen AVL Baum mit hoehe h,
+beide mit minimaler Blattanzahl, wie folgt zu einem Baum der Hoehe h+2 zusammengefuegt wird: \\ 
+TODO: minimale Blattanzahl herausfinden was es bedeutet\\
+Ist <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}F_{i}\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>F</mi>
+		<mi>i</mi>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb --> die i-te Fibonacci Zahl so hat ein AVL baum der hoehe h mindestens <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}F_{h+2}\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>F</mi>
+		<mrow>
+			<mi>h</mi>
+			<mo>+</mo>
+			<mn>2</mn>
+		</mrow>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb --> Blaetter.
+\\
+Die Anzahl der Blaetter in einem hoehenbalacierten Baum waechst also exponentiell mit der Hoehe. Daraus folgt dass ein AVL Baum mit n blaettern (und n-1 inneren Knoten) eine hoehe aus O(log(n)) hat. Denn jeder AVL-Baum mit hoehe h hat <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}n \geq F_{h+2} \approx c*1.618^{h+2}\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>n</mi>
+	<mo>&#x02265;</mo>
+	<msub>
+		<mi>F</mi>
+		<mrow>
+			<mi>h</mi>
+			<mo>+</mo>
+			<mn>2</mn>
+		</mrow>
+	</msub>
+	<mo>&#x02248;</mo>
+	<mi>c</mi>
+	<mo>*</mo>
+	<mn>1.61</mn>
+	<msup>
+		<mn>8</mn>
+		<mrow>
+			<mi>h</mi>
+			<mo>+</mo>
+			<mn>2</mn>
+		</mrow>
+	</msup>
+</mrow>
+</math>
+<!-- end MathToWeb --> Blaetter.
+\underline{comment}: Es gibt hier noch eine anmerkung auf den folien aber die habe ich rausgelassen. \\
+\underline{Suchen}
+Das Suchen in AVL Baeumen erfolgt wie in einem Suchbaum, und ist durch die AVL ausgeglichenheit in O(log(n)) schritten moeglich.
+
+\underline{Einfuegen}
+Der schluessel x wird wie beim Suchbaum gemacht. Liegt anschliessend keine AVL eigenschaft mehr vor, so wird sie wiederhergestellt.
+\\
+Um die Hoehenbedingung an einen inneren Knoten zu ueberpruefen, \\
+genuegt es einen sogenannten \underline{Balancefaktor} bal(u) mitzufuehren, der wie folgt definiert ist.\\
+bal(u) ist die hoehe des rechten Teilbaumes minus der hoehe des linken Teilbaumes.\\
+In einem AVL Baum gilt fuer jeden inneren Knoten <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}bal(u) \in \lbrace -1,0,1 \rbrace \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>b</mi>
+	<mi>a</mi>
+	<mi>l</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>u</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>&#x02208;</mo>
+	<mrow>
+		<mo form="prefix">&#x0007B;</mo>
+		<mo>-</mo>
+		<mn>1,0</mn>
+		<mn>,1</mn>
+		<mo form="postfix">&#x0007D;</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Sei p der Vater des Blattes bei dem die Suche endet.
+\underline{Fall 1 } bal(p) = +1 und x ist kleiner als k(p)
+\underline{Fall 2 } bal(p) =-1 und x ist groesser als k(p)
+\underline{Fall 3 } bal(p) = 0 und x ist groesser als k(p)
+\underline{Fall 4 } bal(p) = 0 und x ist kleiner als k(p)
+
+Durch Einfuegen eines neuen Knotes als rechten oder linken Sohn von p wird p ein Knoten mit Balancefaktor -1 oder +1. Dadurch hat sich die hoehe des Teilbaumes veraendert.\\
+Wir rufen eine Funktion upin(p) fuer den knoten p auf, die den Suchpfad zuruecklaeuft, die Balancefaktoren prueft, gegebenenfalls adjustiert und Umstrukturierungen (sogenannte Rotationen oder Doppelrotationen) vornimmt.
+
+\underline{Invariante}\\
+Wenn upin(p) aufgerufen wird, ist <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}bal(p) \in \lbrace -1, +1 \rbrace \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>b</mi>
+	<mi>a</mi>
+	<mi>l</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>&#x02208;</mo>
+	<mrow>
+		<mo form="prefix">&#x0007B;</mo>
+		<mo>-</mo>
+		<mn>1</mn>
+		<mo>,</mo>
+		<mo>+</mo>
+		<mn>1</mn>
+		<mo form="postfix">&#x0007D;</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+und die Hoehe des Teilbaumes mit Wurzel p um eins gewachsen.
+upin(p) bricht ab, wenn p die Wurzel ist.
+Wir unterscheiden zwei Faelle, je nachdem ob p linker oder rechter Sochn seines Vaters ist.\\
+\underline{Fall 1} (p ist linker Sohn seines Vaters <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} \varphi(p)\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->)
+\underline{Fall 1.1}(<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} bal(\varphi(p))=+1\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>b</mi>
+	<mi>a</mi>
+	<mi>l</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003C6;</mi>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>=</mo>
+	<mo>+</mo>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->), x wird im linken Teilbaum von p angehangen.
+\underline{die vorlesung hat hier ein bild}\\
+Die hoehe des Teilbaumes hat sich nicht veraendert, keine weitere Umstrukturierung notwendig.\\
+\underline{Fall 1.2}(<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} bal(varphi(p))=0\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>b</mi>
+	<mi>a</mi>
+	<mi>l</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>v</mi>
+		<mi>a</mi>
+		<mi>r</mi>
+		<mi>p</mi>
+		<mi>h</mi>
+		<mi>i</mi>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>=</mo>
+	<mn>0</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->), x wird im linken odre rechten Teilbaum von p angehangen. Die Hoehe des Teilbaumes hat sich nicht veraendert, wir sind fertig.
+\underline{Fall 1.3}(<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}bal(\varphi(p))=-1\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>b</mi>
+	<mi>a</mi>
+	<mi>l</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003C6;</mi>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>=</mo>
+	<mo>-</mo>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->)\\
+Da <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}bal(\varphi(p))=-1\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>b</mi>
+	<mi>a</mi>
+	<mi>l</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>&#x003C6;</mi>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>=</mo>
+	<mo>-</mo>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->, hatte der linke Teilbaum von <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\varphi(p)\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> bereits vor dem 
+Einfuegen des neuen Schluessels eine um 1 groessere Hoehe als der rechte Teilbaum von <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\varphi(p)\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->.
+Da der linke Teilbaum in der hoehe um eins gewachsen ist, ist die AVL Ausgeglichenheit bei <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\varphi(p)\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> verletzt.
+Wir strukturieren um.
+\underline{Fall 1.3.1} (bal(p)=-1)
+Hier ist in der vorlesung ein bild.
+Nach Vorraussetzung ist der Teilbaum mit Wurzel p um eins gewachsen und der linke Teilbaum von <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\varphi(p) \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+um eins groeser als der rechte Teilbaum von <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\varphi(p)\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->.\\
+Eine \textbf{Rotation} nach rechts bringte den baum bei <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\varphi(p)\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> wieder in die Balance.
+Dabei wird der rechte Teilbaum von p neuer linker Teilbaum von <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\varphi(p) und \varphi(p) \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mi>u</mi>
+	<mi>n</mi>
+	<mo>&#x02146;</mo>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> mit rechtem Teilbaum wird neuer rechter Teilbaum von p.\\
+Da nach der Rotation der Teilbaum mit Wurzel <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}\varphi(p)\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&#x003C6;</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> nicht um eins gewachsen ist, ist eine weitere Umstrukturierung nicht notwendig.
+\underline{Fall 1.3.2}(<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}bal(p)=+1\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>b</mi>
+	<mi>a</mi>
+	<mi>l</mi>
+	<mrow>
+		<mo form="prefix">(</mo>
+		<mi>p</mi>
+		<mo form="postfix">)</mo>
+	</mrow>
+	<mo>=</mo>
+	<mo>+</mo>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->)
+Hier ist in der Vorlesung ein Bild\\
+TODO: hier weitermachen mit folie 27/71
+\subsection{Splay Baeume}
+\subsection{B Baeume}
+B Baeume sind balancierte Baumstrukturen. Das Ziel ist es moeglichst selten Bloecke aus dem Plattenspeicher laden zu muessen.
+Es wird versucht die Hoehe der Baeume sehr klein zu halten, indem mehrere Schluessel in inneren Knoten gespeichert werden.\\
+
+Ein B Baum der Ordnung m, m>=3 ist ein Baum mit folgenden Eigenschaften:\\
+Alle Blaetter haben die gleiche Tiefe, Jeder Knoten mit Ausnahme der Wurzel und der Blaetter hat mindestens <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+\lceil m/2 \rceil 
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo form="prefix">&#x02308;</mo>
+	<mi>m</mi>
+	<mo>&#x0002F;</mo>
+	<mn>2</mn>
+	<mo form="postfix">&#x02309;</mo>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Soehne.
+Die Wurzel hat mindestens 2 Soehne. Jeder Knoten hat hoechstens m Soehne. Jeder Knoten mit i Soehnen speichert m-1 Schluessel.\\
+
+Zusaetzlich gilt:
+Ist p ein innerer Knoten eines B Baumes der Ordnung m, so speichert er l schluessel, s1,...,sl und hat l+1 Soehne.
+mit <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+\lceil m/2 \rceil <= l+1 <=m \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mrow>
+		<mo form="prefix">&#x02308;</mo>
+		<mi>m</mi>
+		<mo>&#x0002F;</mo>
+		<mn>2</mn>
+		<mo form="postfix">&#x02309;</mo>
+	</mrow>
+	<mo>&#x0003C;</mo>
+	<mo>=</mo>
+	<mi>l</mi>
+	<mo>+</mo>
+	<mn>1</mn>
+	<mo>&#x0003C;</mo>
+	<mo>=</mo>
+	<mi>m</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Alle Schluessel im Teilbaum mit wurzel
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ p_{i-1}, 1 \leq i \leq l \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>p</mi>
+		<mrow>
+			<mi>i</mi>
+			<mo>-</mo>
+			<mn>1</mn>
+		</mrow>
+	</msub>
+	<mn>,1</mn>
+	<mo>&#x02264;</mo>
+	<mi>i</mi>
+	<mo>&#x02264;</mo>
+	<mi>l</mi>
+</mrow>
+</math>
+<!-- end MathToWeb --> sind kleiner als si und alle Schluessel im Teilbaum mit Wurzel pi sind groesser als si.\\
+Bemerkung: Ein B Baum der n Schluessel speichert hat n+1 Blaetter.\\
+Ein B Baum der Ordnung m mit hoehe h hat die minimale Blattanzahl wenn seine Wurzel nur 2 und jeder innere Knoten nur <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+\lceil m/2 \rceil 
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mo form="prefix">&#x02308;</mo>
+	<mi>m</mi>
+	<mo>&#x0002F;</mo>
+	<mn>2</mn>
+	<mo form="postfix">&#x02309;</mo>
+</mrow>
+</math>
+<!-- end MathToWeb --> 
+viele Soehne hat.
+
+<!-- %here is some content missing i thought not important -->
+B Baeume sind balanciert.
+\subsubsection{Suchen in B Baeumen}
+Man beginnt mit der Wurzel, die die Schluessel <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ s_{1}, ... ,s_{l}
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>s</mi>
+		<mn>1</mn>
+	</msub>
+	<mo>,</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>,</mo>
+	<msub>
+		<mi>s</mi>
+		<mi>l</mi>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb --> speichert und bestimmt einen kleinsten index i mit <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ x \leq s_{i} 
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	<mo>&#x02264;</mo>
+	<msub>
+		<mi>s</mi>
+		<mi>i</mi>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+falls es ein solches i gibt. Ist x = si so ist x gefunden.
+Ist x < si so setze die suche bei p i-1 fort, im fall x > si setze die suche bei pi fort.
+Das wird solange gemacht bis man x gefunden hat.
+\subsubsection{Einfuegen in B Baum}
+\subsubsection{Entfernen in B Baum}
+Zum Entfernen eines Schluessels x wird x zunaechst gesucht. wird x nicht gefunden, ist nichts zu tun.
+\textbf{Fall 1: x ist Schluessel si eines Knotens und pi-1, pi sind keine Blaetter.}
+Dann suche den groessten Schluessel y im Teilbaum mit wurzel pi-1
+bzw den kleinsten Schluessel y im Teilbaum mit wurzel pi und tausche ihn mit x.
+Entferne dann x wi in Fall 2.
+
+\textbf{Fall2: x ist Schluessel si eines Knotens und <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+p_{i-1}, p_{i} \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>p</mi>
+		<mrow>
+			<mi>i</mi>
+			<mo>-</mo>
+			<mn>1</mn>
+		</mrow>
+	</msub>
+	<mo>,</mo>
+	<msub>
+		<mi>p</mi>
+		<mi>i</mi>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb --> sind blaetter.}
+
+Entferne x und das blatt pi-1 oder pi.
+Falls der dabei entstandene Knoten p weniger als <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ \lceil \frac{m}{2} \rceil -1 
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mrow>
+		<mo form="prefix">&#x02308;</mo>
+		<mfrac linethickness="1">
+			<mi>m</mi>
+			<mn>2</mn>
+		</mfrac>
+		<mo form="postfix">&#x02309;</mo>
+	</mrow>
+	<mo>-</mo>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+Schluessel hat, sei q der linke oder rechte Bruder von p, je nachdem welcher Bruder existiert. 
+OBdA ist q linker Bruder von p.
+
+Sei y der Schluessel im Vater r, der zwischen q und p angeordnet ist. 
+Wir speichern nun die Schluessel von q,y,p in einem neuen Knoten p' \\
+Dazu wird y aus dem Vater r entfernt.
+
+\subparagraph{Fall 2.1:}
+Sind <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} k_{1} ..., k_{l} \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>k</mi>
+		<mn>1</mn>
+	</msub>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>,</mo>
+	<msub>
+		<mi>k</mi>
+		<mi>l</mi>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb --> die Schluessel in p' in aufsteigender Reihenfolge und ist <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}l > m-1 \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>l</mi>
+	<mo>&#x0003E;</mo>
+	<mi>m</mi>
+	<mo>-</mo>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb -->so bildet man zwei neue Knoten p,q
+mit den Schluesseln <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} k_{1},...,k_{\frac{l}{2}} \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>k</mi>
+		<mn>1</mn>
+	</msub>
+	<mo>,</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>,</mo>
+	<msub>
+		<mi>k</mi>
+		<mrow>
+			<mfrac linethickness="1">
+				<mi>l</mi>
+				<mn>2</mn>
+			</mfrac>
+		</mrow>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb --> und <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} k_{\frac{l}{2}+1},...,k_{l} \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>k</mi>
+		<mrow>
+			<mfrac linethickness="1">
+				<mi>l</mi>
+				<mn>2</mn>
+			</mfrac>
+			<mo>+</mo>
+			<mn>1</mn>
+		</mrow>
+	</msub>
+	<mo>,</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>.</mo>
+	<mo>,</mo>
+	<msub>
+		<mi>k</mi>
+		<mi>l</mi>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb -->
+und fuegt den mittleren Schluessel <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} k_{\frac{l}{2}} \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<msub>
+		<mi>k</mi>
+		<mrow>
+			<mfrac linethickness="1">
+				<mi>l</mi>
+				<mn>2</mn>
+			</mfrac>
+		</mrow>
+	</msub>
+</mrow>
+</math>
+<!-- end MathToWeb --> im Vater r zwischen q,p ein.
+\subparagraph{Fall 2.2:} Ist <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}
+ l \leq m-1
+\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>l</mi>
+	<mo>&#x02264;</mo>
+	<mi>m</mi>
+	<mo>-</mo>
+	<mn>1</mn>
+</mrow>
+</math>
+<!-- end MathToWeb --> dann muss der Vater r von p' weiter betrachtet werden, weil er moeglicherweise zu wenig schluessel speichert.
+Die Korrekturen der zu klein gewordenen Knoten setzen sich entlag des Suchpfades gegebenenfalls bis zur Wurzel fort.
+
+\section{Vorlesung 7: Graphen}
+Ein Graph <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math} G=\lbrace V,E\rbrace \end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>G</mi>
+	<mo>=</mo>
+	<mrow>
+		<mo form="prefix">&#x0007B;</mo>
+		<mi>V</mi>
+		<mo>,</mo>
+		<mi>E</mi>
+		<mo form="postfix">&#x0007D;</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> besteht aus einer endlichen menge von knoten V und kanten E.
+
+In einem gerichteten Graphen ist jede Kante e ein Paar (u,v) von zwei knoten u,v elem V, u ist der startknoten und v der Endknoten.
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+    E \subset V x V
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>E</mi>
+			<mo>&#x02282;</mo>
+			<mi>V</mi>
+			<mi>x</mi>
+			<mi>V</mi>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+\subsection{2}
+In einem ungerichteten Graphen ist jede Kante e 
+\section{Runtime Analysis}
+\section{Showing Correctness of an Algorithm}
+\url{http://www.cs.cornell.edu/courses/cs211/2006sp/Lectures/L06-Induction/binary_search.html}\\
+
+\textbf{Showing binary search correct using strong induction }\\
+Strong induction\\
+
+Strong (or course-of-values) induction is an easier proof technique than ordinary induction because you get to make a stronger assumption in the inductive step. In that step, you are to prove that the proposition holds for k+1 assuming that that it holds for all numbers from 0 up to k. This stronger assumption is especially useful for showing that many recursive algorithms work.
+
+\textbf{The recipe for strong induction is as follows:}
+
+    State the proposition P(n) that you are trying to prove to be true for all n.
+    Base case: Prove that the proposition holds for n = 0, i.e., prove that P(0) is true.
+    Inductive step: Assuming the induction hypothesis that P(n) holds for all n between 0 and k, prove that P(k+1) is true.
+    Conclude by strong induction that P(n) holds for all n ??? 0. 
+
+\textbf{Example: Binary Search}
+
+For example, consider a binary search algorithm that searches efficiently for an element contained in a sorted array. We might implement this algorithm recursively as follows:\\
+
+\begin{verbatim}
+/** Return an index of x in a.
+ *  Requires: a is sorted in ascending order, and x is found in the array a
+ *  somewhere between indices left and right.
+ */
+int binsrch(int x, int[] a, int left, int right) {
+    int m = (left+right)/2;
+    if (x == a[m]){
+        return m;
+    }
+    if (x < a[m]){
+        return find(x, a, l, m???1)
+    }else{
+        return find(x, a, m+1, r);
+    }
+}
+\end{verbatim}
+
+Because this code is tail-recursive, we can also transform it into iterative code straightforwardly:
+\begin{verbatim}
+int binsrch(int x, int[] a, int left, int right) {
+    while (true) {
+        int m = (left+right)/2;
+        if (x == a[m]){
+            return m;
+        }
+        if (x < a[m]){
+            r = m???1;
+        }else{
+            l = m+1;
+        }
+    }
+}
+\end{verbatim}
+
+Binary search is efficient and easy to understand, but it is also famously easy to implement incorrectly. So it is a good example of code for which we want to think carefully about whether it works. Just testing it may well miss cases in which it does not work correctly.\\
+
+We can prove either piece of code correct by induction, but it is arguably simpler to think about the recursive version. The problem with convincing ourselves that binsrch works is that it uses itself, so the argument becomes circular if we're not careful. The key observation is that binsrch works in a divide-and-conquer fashion, calling itself only on arguments that are ???smaller??? in some way. In what way do the arguments become smaller? The difference between the parameters right and left becomes smaller in the recursive call. This is then the variable we should choose to construct our inductive argument. Now we can follow the strong induction recipe.\\
+
+Let P(n) be the assertion that binsrch works correctly for inputs where <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}right???left = n\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>r</mi>
+	<mi>i</mi>
+	<mi>g</mi>
+	<mi>h</mi>
+	<mi>t</mi>
+	???<mi>l</mi>
+	<mi>e</mi>
+	<mi>f</mi>
+	<mi>t</mi>
+	<mo>=</mo>
+	<mi>n</mi>
+</mrow>
+</math>
+<!-- end MathToWeb -->. 
+If we can prove that P(n) is true for all n, then we know that binsrch works on all possible arguments.\\
+
+\textbf{Base Case}. In the case where n=0, we know left=right=m. Since we assumed that the function would only be called when x is found between left and right, it must be the case that x = a[m], and therefore the function will return m, an index of x in array a.\\
+
+\textbf{Inductive Step}. We assume that binsrch works as long as left???right ??? k. Our goal is to prove that it works on an input where left???right = k + 1. There are three cases, where x = a[m], where x < a[m] and where x > a[m].\\
+\textbf{Case x = a[m]}. \\Clearly the function works correctly.\\
+\textbf{Case x < a[m]}. \\We know because the array is sorted that x must be found between a[left] and a[m???-1]. So if the recursive call works correctly, this call will too. The n for the recursive call is n = m ??? 1 ??? left = ???(left+right)/2??? ??? 1 ??? left. (Note that ???x??? is the floor of x, which rounds it down toward negative infinity.) If left+right is odd, then n = (left + right ??? 1)/2 ??? 1 ??? left = (right ??? left)/2 ??? 1, which is definitely smaller than right???left. If left+right is even then n = (left + right)/2 ??? 1 ??? left = (right???left)/2, which is also smaller than k + 1 = right???left because right???left = k + 1 > 0. So the recursive call must be to a range of a that is between 0 and k cells, and must be correct by our induction hypothesis.\\
+
+\textbf{Case <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}x > a[m]\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	<mo>&#x0003E;</mo>
+	<mi>a</mi>
+	<mrow>
+		<mo form="prefix">[</mo>
+		<mi>m</mi>
+		<mo form="postfix">]</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb -->}. \\
+This is more or less symmetrical to the previous case. \\
+We need to show that r ??? (m + 1) ??? right ??? left. 
+We have <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}r???(m + 1)???l=right???\lfloor(left+right)/2\rfloor-1\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>r</mi>
+			???
+			<mrow>
+				<mo form="prefix">(</mo>
+				<mi>m</mi>
+				<mo>+</mo>
+				<mn>1</mn>
+				<mo form="postfix">)</mo>
+			</mrow>
+			???<mi>l</mi>
+			<mo>=</mo>
+			<mi>r</mi>
+			<mi>i</mi>
+			<mi>g</mi>
+			<mi>h</mi>
+			<mi>t</mi>
+			???
+			<mrow>
+				<mo form="prefix">&#x0230A;</mo>
+				<mrow>
+					<mo form="prefix">(</mo>
+					<mi>l</mi>
+					<mi>e</mi>
+					<mi>f</mi>
+					<mi>t</mi>
+					<mo>+</mo>
+					<mi>r</mi>
+					<mi>i</mi>
+					<mi>g</mi>
+					<mi>h</mi>
+					<mi>t</mi>
+					<mo form="postfix">)</mo>
+				</mrow>
+				<mo>&#x0002F;</mo>
+				<mn>2</mn>
+				<mo form="postfix">&#x0230B;</mo>
+			</mrow>
+			<mo>-</mo>
+			<mn>1</mn>
+		</mtd>
+		<mtd columnalign="right" style="width: 100%">
+			<mtext id="">(1)</mtext>
+			<mspace width="6.0em" />
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->.\\
+
+If right+left is even, this is (right???left)/2 ??? 1, which is less than right???left. If right+left is odd, this is right??? (left + right ??? 1)/2 ??? 1 = (right???left)/2 ??? 1/2, which is also less than right???left. Therefore, the recursive call is to a smaller range of the array and can be assumed to work correctly by the induction hypothesis. \\
+
+Because in all cases the inductive step works, we can conclude that binsrch (and its iterative variant) are correct! 
+\\
+Notice that if we had made a mistake coding the <!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{math}x > a[m]\end{math} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>x</mi>
+	<mo>&#x0003E;</mo>
+	<mi>a</mi>
+	<mrow>
+		<mo form="prefix">[</mo>
+		<mi>m</mi>
+		<mo form="postfix">]</mo>
+	</mrow>
+</mrow>
+</math>
+<!-- end MathToWeb --> case, and passed m as left instead of m+1 (easy to do!), the proof we just constructed would have failed in that case. And in fact, the algorithm could go into an infinite loop when right = left + 1. This shows the value of careful inductive reasoning. 
+<!-- %\chapter{Compilers} -->
+\chapter{Other Resources}
+
+\section{resources}
+\url{khanacademy.com}
+\url{codewars.com}
+\url{github.com}
+\url{onlinetutorium.com}
+\url{sharelatex.com}
+\url{hackerrank.com}
+\url{brilliant.org}
+\url{https://www.w3schools.com/}
+\url{freecodecamp.com}
+
+Algodat
+\url{https://www.cs.usfca.edu/~galles/visualization/AVLtree.html}
+\url{https://www.cs.usfca.edu/~galles/visualization/Algorithms.html}
+\url{https://www.youtube.com/watch?v=dHYX4dtNS1k}
+\end{document}
+
 <hr>
+
 <h1>Theoretische Informatik SoSe 2019, Blatt 3 </h1>
 <h2>Aufgabe 1 : Chomsky Hierarchie:</h2>
 Geben sie fuer folgende Spachen jeweils<br>
