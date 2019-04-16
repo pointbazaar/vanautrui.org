@@ -111,220 +111,33 @@ P(M) := \lbrace A : A \subset P \rbrace
 $$
 The Potenzmenge is the set of all subsets of M.\\
 Definition: Cartesian Product:\\
-The cartesian Product of the sets <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}A_{1}, ... , A_{n}
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<msub>
-		<mi>A</mi>
-		<mn>1</mn>
-	</msub>
-	<mo>,</mo>
-	<mo>.</mo>
-	<mo>.</mo>
-	<mo>.</mo>
-	<mo>,</mo>
-	<msub>
-		<mi>A</mi>
-		<mi>n</mi>
-	</msub>
-</mrow>
-</math>
-<!-- end MathToWeb --> is defined as
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+The cartesian Product of the sets $$ A_{1}, ... , A_{n}
+$$ is defined as
+$$
  A_{1} \times ... \times A_{n} := \lbrace (a_{1}, ... ,a_{n}) : a_{i} \in A_{i} : \forall i = \lbrace 1,...,n\rbrace \rbrace
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<msub>
-				<mi>A</mi>
-				<mn>1</mn>
-			</msub>
-			<mo>&#x000D7;</mo>
-			<mo>.</mo>
-			<mo>.</mo>
-			<mo>.</mo>
-			<mo>&#x000D7;</mo>
-			<msub>
-				<mi>A</mi>
-				<mi>n</mi>
-			</msub>
-			<mo>:</mo>
-			<mo>=</mo>
-			<mrow>
-				<mo form="prefix">&#x0007B;</mo>
-				<mrow>
-					<mo form="prefix">(</mo>
-					<msub>
-						<mi>a</mi>
-						<mn>1</mn>
-					</msub>
-					<mo>,</mo>
-					<mo>.</mo>
-					<mo>.</mo>
-					<mo>.</mo>
-					<mo>,</mo>
-					<msub>
-						<mi>a</mi>
-						<mi>n</mi>
-					</msub>
-					<mo form="postfix">)</mo>
-				</mrow>
-				<mo>:</mo>
-				<msub>
-					<mi>a</mi>
-					<mi>i</mi>
-				</msub>
-				<mo>&#x02208;</mo>
-				<msub>
-					<mi>A</mi>
-					<mi>i</mi>
-				</msub>
-				<mo>:</mo>
-				<mo>&#x02200;</mo>
-				<mi>i</mi>
-				<mo>=</mo>
-				<mo form="prefix">&#x0007B;</mo>
-				<mn>1</mn>
-				<mo>,</mo>
-				<mo>.</mo>
-				<mo>.</mo>
-				<mo>.</mo>
-				<mo>,</mo>
-				<mi>n</mi>
-				<mo form="postfix">&#x0007D;</mo>
-				<mo form="postfix">&#x0007D;</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(5)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
-Are <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}A_{1} = ... = A_{n}\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<msub>
-		<mi>A</mi>
-		<mn>1</mn>
-	</msub>
-	<mo>=</mo>
-	<mo>.</mo>
-	<mo>.</mo>
-	<mo>.</mo>
-	<mo>=</mo>
-	<msub>
-		<mi>A</mi>
-		<mi>n</mi>
-	</msub>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-we can also write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- A^{n}\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<msup>
-		<mi>A</mi>
-		<mi>n</mi>
-	</msup>
-</mrow>
-</math>
-<!-- end MathToWeb -->\\
- Definition: obere und untere Schranke:\\
-TODO: add the content from here in the book
-\section{Function, Relations}
-Definition: Function:\\
+$$
+Are $ A_{1} = ... = A_{n} $
+we can also write $ A^{n} $
+obere und untere Schranke:
+
+<h2> Function, Relations </h2>
+Function:
 Are A, B sets then a function f from A to B is a function that 
-maps every <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- a \in A
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>a</mi>
-	<mo>&#x02208;</mo>
-	<mi>A</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> to some
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- b \in B
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>b</mi>
-	<mo>&#x02208;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->.
+maps every $ a \in A $ to some $ b \in B $
+
 We write for a function from A to B:
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$$
     f: A \rightarrow B, a \mapsto f(a)
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>f</mi>
-			<mo>:</mo>
-			<mi>A</mi>
-			<mo>&#x02192;</mo>
-			<mi>B</mi>
-			<mo>,</mo>
-			<mi>a</mi>
-			<mo>&#x021A6;</mo>
-			<mi>f</mi>
-			<mrow>
-				<mo form="prefix">(</mo>
-				<mi>a</mi>
-				<mo form="postfix">)</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(1)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
-Definition: Bild, Urbild:\\
-TODO: continue here
-\section{Numbers}
-\section{Proof Techniques}
-Definition: direct Proof:\\
-Man geht von der (gegebenen, wahren) Vorraussetzung (Aussage) A aus und zeigt durch Umformungen oder Folgern, dass aus A die Aussage B folgt. Mathematisch ausgedrueckt untersucht man <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- A \Rightarrow B
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x021D2;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->\\
-Definition: indirect Proof:\\
+$$
+
+Definition: Bild, Urbild: (TODO)
+
+<h2>Numbers</h2>
+<h2>Proof Techniques</h2>
+direct Proof:
+Man geht von der (gegebenen, wahren) Vorraussetzung (Aussage) A aus und zeigt durch Umformungen oder Folgern, dass aus A die Aussage B folgt. Mathematisch ausgedrueckt untersucht man $ A \Rightarrow B $
+
+ indirect Proof:
 Der indirekte Beweis ist einer der elegantesten und auch einfachsten Beweise. Man geht dabei so vor: \\
 1. Man geht von Gegenteil der Behauptung aus (dies ist die Annahme).\\
 2. Man versucht diese Annahme zu einem Widerspruch zu fuehren.\\
@@ -332,231 +145,28 @@ Der indirekte Beweis ist einer der elegantesten und auch einfachsten Beweise. Ma
 Definition: Induction:\\
 Wir moechten uns der vollstaendingen Induktion nun mithilfe der sogenannten Peano-Axiome annaehern, die folgendes besagen:\\
 TODO: continue here
-\section{Groups, Rings, Fields}
-Gruppen, Ringe und Koerper. \\
-Definition Gruppe:\\
-Eine Gruppe <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- (G,
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo form="prefix">(</mo>
-	<mi>G</mi>
-	<mo>,</mo>
-</mrow>
-</math>
-<!-- end MathToWeb -->
 
-\section{Linear Algebra}
-\subsection{Vector Spaces}
-\subsection{Sub Vector Spaces}
 \section{Analysis}
-Sei M eine Menge. Eine Metrik ist eine abbildung <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- d: M x M \rightarrow R
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>d</mi>
-	<mo>:</mo>
-	<mi>M</mi>
-	<mi>x</mi>
-	<mi>M</mi>
-	<mo>&#x02192;</mo>
-	<mi>R</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> auf M x M fuer die folgende 3 Axiome definiert sind: 
-Positiv definiertheit, <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \forall x,y \in M gilt d(x,y) >=0\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo>&#x02200;</mo>
-	<mi>x</mi>
-	<mo>,</mo>
-	<mi>y</mi>
-	<mo>&#x02208;</mo>
-	<mi>M</mi>
-	<mi>g</mi>
-	<mi>i</mi>
-	<mi>l</mi>
-	<mi>t</mi>
-	<mi>d</mi>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>x</mi>
-		<mo>,</mo>
-		<mi>y</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mo>&#x0003E;</mo>
-	<mo>=</mo>
-	<mn>0</mn>
-</mrow>
-</math>
-<!-- end MathToWeb -->  Gleichheit gilt wenn <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} x=y
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>x</mi>
-	<mo>=</mo>
-	<mi>y</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
+Sei M eine Menge. Eine Metrik ist eine abbildung $ d: M x M \rightarrow R $ auf M x M fuer die folgende 3 Axiome definiert sind: 
+Positiv definiertheit, $
+ \forall x,y \in M gilt d(x,y) >=0 $  Gleichheit gilt wenn $ x=y $
 und Symmetrie, Es gilt d(x,y) = d(y,x) fuer alle x,y in M.
 und Dreiecksungleichung. Es gilt:
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$$
  d(x,y) <= d(x,z) + d(z,y) \forall x,y,z \in M
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>d</mi>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>x</mi>
-		<mo>,</mo>
-		<mi>y</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mo>&#x0003C;</mo>
-	<mo>=</mo>
-	<mi>d</mi>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>x</mi>
-		<mo>,</mo>
-		<mi>z</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mo>+</mo>
-	<mi>d</mi>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>z</mi>
-		<mo>,</mo>
-		<mi>y</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mo>&#x02200;</mo>
-	<mi>x</mi>
-	<mo>,</mo>
-	<mi>y</mi>
-	<mo>,</mo>
-	<mi>z</mi>
-	<mo>&#x02208;</mo>
-	<mi>M</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
+$$
 Das Paar (M,d) nennt man einen metrischen Raum.
 
 Definition offene Kugel, abgeschlossene Kugel
-Seien (M,d) ein metrischer Raum, <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+Seien (M,d) ein metrischer Raum, $
  x_{0} \in M , r>0
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<msub>
-		<mi>x</mi>
-		<mn>0</mn>
-	</msub>
-	<mo>&#x02208;</mo>
-	<mi>M</mi>
-	<mo>,</mo>
-	<mi>r</mi>
-	<mo>&#x0003E;</mo>
-	<mn>0</mn>
-</mrow>
-</math>
-<!-- end MathToWeb --> Die Menge <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$ Die Menge $
  U(x_{0},r):={x\in M : d(x,x_{0})<r}
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>U</mi>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<msub>
-			<mi>x</mi>
-			<mn>0</mn>
-		</msub>
-		<mo>,</mo>
-		<mi>r</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mo>:</mo>
-	<mo>=</mo>
-	<mrow>
-		<mi>x</mi>
-		<mo>&#x02208;</mo>
-		<mi>M</mi>
-		<mo>:</mo>
-		<mi>d</mi>
-		<mrow>
-			<mo form="prefix">(</mo>
-			<mi>x</mi>
-			<mo>,</mo>
-			<msub>
-				<mi>x</mi>
-				<mn>0</mn>
-			</msub>
-			<mo form="postfix">)</mo>
-		</mrow>
-		<mo>&#x0003C;</mo>
-		<mi>r</mi>
-	</mrow>
-</mrow>
-</math>
-<!-- end MathToWeb --> bezeichnen als d-offene Kugel.
+$ bezeichnen als d-offene Kugel.
 Die Menge 
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$$
  B(x_{0},r):={x\in M : d(x,x_{0})\leq r}
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>B</mi>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<msub>
-			<mi>x</mi>
-			<mn>0</mn>
-		</msub>
-		<mo>,</mo>
-		<mi>r</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mo>:</mo>
-	<mo>=</mo>
-	<mrow>
-		<mi>x</mi>
-		<mo>&#x02208;</mo>
-		<mi>M</mi>
-		<mo>:</mo>
-		<mi>d</mi>
-		<mrow>
-			<mo form="prefix">(</mo>
-			<mi>x</mi>
-			<mo>,</mo>
-			<msub>
-				<mi>x</mi>
-				<mn>0</mn>
-			</msub>
-			<mo form="postfix">)</mo>
-		</mrow>
-		<mo>&#x02264;</mo>
-		<mi>r</mi>
-	</mrow>
-</mrow>
-</math>
-<!-- end MathToWeb --> bezeichnen also d-abgeschlossene Kugel.
+$$ bezeichnen also d-abgeschlossene Kugel.
 
 Definition Umgebung
 Sei (M,d) ein metrischer Raum. Eine Teilmenge <!-- begin MathToWeb -->
@@ -628,669 +238,71 @@ Insbesondere ist <!-- begin MathToWeb -->
 </math>
 <!-- end MathToWeb --> 
  selbst eine Umgebung von x.
- Man nennt <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+ Man nennt $
   U(x,\epsilon) die \epsilon Umgebung von x.
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>U</mi>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>x</mi>
-		<mo>,</mo>
-		<mi>&#x003F5;</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mo>&#x02146;</mo>
-	<mi>i</mi>
-	<mi>e</mi>
-	<mi>&#x003F5;</mi>
-	<mi>U</mi>
-	<mi>m</mi>
-	<mi>g</mi>
-	<mi>e</mi>
-	<mi>b</mi>
-	<mi>u</mi>
-	<mi>n</mi>
-	<mi>g</mi>
-	<mi>v</mi>
-	<mi>o</mi>
-	<mi>n</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-\chapter{Programming}
-\section{Linux and Shell}
-There are shells. default is maybe bash.
-\begin{verbatim}
-    pwd                 //prints current directory
-    touch test.txt      //makes a new file called test.txt in the current directory
-    cat test.txt        //prints the contents of test.txt to the terminal
-    mkdir testdirectory //makes a new folder called testdirectory
-    cd testdirectory    //moves into the new folder
-    cd ..               //moves up one directory
-    ls                  //lists all the files in the folder, there are none because the folder was just created
-    echo "hello"        u
-    echo "hello" | wc   // a | pipe symbol pipes the output of one command to the input of another
-    file test.txt       //display information about the file
-\end{verbatim}
-\section{vim (neovim)}
-When in normal mode:
-\begin{verbatim}
-    j,k,h,l,3j          //these are the movement keys
-    :                   //enter command mode
-    i                   //enter insert mode 
-    v                   //enter visual mode (selection)
-    w,4w                //jump to beginning of next word, jump 4 words
-    b                   //jump to beginning of next word
-    dd, 3dd             //delete line, delete 3 lines
-\end{verbatim}  
-When in command mode:
-\begin{verbatim}
-    :w              //write to the file from the buffer
-    :wq             //write to the file and quit vim
-    :q              //quit vim
-    :r test.txt     //reads the contents of test.txt and places them in the current file
-\end{verbatim}
-\section{Git and Github}
-\begin{verbatim}
-    //clones a repository
-    git clone https://github.com/pointbazaar/simpledraw.git 
-    git commit -a               // commits all changes
-    git add .                   // adds all the files to git tracking
-    git commit -am "fix"        // commits all changes and adds the commit message (preferred)
-    git push                    // pushes changes upstream
-    git pull                    // pulls the most recent changes to the local repository
-\end{verbatim}
-If there are conflicts that can't be auto-merged, you can use git pull and then edit the affected files,
-then commit then push.  
+$
+<h2> Programming </h2>
+<h3> Linux </h3>
+<p>
+read: man pages for: pwd, touch,cat,mkdir,cd,ls,ech,file
+</p>
+
+<h3>vim (neovim)</h3>
+<p> read: man vim </p>
+
+<h3>Git and Github</h3>
+
+<p> read: man git </p>
+  
 \section{C}
 \subsection{Data Types}
 int, float, double
 \subsection{Pointers}
 \subsection{Functions}
 
-\section{Haskell}
-from the book "Haskell Programming from first Principles"
-\subsection{All you need is lambda}
-Haskell is a pure functional programming language.
-A function is a relation between two sets, a set of inputs and a set of outputs.
-The set of inputs is the domain and the set of outputs the codomain.
-A set is a collection of unique values. Example:
-\begin{verbatim}
-f: 1 -> A
-f: 2 -> B
-f: 3 -> C
-\end{verbatim}
-It is important that the function always return the same value given the same input.
-Functional programming is a programming paradigm that relies on definition and application of functions as the basis for programs.
-Contrast this with the sequential instructions in imperative programming languages. Functions in haskell are modeled on mathematical functions.
-The essence of functional programming is that programs are a combination of expressions to be evaluated. Expressions are a superset that include concrete values, variables, functions. Functions have a more specific definition: They are expressions that are applied to an argument,
-and once applied, can be reduced or evaluated. In Functional programming, Functions are first-class citizens, so they can be used as arguments and values to other functions.
-Functional programming is very useful for parallel and concurrent processing and working with large codebases.
-Modeling functions after mathematical functions makes it easy to refactor them, reason about them, compose them, and evaluate them in parallel.
-\\
-Functions, also called lambdas consist of two parts, the head and the body. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} \lambda  x . x \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> \\
-This is a lambda abstraction of x. Note that this is the identity function <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} a \phi = a \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>a</mi>
-	<mi>&#x003D5;</mi>
-	<mo>=</mo>
-	<mi>a</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->\\
-One difference is that this is an anonymous function, it has no name. \\
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} (\lambda  x.) x \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>&#x003BB;</mi>
-		<mi>x</mi>
-		<mo>.</mo>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mi>x</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> The Head of the lambda. It includes a single variable that is bound when the function is applied.\\
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} \lambda  x. (x) \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>x</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-</mrow>
-</math>
-<!-- end MathToWeb --> The Body of the lambda. This is the expression the lambda returns when called \\
-\textbf{Beta Reduction}
-When you apply the function, you substitute the input expression for all instances of bound variables within the abstraction, a process known as beta-reduction. At the same time you eliminate the head that binds the variables. When there are no more heads, or lambdas left, you're done. A computation therefore consists of an initial lambda expression(or two, if you want to seperate the function and its input) plus a finite sequence of lambda terms, each deduced from the preceding term by one application of beta-reduction.\\
-The function <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \lambda x.xy
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-	<mi>y</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-might be applied to an argument, z like this: <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- (\lambda x.xy)z
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>&#x003BB;</mi>
-		<mi>x</mi>
-		<mo>.</mo>
-		<mi>x</mi>
-		<mi>y</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mi>z</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-We would bind the argument x to z and replace any occurrence of the bound variable x in the body of the function with z to see the result. We'd be left with zy which is "z applied to y" . This means that z is a function expecting an argument, but we can't apply (or reduce) it until we know the terms of z. This can't be reduced any further because we don't know (or need to know) the terms of z or y and nothing remains to be applied.\\
-1. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} \lambda x.xy \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-	<mi>y</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-We're going to show you more steps than most lambda literature will bother with, so you know why everything happens. The above is the lambda we're going to apply to an argument in the next step.\\
-2. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}(\lambda x.xy)z \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>&#x003BB;</mi>
-		<mi>x</mi>
-		<mo>.</mo>
-		<mi>x</mi>
-		<mi>y</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mi>z</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-We apply the lamda to the argument z. The argument x is bound to z. There are no more arguments to apply in the head so the enclosing lambda has been applied out of existence.
-\\
-3. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}(\lambda [x:=z].xy)z \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>&#x003BB;</mi>
-		<mrow>
-			<mo form="prefix">[</mo>
-			<mi>x</mi>
-			<mo>:</mo>
-			<mo>=</mo>
-			<mi>z</mi>
-			<mo form="postfix">]</mo>
-		</mrow>
-		<mo>.</mo>
-		<mi>x</mi>
-		<mi>y</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mi>z</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-Now we can replace all occurrences of x with z. The notation {x:=z} indicates that x is bound to z, so z will be substituted for all occurrences of x in the expression.
-\\
-4. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}zy \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>z</mi>
-	<mi>y</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-Drop the head of the lambda since it's been applied. We can reduce this no further.
-\\
-Let's use an example that mixes some arithmetic into our lambda calculus.
-We use parentheses here to clarify that the body expression is x+1  . In other words, we are not applying the function to the 1.
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- (\lambda x.x+1)
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo form="prefix">(</mo>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-	<mo>+</mo>
-	<mn>1</mn>
-	<mo form="postfix">)</mo>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-This reduction is really all we can do in the lambda calculus. We keep following the rules of application, substituting arguments in for the bound variables until there are no more heads left to evaluate or no more arguments to apply them to.\\
-\textbf{Bound and free variables}
-We have seen how the head of a lambda abstraction binds variables. The purpose of the head of the function is to tell us which variables to replace when we apply our function, that is, to bind the variables.
-A bound variable must has the same value throughout the expression. But sometimes the body expression has variables that are not named in the head.
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
-    \lambda x.xy
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>&#x003BB;</mi>
-			<mi>x</mi>
-			<mo>.</mo>
-			<mi>x</mi>
-			<mi>y</mi>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(1)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
-The x here is a bound variable because it shows up in the head of the function aswell as the body. But the y is not mentioned in the head of this function, so it is a free variable. When we apply this function to an argument, nothing can be done with the y. It remains unreducible.
-We can bind multiple variables in a function:
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
-    \lambda xy.xy
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>&#x003BB;</mi>
-			<mi>x</mi>
-			<mi>y</mi>
-			<mo>.</mo>
-			<mi>x</mi>
-			<mi>y</mi>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(2)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
-However, it is important to note that we have now actually created a function with multiple, nested heads. When we go through the beta-reduction, we eliminate one head at a time, starting frmo the outermost, or leftmost head. 
-More on this in just a moment. We'll demonstrate how this is the case when we talk about multiple arguments and currying.\\
-\textbf{Alpha Equivalence}
-Ordinarily when people express the identity function in lambda calculus, you'll see something like <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} \lambda x.x \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> 
-There is a form of equivalence between lambda terms called alpha equivalence. This means that
 
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation} \lambda x.x = \lambda y.y  = \lambda d.d \end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>&#x003BB;</mi>
-			<mi>x</mi>
-			<mo>.</mo>
-			<mi>x</mi>
-			<mo>=</mo>
-			<mi>&#x003BB;</mi>
-			<mi>y</mi>
-			<mo>.</mo>
-			<mi>y</mi>
-			<mo>=</mo>
-			<mi>&#x003BB;</mi>
-			<mi>d</mi>
-			<mo>.</mo>
-			<mi>d</mi>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(3)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
-
-all mean the some thing. They're all the identity function. Take one argument, kick it back out. This equivalence applies only to bound variables where you know for a fact within the scope of the lambda that they will be the same, even if they have different names. This intuition does not apply for free variables as they are not defined by the enclosing lambda alone.\\
-\textbf{Multiple Arguments}
-Each lambda accepts one argument. Functions that require multiple arguments have multiple, nested heads. When you apply it once and eliminate the first (leftmost) head, the next one is applied and so on. This formulation was originally discovered by Schoenfinkel in the 1920s but was later rediscovered after Haskell Curry and is called currying.
-What we mean by this description is that the following:
-
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} \lambda xy.x \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mi>y</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-
-is a convenient short-hand for tow nested lambdas (one for each argument x and y):
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}  \lambda x.(\lambda y.x) \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>&#x003BB;</mi>
-		<mi>y</mi>
-		<mo>.</mo>
-		<mi>x</mi>
-		<mo form="postfix">)</mo>
-	</mrow>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-
-
-When you apply the first argument, you're binding x, eliminating the outer lambda, and have <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} \lambda y.x  \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>y</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> with x being whatever the outer lambda was bound to.
-To try to make this a little more concrete, let's suppose that we apply these lambdas to specific values. First, a simple example with the identity function:
-1. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} \lambda x.x \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-2. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} (\lambda x.x) \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo form="prefix">(</mo>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-	<mo form="postfix">)</mo>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-3. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} (\lambda 1.1) \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo form="prefix">(</mo>
-	<mi>&#x003BB;</mi>
-	<mn>1.1</mn>
-	<mo form="postfix">)</mo>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-4. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- 1
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mn>1</mn>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-Now with our "multiple" argument lambda:
-1. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \lambda xy.x
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mi>x</mi>
-	<mi>y</mi>
-	<mo>.</mo>
-	<mi>x</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-2. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- (\lambda x.(\lambda y.x)) 1 2
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>&#x003BB;</mi>
-		<mi>x</mi>
-		<mo>.</mo>
-		<mo form="prefix">(</mo>
-		<mi>&#x003BB;</mi>
-		<mi>y</mi>
-		<mo>.</mo>
-		<mi>x</mi>
-		<mo form="postfix">)</mo>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mn>12</mn>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-We're goingt to apply these two lambdas, one nested within the other.
-3. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- (\lambda y.1) 2
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mi>&#x003BB;</mi>
-		<mi>y</mi>
-		<mn>.1</mn>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mn>2</mn>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-Now we apply the seconds lambda to the second argument. x is bound to 1 now.
-4. <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \lambda 2.1
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>&#x003BB;</mi>
-	<mn>2.1</mn>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-Here we toss the head because the last lambda was applied to 2, but there are no variables in the body expression left to bind it to.
-5.<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- 1
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mn>1</mn>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-The final result, we did nothing with the second argument y because it didnt occur anywhere in the body expression.
-Here applying the outer lambda which handled the argument x to 1 served to bind the variable x to a constant value 1. You'll see most examples working in the lambda calculus refer to abstract variables not bound to particular, concrete values. This is because the additional information is irrelevant. For your purposes, you can see the lambda calculus as being a game with a few simple rules for transforming lambdas, but no specific "meaning". We've just introduced concrete values to make the reduction somewhat easier to see.\\
-Another example, this time one which ends in an irreducible lamda. We're going to use different variables to help make the reduction easier to read, but it's worth emphasizing that the name of the variable (the letter) has no meaning or significance.\\
-\textbf{Evaluation is simplification: } There are multiple "normal forms" in lambda calculus, but here when we refer to normal form we mean beta normal form. Beta normal form is when you cannot beta reduce (apply lambdas to arguments) the terms any further. This corresponds to a "fully evaluated" expression. In programming, we'd call this a "fully executed" program.\\
-How do you refer to the number two? Do you say 2000/1000 each time or do you just say 2? The former, 2000/1000, is not fully evaluated because the division function has been fully applied (two arguments) and there's a simpler form it can be reduced to, the number two.\\
-Similarly, the normal form of the following 600:
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- (10+2)*100/2
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mrow>
-		<mo form="prefix">(</mo>
-		<mn>10</mn>
-		<mo>+</mo>
-		<mn>2</mn>
-		<mo form="postfix">)</mo>
-	</mrow>
-	<mo>*</mo>
-	<mn>100</mn>
-	<mo>&#x0002F;</mo>
-	<mn>2</mn>
-</mrow>
-</math>
-<!-- end MathToWeb -->
-We cannot reduce the number 600 any further. There are no more functions that we can beta reduce. Bringing this idea back over to the lambda calculus, the identity function\\
-
-\textbf{Combinators}\\
-\textbf{Divergence}\\
-\textbf{Summary}\\
-\textbf{Exercises}\\
-\textbf{Answers}\\
-\textbf{Definitions}\\
-\textbf{Follow-up resources}\\
-\textbf{Hello Haskell}\\
-\textbf{Strings}\\
-
-
-\subsection{Types}
-\subsection{Typeclasses}
-\subsection{More functional patters}
-\subsection{Recursion}
-\subsection{Lists}
-\subsection{Folding Lists}
-\subsection{Algebraic Datatypes}
-\subsection{Signaling Adversity with maybe and either}
-\subsection{Building Projects in Haskell}
-\subsection{Testing}
-\subsection{Monoid, Semigroup}
-\subsection{Functor}
-\subsection{Applicative}
-\subsection{Monad}
-\subsection{Abstract Structure Applied}
-\subsection{Foldable}
-\subsection{Traversable}
-\subsection{Reader}
-\subsection{State}
-\subsection{Parser Combinators}
-\subsection{Composing Types}
-\subsection{Monad Transformers}
-
-
-
-
-\section{Java}
+<h2>Java</h2>
+<p>
 .java files are compiled by javac into jvm bytecode in .class files.
 These can be interpreted by the JavaVirtualMachine.\\
 The .java File always has to be the same name as the class. Example:
-\begin{verbatim}
-//Example.java
-public class Example{
-    //...
+</p>
+
+<code>
+//Example.java<br>
+public class Example{<br>
+    //...<br>
 }
-\end{verbatim}
-to save space, there will only be the method and no class declared in the examples
-\subsection{Arithmetic, Comparison}
-The \textbf{==} operator checks if primitive data types like ints are equal.
-It checks Objects for reference equality.
-The \textbf{.equals()} function checks 2 Objects for value equality
-\subsection{Operator Reference}
-\begin{center}
-\begin{tabular}{c|c}
-    Operator & How to write \\
-    postfix & expr++ expr-- \\
-    unary & ++expr --expr -expr +expr \\
-    multiplicative & * /  \\
-    additive & + - \\
-    shift & \<< \>> \>>> \\
-    relational & < > <= >= instanceof\\
-    equality & == !=\\
-    bitwise and & \&\\
+</code>
+<br>
+
+to save space, there will only be the method and no class declared in the examples<br>
+
+<h3>Arithmetic, Comparison</h3>
+
+The == operator checks if primitive data types like ints are equal.<br>
+It checks Objects for reference equality.<br>
+The .equals() method checks 2 Objects for value equality.<br>
+
+<h3>Operator Reference</h3>
+
+<code>
+    Operator & How to write <br>
+    postfix & expr++ expr-- <br>
+    unary & ++expr --expr -expr +expr <br>
+    multiplicative & * /  <br>
+    additive & + - <br>
+    shift & \<< \>> \>>> <br>
+    relational & < > <= >= instanceof<br>
+    equality & == !=<br>
+    bitwise and & \&<br>
     bitwise XOR & |\\
     logical and & "&&"\\
     logical or & ||\\
     ternary & ? : \\
     assignment & = += -= *= /= \%= \&= ^= <<= >>= >>>= \\
     
-\end{tabular}
-\end{center}
+</code>
 \subsection{Data Types}
 There is a difference between primitive Data Types and Class Tyes\\
 Integer <-> int
