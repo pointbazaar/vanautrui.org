@@ -15,86 +15,29 @@
 <!-- credits: https://tex.stackexchange.com/questions/23804/how-to-incorporate-tex-into-a-website -->
 <h2>Math in TeX notation</h2>
 
-<h1> Math </h1>
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %% LaTeX book template                           %% -->
-<!-- %% Author:  Amber Jain (http://amberj.devio.us/) %% -->
-<!-- %% License: ISC license                          %% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-\documentclass[a4paper,11pt,openany]{book}
-\usepackage[margin=1.5cm,padding=0.1cm]{geometry}
-\usepackage{verbatim}
-<!-- % Source: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks % -->
-\usepackage{hyperref}
-\usepackage{graphicx}
-<!-- %https://stackoverflow.com/questions/3175105/writing-code-in-latex-document -->
-<!-- %https://stackoverflow.com/questions/491904/how-do-i-remove-blank-pages-coming-between-two-chapters-in-appendix -->
-\usepackage{listings}
-\usepackage{color}
-\begin{document}
+<h1>Chapter: Mathematics </h2>
+<h2>Logic</h2>
 
-\tableofcontents
+<h3>Truth Value</h3>
+<p>An Assertion is an Object which has a truth value, is either true or false, 1 or 0 
 
-\chapter{Mathematics}
-\section{Logic}
-Truth Value: An Assertion is an Object which has a truth value, is either true or false, 1 or 0 \\
-Definiton: Negation:
-Is A an assertion, so is <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \neg A 
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo>&#x000AC;</mo>
-	<mi>A</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> it's negation. If A is true, then <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \neg A
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo>&#x000AC;</mo>
-	<mi>A</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> is false. \\
-Definition 1.3 (Conjunction, Disjunction):\\
-Are A and B assertions, then the Conjunction of A and B is <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} A \wedge B \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x02227;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->\\
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} A \wedge B \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x02227;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> is true if A and B are true.
+<h4>Negation</h4>
+<p>
+    Is A an assertion, and is true, so is $ \neg A $ false.
+</p>
+</p>
+ 
+<h3>Conjunction, Disjunction</h3>
+<p>
+Are A and B assertions, then the Conjunction of A and B is $ A \wedge B $
+is true if A and B are true.
+</p>
+<p> 
 Are A and B assertions, then the Disjunction of A and B: 
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- A \vee B
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x02228;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> is true if either A is true or B is true.\\
+$ A \vee B $
+ is true if either A is true or B is true.
+</p> 
 Definition: Quantoren:\\
 1. Existence: we write <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}
@@ -186,11 +129,14 @@ We write <!-- begin MathToWeb -->
 	<mo>:</mo>
 </mrow>
 </math>
+<br>
+<br>
 <!-- end MathToWeb --> to say that the statement to the right of this sign holds true for the things on the left of this sign.
 We also write <!-- begin MathToWeb -->
 <!-- (your LaTeX) \begin{math}
  a | b 
 \end{math} -->
+<br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 	<mi>a</mi>
@@ -4875,25 +4821,26 @@ Notice that if we had made a mistake coding the <!-- begin MathToWeb -->
 </mrow>
 </math>
 <!-- end MathToWeb --> case, and passed m as left instead of m+1 (easy to do!), the proof we just constructed would have failed in that case. And in fact, the algorithm could go into an infinite loop when right = left + 1. This shows the value of careful inductive reasoning. 
-<!-- %\chapter{Compilers} -->
-\chapter{Other Resources}
 
-\section{resources}
-\url{khanacademy.com}
-\url{codewars.com}
-\url{github.com}
-\url{onlinetutorium.com}
-\url{sharelatex.com}
-\url{hackerrank.com}
-\url{brilliant.org}
-\url{https://www.w3schools.com/}
-\url{freecodecamp.com}
 
-Algodat
-\url{https://www.cs.usfca.edu/~galles/visualization/AVLtree.html}
-\url{https://www.cs.usfca.edu/~galles/visualization/Algorithms.html}
-\url{https://www.youtube.com/watch?v=dHYX4dtNS1k}
-\end{document}
+<h1> Resources </h1>
+khanacademy.com<br>
+codewars.com<br>
+github.com<br>
+onlinetutorium.com<br>
+sharelatex.com<br>
+hackerrank.com<br>
+brilliant.org<br>
+https://www.w3schools.com/<br>
+freecodecamp.com<br>
+
+<h1>Algodat</h1>
+<a href="https://www.cs.usfca.edu/~galles/visualization/AVLtree.html"></a>
+<br>
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+<br>
+https://www.youtube.com/watch?v=dHYX4dtNS1k
+
 
 <hr>
 
