@@ -38,414 +38,77 @@ Are A and B assertions, then the Disjunction of A and B:
 $ A \vee B $
  is true if either A is true or B is true.
 </p> 
-Definition: Quantoren:\\
-1. Existence: we write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \exists
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo>&#x02203;</mo>
-</mrow>
-</math>
-<!-- end MathToWeb --> to say that there is something that has some propertie(s).
-2. We write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} \exits \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-\exits
-</mrow>
-</math>
-<!-- end MathToWeb --> to say there exists just one thing with that property.
-3. We write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \forall
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo>&#x02200;</mo>
-</mrow>
-</math>
-<!-- end MathToWeb --> to say that for all objects specified, some proposition is true.\\
-Definition:\\
-Are A and B assertions, we write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} A \Rightarrow B \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x021D2;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> for "A implies B" and call this implication. The only case where this statement is false is if A is true and B is false.
-If <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} A \Rightarrow B \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x021D2;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> and <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} B \Rightarrow A \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>B</mi>
-	<mo>&#x021D2;</mo>
-	<mi>A</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> are true, we write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math} A \Leftrightarrow B \end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x021D4;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> and call this equivalence.\\
-Definition: other Notation:\\
-We write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- x:=y
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>x</mi>
-	<mo>:</mo>
-	<mo>=</mo>
-	<mi>y</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> to say that x is defined in terms of y.
-We write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- :
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo>:</mo>
-</mrow>
-</math>
+<h2> Quantoren</h2>
+
+<h4>Existence</h4>
+<p>
+ we write 
+$ \exists $ to say that there is something that has some propertie(s).<br>
+We write $ \exists ! $ to say there exists just one thing with that property.<br>
+We write $ \forall $ to say that for all objects specified, some proposition is true.
+</p>
+
+
+<p>
+Are A and B assertions, we write $ A \Rightarrow B $
+ for "A implies B" and call this implication. <br>
+ The only case where this statement is false is if A is true and B is false.
+</p>
+<p>
+If $ A \Rightarrow B $
+ and $ B \Rightarrow A  $
+ are true, we write $ A \Leftrightarrow B $
+and call this equivalence.
+</p>
+
+<p>
+We write $ x:=y$  to say that x is defined in terms of y.<br>
+We write $ :$ to say that the statement to the right of this sign holds true for the things on the left of this sign.
+</p>
 <br>
+
+<h2> Sets </h2>
+
+A Set is a collection of distinct Objects to a whole. These Objects can have any form. If a Set has no elements, we call it the empty set $
+ \emptyset $
+
+If x is Element of the Set A, we write $ x \in A $ , if x is not Element of Set A, $ x \not\in A $
+
+Subset
 <br>
-<!-- end MathToWeb --> to say that the statement to the right of this sign holds true for the things on the left of this sign.
-We also write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- a | b 
-\end{math} -->
-<br><br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>a</mi>
-	<mo>|</mo>
-	<mi>b</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> to say that a divides b without remainder.\\
-\begin{center}
-\begin{tabular}{c|c|c|c|c|c}
-    A & B & A and B & A or B & A => B & A<=>B \\
-    1 & 1 &     1   &    1   &  1     &     1\\
-    1 & 0 &     0   &    1   &  0     &     0\\
-    0 & 1 &     0   &    1   &  1     &     0\\
-    0 & 0 &     0   &    0   &  1     &     1
-\end{tabular}
-\end{center}
-\section{Sets}
-Definition: Set: 
-A Set is a collection of distinct Objects to a whole. These Objects can have any form. If a Set has no elements, we call it the empty set
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \emptyset
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo>&#x02205;</mo>
-</mrow>
-</math>
-<!-- end MathToWeb -->.
-If x is Element of the Set A, we write <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- x \in A
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>x</mi>
-	<mo>&#x02208;</mo>
-	<mi>A</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->, if x is not Element of Set A, <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- x \not\in A
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>x</mi>
-	\not<mo>&#x02208;</mo>
-	<mi>A</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->\\
-Definition: Subset\\
-A is called a subset of B, written <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+
+A is called a subset of B, written $
  A \subset B
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x02282;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> if and only if <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$ if and only if $
  x \in A \Rightarrow x \in B
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>x</mi>
-	<mo>&#x02208;</mo>
-	<mi>A</mi>
-	<mo>&#x021D2;</mo>
-	<mi>x</mi>
-	<mo>&#x02208;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->. 
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$ 
+$
  A \not\subset B
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	\not<mo>&#x02282;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb --> is defined as : <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
- \exists x \in A : x \not\in B
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mo>&#x02203;</mo>
-	<mi>x</mi>
-	<mo>&#x02208;</mo>
-	<mi>A</mi>
-	<mo>:</mo>
-	<mi>x</mi>
-	\not<mo>&#x02208;</mo>
-	<mi>B</mi>
-</mrow>
-</math>
-<!-- end MathToWeb -->.\\
+$ is defined as : $ \exists x \in A : x \not\in B $
 Definition: the Cut of two Sets A, B is defined as:
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$
  A \cap B := \lbrace x : x\in A \wedge x \in B \rbrace
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x02229;</mo>
-	<mi>B</mi>
-	<mo>:</mo>
-	<mo>=</mo>
-	<mrow>
-		<mo form="prefix">&#x0007B;</mo>
-		<mi>x</mi>
-		<mo>:</mo>
-		<mi>x</mi>
-		<mo>&#x02208;</mo>
-		<mi>A</mi>
-		<mo>&#x02227;</mo>
-		<mi>x</mi>
-		<mo>&#x02208;</mo>
-		<mi>B</mi>
-		<mo form="postfix">&#x0007D;</mo>
-	</mrow>
-</mrow>
-</math>
-<!-- end MathToWeb -->\\
-Two Sets are called disjoint, if <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{math}
+$
+Two Sets are called disjoint, if $
  A \cap B = \emptyset
-\end{math} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-	<mi>A</mi>
-	<mo>&#x02229;</mo>
-	<mi>B</mi>
-	<mo>=</mo>
-	<mo>&#x02205;</mo>
-</mrow>
-</math>
-<!-- end MathToWeb -->\\
+$
 Definition: Joining of two Sets:\\
-The joining of two sets A,B is defined as <!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+The joining of two sets A,B is defined as $$
  A \cup B := \lbrace x : x \in A \vee x \in B \rbrace
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>A</mi>
-			<mo>&#x0222A;</mo>
-			<mi>B</mi>
-			<mo>:</mo>
-			<mo>=</mo>
-			<mrow>
-				<mo form="prefix">&#x0007B;</mo>
-				<mi>x</mi>
-				<mo>:</mo>
-				<mi>x</mi>
-				<mo>&#x02208;</mo>
-				<mi>A</mi>
-				<mo>&#x02228;</mo>
-				<mi>x</mi>
-				<mo>&#x02208;</mo>
-				<mi>B</mi>
-				<mo form="postfix">&#x0007D;</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(1)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
-Disjunct joining means joining two or more sets where they have no elements in common. TODO: expand on this like in the book\\
-Definition: Difference of two sets:\\
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$$
+Disjunct joining means joining two or more sets where they have no elements in common. TODO: expand on this like in the book
+Definition: Difference of two sets:
+$$
  A \backslash B := \lbrace x : x \in A \wedge x \not\in B \rbrace
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>A</mi>
-			<mo>&#x0005C;</mo>
-			<mi>B</mi>
-			<mo>:</mo>
-			<mo>=</mo>
-			<mrow>
-				<mo form="prefix">&#x0007B;</mo>
-				<mi>x</mi>
-				<mo>:</mo>
-				<mi>x</mi>
-				<mo>&#x02208;</mo>
-				<mi>A</mi>
-				<mo>&#x02227;</mo>
-				<mi>x</mi>
-				\not<mo>&#x02208;</mo>
-				<mi>B</mi>
-				<mo form="postfix">&#x0007D;</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(2)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->\\
-Definition: Symmetric Difference:\\
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$$
+Definition: Symmetric Difference:
+$$
  A \bigtriangleup B := (A \backslash B) \cup (B \backslash A)
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>A</mi>
-			<mo>&#x025B3;</mo>
-			<mi>B</mi>
-			<mo>:</mo>
-			<mo>=</mo>
-			<mrow>
-				<mo form="prefix">(</mo>
-				<mi>A</mi>
-				<mo>&#x0005C;</mo>
-				<mi>B</mi>
-				<mo form="postfix">)</mo>
-			</mrow>
-			<mo>&#x0222A;</mo>
-			<mrow>
-				<mo form="prefix">(</mo>
-				<mi>B</mi>
-				<mo>&#x0005C;</mo>
-				<mi>A</mi>
-				<mo form="postfix">)</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(3)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->\\
-Definition: Potenzmenge:\\
-<!-- begin MathToWeb -->
-<!-- (your LaTeX) \begin{equation}
+$$
+Definition: Potenzmenge:
+$$
 P(M) := \lbrace A : A \subset P \rbrace
-\end{equation} -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
-	<mtr>
-		<mtd>
-			<mspace width="6.0em" />
-		</mtd>
-		<mtd columnalign="left">
-			<mi>P</mi>
-			<mrow>
-				<mo form="prefix">(</mo>
-				<mi>M</mi>
-				<mo form="postfix">)</mo>
-			</mrow>
-			<mo>:</mo>
-			<mo>=</mo>
-			<mrow>
-				<mo form="prefix">&#x0007B;</mo>
-				<mi>A</mi>
-				<mo>:</mo>
-				<mi>A</mi>
-				<mo>&#x02282;</mo>
-				<mi>P</mi>
-				<mo form="postfix">&#x0007D;</mo>
-			</mrow>
-		</mtd>
-		<mtd columnalign="right" style="width: 100%">
-			<mtext id="">(4)</mtext>
-			<mspace width="6.0em" />
-		</mtd>
-	</mtr>
-</mtable>
-</math>
-<!-- end MathToWeb -->
+$$
 The Potenzmenge is the set of all subsets of M.\\
 Definition: Cartesian Product:\\
 The cartesian Product of the sets <!-- begin MathToWeb -->
