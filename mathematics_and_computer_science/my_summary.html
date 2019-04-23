@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
 <head>
-<title>Mathedemo</title>
+<title>Computer Science and Math Notes</title>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['<br>(','<br>)']]}});
 </script>
@@ -2071,96 +2071,6 @@ https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 <br>
 https://www.youtube.com/watch?v=dHYX4dtNS1k
 
-<h1>Theoretical Computer Science</h1>
-An Alphabet $ \Sigma $ is a finite, non-empty Set.<br>
-Elements of this Set are called Letters.<br>
-
-A Word $ w $ over $ \Sigma $ is a finite (and possibly empty) sequence of Letters from $ \Sigma$ <br>
-
-The Length of a word: $ |w| $ <br>
-The empty word has length 0 : $ | \lambda |  = 0$ <br>
-
-<h2>Concatenation</h2>
-
-The concatenation of two words: 
-$$
-	v = a_{1} ... a_{n}, w= b_{1} ... b_{m}, vw = a_{1} ... a_{n}b_{1} ... b_{m}
-$$
-<br>
-
-u is a prefix of w $ \Leftrightarrow \exists s \in \Sigma * : us = w$  <br>
-u is a infix of w $ \Leftrightarrow  \exists r,s \in \Sigma * : rus = w$  <br>
-u is a suffix of w $ \Leftrightarrow \exists r \in \Sigma * : ru = w$  <br>
-
-<h2>Iteration</h2>
-Let w be a word.
-$$
-	w^{0}:=\lambda, w^{n+1}:= ww^{n}
-$$
-
-<h2>Reversing</h2>
-
-Let w be a word.<br>
-
-Case $w=\lambda$ : $w^{R} = \lambda $ <br>
-Case $w = va $ with $ v \in \Sigma^{*} , a \in \Sigma : (va)^{R} := a(v^{R}) $ <br>
-
-<h2>Kleene - Star (*)</h2>
-
-$$
-	\Sigma^{*} := \bigcup_{i \in N} \Sigma^{i}
-$$
-
-<h2>Language</h2>
-a Set L is a Language over an Alphabet $\Sigma$ , if $ L \subseteq \Sigma^{*}$ <br>
-
-<h3>Concatenation of Languages</h3>
-let $L_{1}, L_{2} $ be Languages. <br>
-
-$$
-	L_{1}L_{2} := \{uv | u \in L_{1}, v \in L_{2}\}
-$$
-
-<br>
-
-<h3>Iterations of a Language</h3>
-let $L $ be a Language <br>
-
-$$
-	L^{0} := \{ \lambda \} , L^{n+1} = LL^{n}
-$$
-
-<br>
-
-<p>
-	The set of all languages forms a semigroup with concatenation. <br>
-	Concatenation of Languages is associative.
-</p>
-
-<hr>
-
-<h1>Theoretische Informatik SoSe 2019, Blatt 3 </h1>
-<h2>Aufgabe 1 : Chomsky Hierarchie:</h2>
-Geben sie fuer folgende Spachen jeweils<br>
-(i) eine Grammatik $G_{i}$ mit $L(G_{i}) = L_{i}, 1\leq i \leq 3$
-und moeglichst grossem Typ an und 
-<br>
-(ii) geben sie explizit den maximalen Typ ihrer Grammatik an. 
-<br>
-Begruenden sie ihre Antworten, insbesondere, warum Ihre Grammatik von keinem groesseren Typ ist.
-<br>
-<br>
-(a) $L_{1} = \{ 1^{n} 0^{m} | n,m \geq 2 \} \subseteq \{0,1\}^{*} $
-<br>
-(b) $L_{2} = \{ 0^{2n}110(01)^{n} | n \geq 0 \} \subseteq \{0,1\}^{*} $
-<br>
-(c) $L_{3} = \{ aba^{n+2}ba | n \geq 0 \} \subseteq \{a,b\}^{*} $
-<br>
-
-<h2> Aufgabe1: mein Ergebnis </h2>
-<br>
-(a) $G_{1} = ({},N,S,T) $
-<hr>
 
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
