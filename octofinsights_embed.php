@@ -15,7 +15,7 @@
     include("logo_fragment.php");
   ?>
   <div class="container-fluid">
-      <iframe src="https://octofinsights.vanautrui.org" style="width: 100%;height: 1000px; border:none;">
+      <iframe src="https://octofinsights.vanautrui.org" style="width: 100%;height: 100%; border:none;">
 
       </iframe>
   </div>
