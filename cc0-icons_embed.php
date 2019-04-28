@@ -12,9 +12,6 @@
     include("logo_fragment.php");
   ?>
   <div class="container-fluid">
-	<?php
-		include_once("https://cc0-icons.vanautrui.org/index.php");
-	?>
       <iframe src="https://cc0-icons.vanautrui.org" style="width: 100%;height: 1000px; border:none;">
 
       </iframe>
