@@ -117,6 +117,144 @@
 					 $ P \subseteq  (N \cup \Sigma)^{+} \times (N \cup \Sigma)^{*} $ the finite Set of Production Rules
 					</p>
 				</li>
+				<li>
+					<h2>Pushdown Automaton (Kellerautomat)</h2>
+					<p>
+						(nondeterministic PDA)<br>
+						
+						$ M= ( \Sigma, \Gamma, Z, \delta, z_{0}, \# ) $
+						where
+					</p>
+					<ul>
+						<li>
+							$\Sigma $ the Alphabet
+						</li>
+						<li>
+							$\Gamma $ the Keller Alphabet (Pushdown Alphabet)
+						</li>
+						<li>
+							$Z $ a finite Set of States
+						</li>
+						<li>
+							$\delta : Z \times (\Sigma \cup \{\lambda\}) \times \Gamma \rightarrow P_{e}(Z \times \Gamma^{*})$
+							<ul>
+								<li>
+									$P_{e}(X) $ meint die Menge der endlichen Teilmengen von X
+								</li>
+							</ul>
+						</li>
+						<li>
+							$z_{0} $ the starting state
+						</li>
+						<li>
+							$\# \in \Gamma$ the Bottom symbol of the PDA
+						</li>
+					</ul>
+					<p>
+						How the PDA should work:<br>
+						<ul>
+							<li>
+								Accepting a word happens through an emtpy stack (empty keller)
+							</li>
+							<li>
+								There only needs to be one starting state.
+							</li>
+						</ul>
+						<br>
+						TODO: summarize more about the Language of a PDA and some examples.
+					</p>
+					<p>
+						PDA are usable for characterizing the class of context free languages<br>
+						Satz: L is context-free $\iff$ there is a PDA M with L(M) = L <br>
+						proof: (TODO: summarize it here)
+					</p>
+				</li>
+				<li>
+					<h2>Deterministic Pushdown Automatons</h2>
+					<p>
+						$M=(\Sigma,\Gamma,Z,\delta,z_{0}, \#,F)$ is a deterministic PDA (DPDA) if and only if<br>
+					</p>
+					<ul>
+						<li>
+							$M' = (\Sigma,\Gamma,Z,\delta,z_{0}, \#)$ is a PDA
+						</li>
+						<li>
+							$(\forall a \in \Sigma) (\forall A \in \Gamma) (\forall z \in Z) (||\delta(z,a,A)||+  ||\delta(z,\lambda,A)|| \leq 1)$
+						</li>
+						<li>
+							$F \subseteq Z$ is a subset of Final States (M accepts via Final States , not via empty Stack)
+						</li>
+					</ul>
+					<p>
+						TODO: write an example here
+					</p>
+				</li>
+				<li>
+					<p>
+						Satz: <br>
+						$REG \subset DCF \subset CF$
+					</p>
+				</li>
+				<li>
+					<h2>Turing Machines</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
+				<li>
+					<h2>Linear beschraenkte Automaten</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
+				<li>
+					<h2>Turing Berechenbarkeit (Turing computability)</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
+				<li>
+					<h2>LOOP,WHILE,GOTO Berechenbarkeit (LOOP,WHILE,GOTO computability)</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
+				<li>
+					<h2>Primitive Recursive Functions and Partial Recursive Functions</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
+				<li>
+					<h2>The Ackermann Function</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
+				<li>
+					<h2>Entscheidbarkeit und Aufzaehlbarkeit (Decidability and Countability)</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
+				<li>
+					<h2>Unentscheidbarkeit (Undecidability)</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
+				<li>
+					<h2>NP-Completeness</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
+				<li>
+					<h2>Problems in P and NP</h2>
+					<p>
+						TODO: summarize it here
+					</p>
+				</li>
 			</ul>
 
 
