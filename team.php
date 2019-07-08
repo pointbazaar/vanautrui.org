@@ -57,29 +57,12 @@
                 <span class="badge badge-light">Bootstrap</span>
             </div>
             <div>
-                <span class="badge badge-light">Spring Boot</span>
+                <span class="badge badge-light">Android</span>
                 <span class="badge badge-light">Java</span>
                 <span class="badge badge-light">Git</span>
             </div>
         </div>
       </div>
-
-      <div class="card m-3 ">
-        <div class="card-header bg-custom-dark">
-            <a href="" class="fg-custom">Ilona</a>
-        </div>
-        <img class="card-img-top profilepic" src="https://vanautrui.org/pics/ilona2.png">
-        <div class="card-footer bg-custom-dark">
-            <div>
-                <span class="badge badge-light">Finance</span>
-                <span class="badge badge-light">Market Research</span>
-            </div>
-            <div>
-                <span class="badge badge-light">Event Management</span>
-            </div>
-        </div>
-      </div>
-
   </div>
 
       <div class="row justify-content-center">
