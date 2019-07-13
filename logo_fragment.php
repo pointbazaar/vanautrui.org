@@ -48,11 +48,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                 </strong>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="cc0-icons_embed.php">
-                Free Icons
-            </a>
-        </li>
+        
       <li class="nav-item <?= ($activePage == 'portfolio') ? 'active':''; ?>">
         <a class="nav-link" href="portfolio.php">
           <strong>
