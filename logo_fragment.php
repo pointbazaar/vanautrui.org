@@ -39,15 +39,6 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
               </strong>
             </a>
         </li>
-        <li class="nav-item <?= ($activePage == 'octofinsights_embed') ? 'active':''; ?>">
-            <a class="nav-link" href="octofinsights_embed.php">
-                <strong>
-                    <span>
-                        Octofinsights
-                    </span>
-                </strong>
-            </a>
-        </li>
         
       <li class="nav-item <?= ($activePage == 'portfolio') ? 'active':''; ?>">
         <a class="nav-link" href="portfolio.php">
