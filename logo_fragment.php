@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-xl navbar-dark bg-custom-dark">
     <a class="navbar-brand" href="index.php">
       <img style="width:3em;" src="https://vanautrui.org/pics/logo.svg"/>
-      <span class="fg-custom">Van Autrui Web Development</span>
+      <span class="fg-custom">Van Autrui</span>
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
