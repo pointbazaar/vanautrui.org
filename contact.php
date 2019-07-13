@@ -22,9 +22,8 @@
   
 
 	<div class="container">
-		<hr>
 		<p class="text-center">
-			<strong>contact us: vanautrui@gmail.com</strong>
+			<p>vanautrui@gmail.com</p>
 		</p>
 	</div>
 
