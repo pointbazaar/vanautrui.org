@@ -20,8 +20,9 @@
     include("logo_fragment.php");
   ?>
   
+	<div style="height: 20vh;"></div>
 
-	<div class="container">
+	<div class="row justify-content-center">
 		<p class="text-center">
 			<p>vanautrui@gmail.com</p>
 		</p>
