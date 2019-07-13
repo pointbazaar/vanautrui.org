@@ -19,31 +19,14 @@
   <?php
     include("logo_fragment.php");
   ?>
-
-
-  <!-- https://www.datenschutz.org/website/ -->
-  <div id="Portfolio" class="container-fluid">
-        
-        <div class="m-3 p-3"></div>
-        
-        <div class="row justify-content-center">
-			<ul class="list-group">
-			  <li class="list-group-item">
-				  <a href="https://afropeanbase.com/">afropeanbase.com</a>
-			  </li>
-			  <li class="list-group-item">
-				  <a href="https://octofinsights.vanautrui.org/">Octofinsights (in Progress)</a>
-			  </li>
-			  <li class="list-group-item">
-				  <a href="https://afroliciouz-kitchen.com/">
-					  Afroliciouz Kitchen (in Progress)
-				  </a>
-			  </li>
-			</ul>
-        </div>
-
-  </div>
-
   
+
+	<div class="container">
+		<hr>
+		<p class="text-center">
+			<strong>contact us: vanautrui@gmail.com</strong>
+		</p>
+	</div>
+
 </body>
 </html>

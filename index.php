@@ -95,10 +95,7 @@
       </div>
   </div>
 
-  <div id="footer" class="container-fluid"></div>
-  <?php
-    include("footer.html");
-  ?>
+  
 </body>
 
 </html>

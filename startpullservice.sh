@@ -1,1 +1,0 @@
-nohup node pullservice.js &

@@ -92,10 +92,7 @@
   <!-- inspiration: https://blog.hubspot.com/marketing/creative-agency-team-pages -->
   <!-- https://www.rkh.co.uk/about-us -->
 
-  <div id="footer"></div>
-  <?php
-    include("footer.html");
-  ?>
+  
 
 </body>
 </html>
