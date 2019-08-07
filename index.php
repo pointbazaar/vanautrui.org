@@ -41,7 +41,7 @@
                     <div>
                         <h2 class="m-3">Websites</h2>
                         <p class="m-3">
-                            We can design your Website using PHP, to represent your business.<br>
+                            We can design your Website using Bootstrap,Typescript and Angular, to represent your business.<br>
                             All of the Websites we develop are secured using <a href="https://letsencrypt.org/"> Lets Encrypt Certificates</a> <br>
                             Take a look at our Portfolio to see some Websites that <br>
                             we have designed.
@@ -57,7 +57,10 @@
                                 <a href="https://www.openstreetmap.org">Openstreetmap</a>
                                 and
                                 <a href="https://leafletjs.com/">Leaflet.js</a>
-                            </li>
+			    </li>
+			    <li>
+				only using statically typed Languages, to prevent errors
+			   </li>
                         </ul>
                     </div>
                 </div>
