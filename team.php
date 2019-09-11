@@ -39,7 +39,6 @@
                 <span class="badge badge-light">Adobe XD</span>
                 <span class="badge badge-light">Git</span>
             </div>
-            <!-- add badges for skills -->
         </div>
       </div>
 
@@ -48,7 +47,7 @@
             <a class="fg-custom" href="profiles/jorg.html">Alexander Hansen</a>
         </div>
 
-        <img class="card-img-top profilepic" src="https://vanautrui.org/pics/alex_2.jpg">
+        <img class="card-img-top profilepic" src="https://vanautrui.org/pictures/alex.jpg">
 
         <div class="card-footer bg-custom-dark">
             <div>
@@ -60,6 +59,25 @@
                 <span class="badge badge-light">Android</span>
                 <span class="badge badge-light">Java</span>
                 <span class="badge badge-light">Git</span>
+            </div>
+        </div>
+      </div>
+      <div class="card m-3 ">
+        <div class="card-header bg-custom-dark">
+            <a class="fg-custom" href="profiles/david.html">David Milosevic</a>
+        </div>
+
+        <img class="card-img-top profilepic" src="https://vanautrui.org/pictures/david.jpeg">
+
+        <div class="card-footer bg-custom-dark">
+            <div>
+                <span class="badge badge-light">C</span>
+                <span class="badge badge-light">C++</span>
+                <span class="badge badge-light">Linux Kernel Development</span>
+            </div>
+            <div>
+                <span class="badge badge-light">Embedded Systems Development</span>
+                <span class="badge badge-light">Linux Driver Development</span>
             </div>
         </div>
       </div>
