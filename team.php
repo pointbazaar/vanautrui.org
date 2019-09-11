@@ -72,12 +72,11 @@
         <div class="card-footer bg-custom-dark">
             <div>
                 <span class="badge badge-light">C</span>
-                <span class="badge badge-light">C++</span>
-                <span class="badge badge-light">Linux Kernel Development</span>
+                <span class="badge badge-light">Linux Kernel Dev.</span>
             </div>
             <div>
-                <span class="badge badge-light">Embedded Systems Development</span>
-                <span class="badge badge-light">Linux Driver Development</span>
+				<span class="badge badge-light">C++</span>
+                <span class="badge badge-light">Linux Driver Dev.</span>
             </div>
         </div>
       </div>
