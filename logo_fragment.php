@@ -56,7 +56,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
       </li>
       <li class="nav-item <?= ($activePage == 'principles') ? 'active':''; ?>">
         <a class="nav-link" href="principles.php">
-            Team
+            Our Principles
         </a>
       </li>
       <li class="nav-item <?= ($activePage == 'contact') ? 'active':''; ?>">
