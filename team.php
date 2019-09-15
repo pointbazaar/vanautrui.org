@@ -89,7 +89,8 @@
 			<div class="card-footer bg-custom-dark">
 				<div>
 					<span class="badge badge-light">PHP</span>
-					<span class="badge badge-light">Web Development</span>
+					<span class="badge badge-light">Web</span>
+					<span class="badge badge-light">Bootstrap</span>
 				</div>
 				<div>
 					<span class="badge badge-light">Java</span>
