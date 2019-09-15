@@ -38,7 +38,6 @@
 				<div>
 					<span class="badge badge-light">Java</span>
 					<span class="badge badge-light">Adobe XD</span>
-					<span class="badge badge-light">Git</span>
 				</div>
 			</div>
 		  </div>
@@ -59,7 +58,6 @@
 				<div>
 					<span class="badge badge-light">Android</span>
 					<span class="badge badge-light">Java</span>
-					<span class="badge badge-light">Git</span>
 				</div>
 			</div>
 		  </div>
@@ -78,6 +76,24 @@
 				<div>
 					<span class="badge badge-light">C++</span>
 					<span class="badge badge-light">Linux Driver Dev.</span>
+				</div>
+			</div>
+		  </div>
+		  <div class="card m-3 ">
+			<div class="card-header bg-custom-dark">
+				<a class="fg-custom" href="http://bestofcode.net/">Marco Steinke</a>
+			</div>
+
+			<img class="card-img-top profilepic" src="https://www.bestofcode.net/Dashboard/assets/img/pp.jpg">
+
+			<div class="card-footer bg-custom-dark">
+				<div>
+					<span class="badge badge-light">PHP</span>
+					<span class="badge badge-light">Web Development</span>
+				</div>
+				<div>
+					<span class="badge badge-light">Java</span>
+					<span class="badge badge-light">Web Design</span>
 				</div>
 			</div>
 		  </div>
