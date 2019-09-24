@@ -113,13 +113,12 @@
 					<div>
 						<span class="badge badge-light">Versatile</span>
 						<span class="badge badge-light">Fullstack Web</span>
-						<span class="badge badge-light">GameDev</span>
+						
 					</div>
 					<div>
+						<span class="badge badge-light">GameDev</span>
 						<span class="badge badge-light">Java</span>
 						<span class="badge badge-light">C#</span>
-						<span class="badge badge-light">JavaScript</span>
-						<span class="badge badge-light">Python</span>
 					</div>
 				</div>
 			</div>
