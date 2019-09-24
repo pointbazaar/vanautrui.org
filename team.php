@@ -101,29 +101,36 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="card m-3 ">
-			<div class="card-header bg-custom-dark">
-				<a class="fg-custom" href="#">Alan I-Shref</a>
-			</div>
-
-			<img class="card-img-top profilepic" src="">
-
-			<div class="card-footer bg-custom-dark">
-				<div>
-					<span class="badge badge-light">Versatile</span>
-					<span class="badge badge-light">Fullstack Web</span>
-					<span class="badge badge-light">GameDev</span>
+			
+			<div class="card m-3 ">
+				<div class="card-header bg-custom-dark">
+					<a class="fg-custom" href="#">Alan I-Shref</a>
 				</div>
-				<div>
-					<span class="badge badge-light">Java</span>
-					<span class="badge badge-light">C#</span>
-					<span class="badge badge-light">JavaScript</span>
-					<span class="badge badge-light">Python</span>
+
+				<img class="card-img-top profilepic" src="">
+
+				<div class="card-footer bg-custom-dark">
+					<div>
+						<span class="badge badge-light">Versatile</span>
+						<span class="badge badge-light">Fullstack Web</span>
+						<span class="badge badge-light">GameDev</span>
+					</div>
+					<div>
+						<span class="badge badge-light">Java</span>
+						<span class="badge badge-light">C#</span>
+						<span class="badge badge-light">JavaScript</span>
+						<span class="badge badge-light">Python</span>
+					</div>
 				</div>
 			</div>
+			
+			
+			
+			
+			
+			
 		</div>
+		
 	</div>
 
 	<!-- inspiration: https://blog.hubspot.com/marketing/creative-agency-team-pages -->
