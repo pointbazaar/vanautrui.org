@@ -46,7 +46,7 @@
 
 			<div class="card m-3 ">
 				<div class="card-header bg-custom-dark">
-					<a class="fg-custom" href="profiles/jorg.html">Alexander Hansen</a>
+					<a class="fg-custom" href="https://alexander-hansen.dev">Alexander Hansen</a>
 				</div>
 
 				<img class="card-img-top profilepic" src="https://vanautrui.org/pictures/alex.jpg">
